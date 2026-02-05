@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Result Prediction - Research Detail</title>
+  <title>Adaptive Message-Passing GNN - Detail</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
-    .publication-box { background: #fdfdfd; border: 1px solid #e0e0e0; padding: 25px; border-radius: 10px; margin-top: 30px; }
-    .algo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 15px; }
-    .algo-item { background: #eef7ff; padding: 10px; border-radius: 5px; text-align: center; font-size: 14px; color: #0563af; font-weight: 600; }
-    .download-btn { background: #0563af; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; transition: 0.3s; }
-    .download-btn:hover { background: #003d73; color: white; text-decoration: none; }
+    .efficiency-card { background: #fff; border: 1px solid #0563af; border-left: 5px solid #0563af; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+    .stat-circle { width: 100px; height: 100px; border: 4px solid #0563af; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0563af; margin: 0 auto 10px; }
+    .tech-list { list-style: none; padding: 0; }
+    .tech-list li { padding: 10px 0; border-bottom: 1px dotted #ccc; font-size: 14px; }
+    .tech-list i { color: #0563af; margin-right: 10px; }
   </style>
 </head>
 
 <body>
 
-    <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -57,7 +56,7 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Result Prediction Research</h2>
+          <h2>Adaptive Message-Passing GNN</h2>
           <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
         </div>
       </div>
@@ -68,46 +67,52 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Student Performance Forecasting using Data Mining</h2>
+              <h2>Trainable Control Networks for Selective Communication</h2>
               <p>
-                In this project, I explored the application of <strong>Educational Data Mining (EDM)</strong> to forecast academic outcomes. By analyzing historical grade distributions, we developed a system capable of predicting a student's performance in upcoming semesters, enabling early intervention and personalized academic support.
+                In large-scale crystal structure prediction, the computational cost of full message-passing can be prohibitive. This project involved designing <strong>trainable control networks</strong> that sit on top of standard GNN architectures to manage selective node communication.
               </p>
 
-              <h3>Comparative Algorithmic Analysis</h3>
+              <div class="efficiency-card">
+                <h4>Key Optimization Achievements</h4>
+                <div class="row text-center mt-4">
+                  <div class="col-6">
+                    <div class="stat-circle">20%</div>
+                    <p>Edges Pruned</p>
+                  </div>
+                  <div class="col-6">
+                    <div class="stat-circle">0%</div>
+                    <p>Accuracy Loss</p>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Methodology</h3>
               <p>
-                To ensure high predictive reliability, the dataset was subjected to rigorous testing across four distinct machine learning classifiers:
+                The control network learns which edges in the crystal graph are vital for property prediction and which are redundant. By dynamically pruning these edges during the forward pass, we significantly reduce the number of message-passing operations.
               </p>
               
-              <div class="algo-grid">
-                <div class="algo-item">Naive Bayes</div>
-                <div class="algo-item">J48 (Decision Tree)</div>
-                <div class="algo-item">K* (Instance-based)</div>
-                <div class="algo-item">Random Tree</div>
-              </div>
+              <h4>Implementation Highlights</h4>
+              <ul class="tech-list">
+                <li><i class="bx bxs-bolt"></i> Trainable gating mechanisms for adaptive adjacency matrices.</li>
+                <li><i class="bx bxs-bolt"></i> Evaluation on high-atom count crystal datasets (JARVIS/Materials Project).</li>
+                <li><i class="bx bxs-bolt"></i> Integration with PyTorch Geometric and DGL for efficient sparse matrix operations.</li>
+              </ul>
 
-              <h4 class="mt-4">Methodology</h4>
+              <h3 class="mt-4">Computational Impact</h3>
               <p>
-                The model was trained on 90% of the dataset using grade-based predictor attributes. By mapping the correlation between prerequisite performance and advanced course success, the system achieved significant accuracy in forecasting final GPA trajectories.
+                Reducing the graph density by 20% led to a substantial decrease in training time and memory footprint. This makes the model highly suitable for deployment on high-performance computing (HPC) clusters where resource allocation is critical.
               </p>
-
-              <div class="publication-box">
-                <h4><i class="bx bx-book-bookmark"></i> Scholarly Publication</h4>
-                <p>This work was published in the Springer series <em>Lecture Notes in Networks and Systems (Vol 284)</em>. You can find the full details on pages 295–307 of the proceedings.</p>
-                <a href="assets/pdf/IntelligentComputing.pdf" class="download-btn" download>
-                  <i class="bx bxs-download mr-2"></i> Download Full Proceedings (PDF)
-                </a>
-              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project Specs</h3>
+              <h3>Technical Specs</h3>
               <ul>
-                <li><strong>Category</strong>: Machine Learning / EDM</li>
-                <li><strong>Publisher</strong>: Springer Nature</li>
-                <li><strong>Tools</strong>: Weka, Python</li>
-                <li><strong>Techniques</strong>: Supervised Classification</li>
+                <li><strong>Category</strong>: Deep Learning Optimization</li>
+                <li><strong>GNN Core</strong>: Message-Passing Neural Networks (MPNN)</li>
+                <li><strong>Libraries</strong>: PyTorch, DGL, SLURM (HPC)</li>
+                <li><strong>Dataset</strong>: Large-scale Inorganic Crystals</li>
               </ul>
             </div>
           </div>

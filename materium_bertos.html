@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Result Prediction - Research Detail</title>
+  <title>CrysLLMGen Framework - Detail</title>
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+
   <style>
-    .publication-box { background: #fdfdfd; border: 1px solid #e0e0e0; padding: 25px; border-radius: 10px; margin-top: 30px; }
-    .algo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 15px; }
-    .algo-item { background: #eef7ff; padding: 10px; border-radius: 5px; text-align: center; font-size: 14px; color: #0563af; font-weight: 600; }
-    .download-btn { background: #0563af; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; transition: 0.3s; }
-    .download-btn:hover { background: #003d73; color: white; text-decoration: none; }
+    /* Professional Highlight for PhD Research */
+    .research-highlight-box {
+        background: #f0f7ff;
+        border-left: 5px solid #0563af;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 0 8px 8px 0;
+    }
+    .tech-pill {
+        display: inline-block;
+        background: #0563af;
+        color: #fff;
+        padding: 3px 12px;
+        border-radius: 50px;
+        font-size: 12px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
   </style>
 </head>
 
@@ -57,63 +74,60 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Result Prediction Research</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+          <h2>CrysLLMGen Framework</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfolio Details</li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
         <div class="row">
+
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Student Performance Forecasting using Data Mining</h2>
+              <h2>Hybrid Generative Framework for Stable Crystal Synthesis</h2>
               <p>
-                In this project, I explored the application of <strong>Educational Data Mining (EDM)</strong> to forecast academic outcomes. By analyzing historical grade distributions, we developed a system capable of predicting a student's performance in upcoming semesters, enabling early intervention and personalized academic support.
+                The <strong>CrysLLMGen</strong> project addresses a critical bottleneck in material informatics: the generation of chemically valid and stable inorganic crystals. Current generative models often struggle with charge neutrality and realistic atomic arrangements. 
               </p>
 
-              <h3>Comparative Algorithmic Analysis</h3>
-              <p>
-                To ensure high predictive reliability, the dataset was subjected to rigorous testing across four distinct machine learning classifiers:
-              </p>
-              
-              <div class="algo-grid">
-                <div class="algo-item">Naive Bayes</div>
-                <div class="algo-item">J48 (Decision Tree)</div>
-                <div class="algo-item">K* (Instance-based)</div>
-                <div class="algo-item">Random Tree</div>
+              <div class="research-highlight-box">
+                <h4>Technical Core: Oxidation State Integration</h4>
+                <p>My primary contribution involves the integration of <strong>BERTOS</strong> and <strong>TOSS</strong> models to predict high-accuracy oxidation states. By embedding these specialized models, we ensure that the generated structures are not just geometrically plausible, but electronically stable.</p>
+                <div class="mt-3">
+                  <span class="tech-pill">TOSS Integration</span>
+                  <span class="tech-pill">BERTOS NLP</span>
+                  <span class="tech-pill">Materium Backbone</span>
+                  <span class="tech-pill">Charge Neutrality</span>
+                </div>
               </div>
 
-              <h4 class="mt-4">Methodology</h4>
               <p>
-                The model was trained on 90% of the dataset using grade-based predictor attributes. By mapping the correlation between prerequisite performance and advanced course success, the system achieved significant accuracy in forecasting final GPA trajectories.
+                By coupling these oxidation-state predictors with the <strong>Materium</strong> codebase, the framework can filter and refine generated structures in real-time. This pipeline facilitates "Inverse Design," where we start with a desired property and work backward to the atomic coordinates, significantly reducing the time required for lab synthesis.
               </p>
-
-              <div class="publication-box">
-                <h4><i class="bx bx-book-bookmark"></i> Scholarly Publication</h4>
-                <p>This work was published in the Springer series <em>Lecture Notes in Networks and Systems (Vol 284)</em>. You can find the full details on pages 295–307 of the proceedings.</p>
-                <a href="assets/pdf/IntelligentComputing.pdf" class="download-btn" download>
-                  <i class="bx bxs-download mr-2"></i> Download Full Proceedings (PDF)
-                </a>
-              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project Specs</h3>
+              <h3>Project Specifications</h3>
               <ul>
-                <li><strong>Category</strong>: Machine Learning / EDM</li>
-                <li><strong>Publisher</strong>: Springer Nature</li>
-                <li><strong>Tools</strong>: Weka, Python</li>
-                <li><strong>Techniques</strong>: Supervised Classification</li>
+                <li><strong>Category</strong>: Generative AI / Material Informatics</li>
+                <li><strong>Institution</strong>: University of South Carolina (MLEG)</li>
+                <li><strong>Primary Tools</strong>: Python, PyTorch, Materium</li>
+                <li><strong>Key Models</strong>: TOSS, BERTOS, Diffusion Models</li>
+                <li><strong>Focus</strong>: Crystal Structure Stability</li>
               </ul>
             </div>
           </div>
+
         </div>
       </div>
     </section>
   </main>
-</body>
+
+  </body>
 </html>

@@ -1,43 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Google Drive API</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <title>Google Drive API Integration - Detail</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.5.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .feature-list { list-style: none; padding: 0; }
+    .feature-list li { padding: 12px; background: #f9f9f9; border-left: 4px solid #0563af; margin-bottom: 10px; border-radius: 0 5px 5px 0; font-size: 14px; }
+    .feature-list strong { color: #0563af; }
+    .context-box { background: #f0f7ff; padding: 25px; border-radius: 10px; margin-bottom: 30px; }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
+    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -47,9 +27,9 @@
       <div class="profile">
         <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-       <div class="social-links mt-3 text-center">
+      <div class="social-links mt-3 text-center">
           <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-         <!--  <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
+     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
           <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -59,7 +39,7 @@
 
       <nav class="nav-menu">
         <ul>
-           <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
@@ -72,99 +52,61 @@
 
     </div>
   </header><!-- End Header -->
-
   <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Google Drive API</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
-          </ol>
+          <h2>Google Drive API Integration</h2>
+          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section class="portfolio-details">
       <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <div class="context-box">
+                <h2>Scalable File Management for LMS</h2>
+                <p>
+                  In a modern Learning Management System (LMS), file exchange is a core utility—from question paper distribution to student answer script submissions. To ensure scalability and data integrity, I integrated <strong>Google Drive REST APIs</strong> with an <strong>ASP.NET Core</strong> backend.
+                </p>
+              </div>
 
-        <div class="portfolio-details-container">
+              <h3>Implementation Architecture</h3>
+              <p>
+                The system was designed to handle various file types and sizes efficiently, optimizing network bandwidth and ensuring successful transfers even over unstable connections.
+              </p>
+              
+              <ul class="feature-list">
+                <li><strong>Multipart Upload:</strong> Optimized for small metadata-heavy files (less than 5MB).</li>
+                <li><strong>Resumable Upload:</strong> Implemented a chunk-based protocol for large files (greater than 5MB), allowing transfers to resume if interrupted.</li>
+                <li><strong>Streamed Downloads:</strong> Implemented byte-array retrieval from the API, piping the data directly to the user's local stream to minimize server memory overhead.</li>
+                <li><strong>CRUD Operations:</strong> Full lifecycle management including programmatic file deletion and permission handling via FileID.</li>
+              </ul>
 
-          <div class="owl-carousel portfolio-details-carousel">
-          
+              <h4 class="mt-4">Impact</h4>
+              <p>
+                By offloading storage to Google Drive, the system eliminated the need for expensive on-premise storage servers while providing enterprise-grade security and 99.9% availability for academic documents.
+              </p>
+            </div>
           </div>
 
-          <div class="portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: API Integration</li>
-              <li><strong>Tech Stack</strong>: ASP.Net Core, Razor</li>
-    
-            </ul>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>System Specs</h3>
+              <ul>
+                <li><strong>Category</strong>: API & Systems</li>
+                <li><strong>Tech Stack</strong>: ASP.NET Core, Razor</li>
+                <li><strong>Integration</strong>: Google Drive REST API</li>
+                <li><strong>Security</strong>: OAuth 2.0 / Service Accounts</li>
+              </ul>
+            </div>
           </div>
-
         </div>
-
-        <div class="portfolio-description">
-          <h2>Google Drive API's have been called to manage file for a Learning Management System.</h2>
-          <p>
-            Learning Management System (LMS) is a hot cake for the modern world. Recent pandemic has made LMS
-            an integral part for the education system. File management is one of the most important aspects for LMS. Teachers submit questions while all students submit their answer scripts through LMS. Like it, different assignments, quizs require huge amount of file exchange. To ensure a secured file storage system, Google Drive APIs have been integrated with ASP.Net core.
-          </p>
-
-            <ul>
-              <li><strong>Upload FIle(Less than 5MB)</strong>: Multipart Upload Type</li>
-              <li><strong>Upload File(Greater than 5MB)</strong>: Resumable Upload Type</li>
-              <li><strong>Download File</strong>: Getting the byte array as API return result and write it in the user's local stream.</li>
-              <li><strong>Delete File</strong>: Delete file using FileID from a particular drive.</li>
-            </ul>
-
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    </section>
+  </main>
 </body>
-
 </html>

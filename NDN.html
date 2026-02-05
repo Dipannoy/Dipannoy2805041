@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Named Data Networking</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <title>Named Data Networking - Research Detail</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.5.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .pdf-container { background: #444; padding: 20px; border-radius: 12px; margin-top: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .research-note { border-left: 5px solid #0563af; background: #f0f7ff; padding: 20px; border-radius: 0 8px 8px 0; margin-bottom: 25px; }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
+    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -47,7 +25,7 @@
       <div class="profile">
         <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-        <div class="social-links mt-3 text-center">
+      <div class="social-links mt-3 text-center">
           <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
      <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
@@ -72,100 +50,57 @@
 
     </div>
   </header><!-- End Header -->
-
   <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Named Data Networking</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
-          </ol>
+          <h2>Named Data Networking (NDN)</h2>
+          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section class="portfolio-details">
       <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2>Hybrid Cache Replacement Policy</h2>
+              <p>
+                As an undergraduate researcher, I focused on <strong>Content-Centric Networking (CCN)</strong>, specifically addressing the memory constraints of NDN nodes. Because these nodes have finite content stores, efficient eviction policies are critical for network throughput.
+              </p>
 
-        <div class="portfolio-details-container">
+              <div class="research-note">
+                <h4>Proposed Algorithm: The Hybrid Policy</h4>
+                <p>My proposed "Hybrid Policy" optimizes the selection of content for eviction by balancing frequency and recency. During simulation, this approach demonstrated superior hit rates compared to standard industrial baselines like <strong>LRU (Least Recently Used)</strong> and <strong>Priority FIFO</strong>.</p>
+              </div>
 
-          <div class="owl-carousel portfolio-details-carousel">
-          
+              <h3>Technical Scope</h3>
+              <p>
+                The research involved simulating network traffic and cache hits using the <strong>ndnSIM</strong> simulator. The findings contributed to a deeper understanding of how data naming conventions influence caching efficiency in next-generation internet architectures.
+              </p>
+
+              <div class="pdf-container">
+                <h4 class="text-white mb-3"><i class="bx bxs-file-pdf"></i> Research Paper Preview</h4>
+                <iframe src="assets/pdf/NDN_Cache_Replacement_Policy.pdf" style="width:100%; height:600px; border:none; border-radius: 8px;"></iframe>
+              </div>
+            </div>
           </div>
 
-          <div class="portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Networking</li>
-              <li><strong>Objective</strong>: Cache Replacement Policy</li>
-    		  <li><strong>Simulator</strong>: NDN</li>
-
-            </ul>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project Specs</h3>
+              <ul>
+                <li><strong>Category</strong>: Networking / CCN</li>
+                <li><strong>Objective</strong>: Cache Eviction Optimization</li>
+                <li><strong>Simulator</strong>: ndnSIM</li>
+                <li><strong>Outcome</strong>: Baseline Performance Improvement</li>
+              </ul>
+            </div>
           </div>
-
         </div>
-
-        <div class="portfolio-description">
-          <h2>Named Data Networking(NDN) was my undergrad research topic. I have proposed a new cache replacement policy for the content store of NDN.</h2>
-          <p>
-        NDN works with content rather than IP. It's also called as Content-Centric Networking. The contents reside in the content store of NDN nodes. But the nodes don't have unlimited memory. So, eviction of content to give place to new content is often required. I have basically worked in this part. Selecting appropriate content for eviction was the target of my algorithm. The policy I have proposed is named as "Hybrid Policy". It performs better than the default NDN policy- LRU, Priority Fifo. This work has been submitted to NSys 2021.
-          </p>
-
-         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-12 col-md-12 portfolio-item filter-app">  <iframe src="assets/pdf/NDN_Cache_Replacement_Policy.pdf" style="width:100%;height:700px;"></iframe>
-          </div>
-
-       
-        </div>
-
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    </section>
+  </main>
 </body>
-
 </html>

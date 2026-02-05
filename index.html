@@ -64,6 +64,177 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/* Professional Skill Badges */
+.skill-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0563af;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: #0563af;
+    color: #fff;
+    border-color: #0563af;
+    transform: translateY(-2px);
+}
+
+.skill-category-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #45505b;
+    border-left: 4px solid #0563af;
+    padding-left: 10px;
+}
+
+/* Custom Tooltip Styling */
+.tooltip-inner {
+    max-width: 280px;
+    padding: 12px;
+    background-color: #0563af;
+    text-align: left;
+    pointer-events: auto; /* Important for clicking links */
+}
+
+/* Keeps the tooltip open while moving the mouse into it */
+.tooltip:hover .tooltip-inner {
+    visibility: visible;
+}
+
+/* Professional Portfolio Cards */
+.portfolio-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(5, 99, 175, 0.15);
+}
+
+.portfolio-card .card-body {
+    padding: 25px;
+}
+
+.portfolio-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0563af;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.portfolio-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #45505b;
+    margin-bottom: 15px;
+}
+
+.portfolio-card .card-text {
+    font-size: 14px;
+    color: #747f8a;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-learn-more {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0563af;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-learn-more i {
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.btn-learn-more:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive Portfolio Grid */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image/Icon Header Area */
+.portfolio-img-header {
+    height: 160px;
+    background: linear-gradient(135deg, #0563af 0%, #003d73 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.2);
+    font-size: 80px;
+    position: relative;
+}
+
+.portfolio-img-header i {
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-img-header i {
+    transform: scale(1.1) rotate(-5deg);
+    color: rgba(255,255,255,0.4);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(5, 99, 175, 0.2);
+}
+
+.portfolio-card .card-body {
+    padding: 20px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-tag {
+    font-size: 10px;
+    background: #eef7ff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #0563af;
+    font-weight: 700;
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
   </style>
 </head>
 
@@ -223,7 +394,93 @@
     <!-- End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
+
+
     <section id="skills" class="skills section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Technical Expertise</h2>
+      <p>A comprehensive overview of the languages, frameworks, and core competencies I leverage in my research and development.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-up">
+        <h3 class="skill-category-title">Research</h3>
+        <div class="skills-wrapper mb-4">
+                      <span class="skill-badge">Graph Neural Networks</span>
+          <span class="skill-badge">Self-Supervised Learning</span>
+          <span class="skill-badge">Generative Models</span>
+          <span class="skill-badge">Large Language Models</span>
+          <span class="skill-badge">Domain Adaptation</span>
+          <span class="skill-badge">Inverse Design</span>
+        </div>
+      </div>
+
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+  <h3 class="skill-category-title">ML Libraries and Models</h3>
+  <div class="skills-wrapper mb-4">
+    <span class="skill-badge">PyTorch</span>
+    <span class="skill-badge">DGL</span>
+    <span class="skill-badge">TensorFlow</span>
+    <span class="skill-badge">Keras</span>
+    <span class="skill-badge">Scikit-Learn</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>ALIGNN</b>: Atomistic Line Graph Neural Network. Captures bond angles for high-accuracy property prediction.<br><a href='https://github.com/usnistgov/alignn' target='_blank' style='color:#fff; text-decoration:underline;'>GitHub/Paper</a>">ALIGNN</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>SchNet</b>: Continuous-filter GNN for modeling quantum interactions in molecules and materials.<br><a href='https://arxiv.org/abs/1706.08566' target='_blank' style='color:#fff; text-decoration:underline;'>Paper</a>">SchNet</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>PAiNN</b>: Polarizable Atom Interaction NN. Equivariant message passing for tensorial properties.<br><a href='https://arxiv.org/abs/2102.03150' target='_blank' style='color:#fff; text-decoration:underline;'>Paper</a>">PAiNN</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>CGCNN</b>: Crystal Graph Convolutional Neural Networks for interpretable materials discovery.<br><a href='https://github.com/txie-93/cgcnn' target='_blank' style='color:#fff; text-decoration:underline;'>GitHub/Paper</a>">CGCNN</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>MatterGen</b>: Diffusion-based generative model for inorganic materials across the periodic table.<br><a href='https://github.com/microsoft/mattergen' target='_blank' style='color:#fff; text-decoration:underline;'>GitHub/Paper</a>">MatterGen</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>CrystalGRW</b>: Diffusion model using Geodesic Random Walks for targeted crystal property generation.<br><a href='https://arxiv.org/abs/2501.08998' target='_blank' style='color:#fff; text-decoration:underline;'>Paper</a>">CrystalGRW</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>FlowMM</b>: Materials generation via Riemannian Flow Matching for efficient CSP and DNG tasks.<br><a href='https://arxiv.org/abs/2406.04713' target='_blank' style='color:#fff; text-decoration:underline;'>Paper</a>">FlowMM</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>CDVAE</b>: Crystal Diffusion Variational Autoencoder. Denoises coordinates to generate stable structures.<br><a href='https://arxiv.org/abs/2110.11599' target='_blank' style='color:#fff; text-decoration:underline;'>Paper</a>">CDVAE</span>
+
+    <span class="skill-badge" data-toggle="tooltip" data-html="true" 
+      title="<b>Llama / Llama-2</b>: Foundation LLMs used here for chemical text mining and property constraints.">Llama-2</span>
+  </div>
+</div>
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="skill-category-title">Languages & Frameworks</h3>
+        <div class="skills-wrapper mb-4">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">C#</span>
+          <span class="skill-badge">C++</span>
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">C</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">MongoDB</span>
+          <span class="skill-badge">ReactJS / AngularJS</span>
+          <span class="skill-badge">ASP.NET Core</span>
+          <span class="skill-badge">Node.js</span>
+          <span class="skill-badge">Linux</span>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- <!--   <section id="skills" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -401,7 +658,7 @@
               </div>
             </div> -->
 
-            <div class="progress">
+            <!-- <div class="progress">
               <span class="skill">Database Management <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
@@ -419,19 +676,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-            <!-- <div class="progress">
-              <span class="skill">Machine Learning <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
 
-            <div class="progress">
-              <span class="skill">Deep Learning<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div> -->
             <div class="progress">
               <span class="skill">Material Informatics<i class="val">80%</i></span>
               <div class="progress-bar-wrap">
@@ -459,8 +704,8 @@
 
 
       </div>
-    </section><!-- End Skills Section -->
-
+    </section>
+  -->
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
@@ -649,13 +894,200 @@ Process Exploration (SCOPE) Group
       </div>
     </section><!-- End Resume Section -->
 
+
+<!-- ====================================================Updated Portfolio============================================================================ -->
+
+<section id="portfolio" class="portfolio section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <p>A comprehensive record of my research in AI-driven material discovery and full-stack system architecture.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-research">Research</li>
+          <li data-filter=".filter-app">Applications</li>
+          <li data-filter=".filter-api">APIs & Systems</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-research">
+        <div class="portfolio-card">
+          <div class="portfolio-img-header"><i class="bx bx-atom"></i></div>
+          <div class="card-body">
+            <span class="portfolio-tag">LLM for Material Generation</span>
+            <h5 class="card-title">CrysLLMGen Framework</h5>
+            <p class="card-text">Leveraging LLMs to generate imroved token represenation from the crystal structure</p>
+            <a href="materium_bertos.html" class="btn-learn-more">Methodology <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-research">
+  <div class="portfolio-card">
+    <div class="portfolio-img-header"><i class="bx bx-shape-polygon"></i></div>
+    <div class="card-body">
+      <span class="portfolio-tag">Conditional Generation</span>
+      <h5 class="card-title">Inverse Materials Design</h5>
+      <p class="card-text">Improving control and novelty in crystal generation by 5x through adapter-based conditioning on Diffusion models and Equivariant GNN decoders.</p>
+      <a href="inverse_design.html" class="btn-learn-more">Methodology & Results <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-research">
+  <div class="portfolio-card">
+    <div class="portfolio-img-header"><i class="bx bx-unite"></i></div>
+    <div class="card-body">
+      <span class="portfolio-tag">Efficient Deep Learning</span>
+      <h5 class="card-title">Adaptive Message-Passing GNN</h5>
+      <p class="card-text">Optimized large-scale crystal predictions by pruning 20% of graph edges via trainable control networks, reducing compute costs with zero performance loss.</p>
+      <a href="adaptive_gnn.html" class="btn-learn-more">Optimization Details <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-research">
+  <div class="portfolio-card">
+    <div class="portfolio-img-header"><i class="bx bx-repost"></i></div>
+    <div class="card-body">
+      <span class="portfolio-tag">Self-Supervised Learning</span>
+      <h5 class="card-title">Large-Scale SSL for Materials</h5>
+      <p class="card-text">Evaluating contrastive learning on 360k+ crystal structures. Providing critical insights into the efficacy of SSL vs. supervised training for equivariant GNN encoders.</p>
+      <a href="ssl_material.html" class="btn-learn-more">Evaluation Results <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-research">
+  <div class="portfolio-card">
+    <div class="portfolio-img-header"><i class="bx bx-git-branch"></i></div>
+    <div class="card-body">
+      <span class="portfolio-tag">Transfer Learning</span>
+      <h5 class="card-title">Domain Adaptation for Discovery</h5>
+      <p class="card-text">Improving prediction accuracy by 1.5–2x through parameter-based domain adaptation across SchNet, PAiNN, and ALIGNN for halide perovskite screening.</p>
+      <a href="domain_adaptation.html" class="btn-learn-more">Methodology & Impact <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+<!--       <div class="col-lg-4 col-md-6 portfolio-item filter-research">
+        <div class="portfolio-card">
+          <div class="portfolio-img-header"><i class="bx bx-network-chart"></i></div>
+          <div class="card-body">
+            <span class="portfolio-tag">Material Informatics</span>
+            <h5 class="card-title">GNN Property Prediction</h5>
+            <p class="card-text">Utilizing ALIGNN, SchNet, and GATv2Conv layers for high-fidelity property prediction. Implementing parameter-based domain adaptation to handle limited annotated datasets.</p>
+            <a href="GNN.html" class="btn-learn-more">Deep Dive <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-research">
+        <div class="portfolio-card">
+          <div class="portfolio-img-header"><i class="bx bx-dna"></i></div>
+          <div class="card-body">
+            <span class="portfolio-tag">Biomedical ML</span>
+            <h5 class="card-title">Osteoporotic Fracture Risk</h5>
+            <p class="card-text">Applied GNNs to complex regions of the femoral head in CT scans for fracture risk analysis, including 3D reconstruction via pixel clustering.</p>
+            <a href="IP.html" class="btn-learn-more">View Case Study <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-research">
+  <div class="portfolio-card">
+    <div class="portfolio-img-header"><i class="bx bx-transfer-alt"></i></div>
+    <div class="card-body">
+      <span class="portfolio-tag">Networking Research</span>
+      <h5 class="card-title">NDN Cache Orchestration</h5>
+      <p class="card-text">Proposed a "Hybrid Policy" for content eviction in Content-Centric Networking, outperforming standard LRU and FIFO baselines in simulated environments.</p>
+      <a href="NDN.html" class="btn-learn-more">View Publication <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 portfolio-item filter-research">
+  <div class="portfolio-card">
+    <div class="portfolio-img-header"><i class="bx bx-line-chart"></i></div>
+    <div class="card-body">
+      <span class="portfolio-tag">Educational Data Mining</span>
+      <h5 class="card-title">Predictive Academic Analytics</h5>
+      <p class="card-text">Developed a multi-algorithmic system to predict future student performance based on historical course data. Published by Springer in 'Intelligent Computing'.</p>
+      <a href="ResultPrediction.html" class="btn-learn-more">View Research <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-card">
+          <div class="portfolio-img-header"><i class="bx bx-spreadsheet"></i></div>
+          <div class="card-body">
+            <span class="portfolio-tag">Enterprise Development</span>
+            <h5 class="card-title">Accreditation Management (AMS)</h5>
+            <p class="card-text">Lead developer for the national accreditation system (BAETE), streamlining engineering program reviews for universities across Bangladesh.</p>
+            <a href="AMS.html" class="btn-learn-more">Architecture <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-card">
+          <div class="portfolio-img-header"><i class="bx bx-shield-quarter"></i></div>
+          <div class="card-body">
+            <span class="portfolio-tag">Infrastructure</span>
+            <h5 class="card-title">Single Sign-On (SSO)</h5>
+            <p class="card-text">Developed a unified authentication gateway using OAuth implementation to manage student and faculty access across disparate academic portals.</p>
+            <a href="SSO.html" class="btn-learn-more">Details <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-api">
+        <div class="portfolio-card">
+          <div class="portfolio-img-header"><i class="bx bx-credit-card"></i></div>
+          <div class="card-body">
+            <span class="portfolio-tag">API Integration</span>
+            <h5 class="card-title">BKash Payment Gateway</h5>
+            <p class="card-text">Integrated secure mobile financial service APIs for seamless tuition and fee collection within institutional academic systems.</p>
+            <a href="Bkash.html" class="btn-learn-more">Documentation <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-api">
+  <div class="portfolio-card">
+    <div class="portfolio-img-header"><i class="bx bxl-google-cloud"></i></div>
+    <div class="card-body">
+      <span class="portfolio-tag">API Integration</span>
+      <h5 class="card-title">Cloud-Based File Management</h5>
+      <p class="card-text">Engineered a secure file storage backend for an LMS using Google Drive APIs, implementing resumable uploads and optimized byte-stream downloading.</p>
+      <a href="GoogleDrive.html" class="btn-learn-more">Integration Details <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================End updated portfolio==================================================================== -->
+
+
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+ <!--    <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Portfolio</h2>
- <!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+ 
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -679,11 +1111,9 @@ Process Exploration (SCOPE) Group
   <div class="card-body">
     <h5 class="card-title">Google Drive API</h5>
     <p class="card-text"></p>
+ -->
 
-<!--     <div class="tooltip">Hover over me
-  <span class="tooltiptext">Tooltip text</span>
-</div> -->
-    <a href="GoogleDrive.html" ><i class="bx bx-link"> </i></a>  </div>
+   <!--  <a href="GoogleDrive.html" ><i class="bx bx-link"> </i></a>  </div>
 </div>
 
           
@@ -823,7 +1253,7 @@ Process Exploration (SCOPE) Group
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> --><!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -1092,6 +1522,14 @@ reconstruction of femur from CT data via pixel clustering</h4>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({
+    delay: { "show": 600, "hide": 1500 } // Added a longer hide delay so users can click the links
+  });
+});
+</script>
 </body>
 
 </html>

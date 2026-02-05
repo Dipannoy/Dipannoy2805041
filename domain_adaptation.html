@@ -3,16 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Result Prediction - Research Detail</title>
+  <title>Domain Adaptation for Materials - Detail</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
-    .publication-box { background: #fdfdfd; border: 1px solid #e0e0e0; padding: 25px; border-radius: 10px; margin-top: 30px; }
-    .algo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 15px; }
-    .algo-item { background: #eef7ff; padding: 10px; border-radius: 5px; text-align: center; font-size: 14px; color: #0563af; font-weight: 600; }
-    .download-btn { background: #0563af; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; transition: 0.3s; }
-    .download-btn:hover { background: #003d73; color: white; text-decoration: none; }
+    .impact-badge { background: #28a745; color: #fff; padding: 10px 15px; border-radius: 5px; font-weight: 700; margin-bottom: 20px; display: inline-block; }
+    .model-comparison-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 25px 0; }
+    .model-box { background: #f0f7ff; border: 1px solid #0563af; padding: 15px; border-radius: 8px; text-align: center; font-weight: 600; color: #0563af; }
   </style>
 </head>
 
@@ -57,7 +55,7 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Result Prediction Research</h2>
+          <h2>Domain Adaptation for Materials</h2>
           <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
         </div>
       </div>
@@ -68,46 +66,45 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Student Performance Forecasting using Data Mining</h2>
+              <div class="impact-badge"><i class="bx bx-trending-up"></i> 1.5x - 2x Accuracy Improvement</div>
+              <h2>Overcoming Data Scarcity via Transfer Learning</h2>
               <p>
-                In this project, I explored the application of <strong>Educational Data Mining (EDM)</strong> to forecast academic outcomes. By analyzing historical grade distributions, we developed a system capable of predicting a student's performance in upcoming semesters, enabling early intervention and personalized academic support.
+                A major challenge in discovering new materials, such as <strong>Halide Perovskites</strong>, is the limited amount of high-quality annotated data. This project focused on <strong>Parameter-based Domain Adaptation</strong> to leverage knowledge from large datasets (source domains) to improve performance on specialized subsets (target domains).
               </p>
 
-              <h3>Comparative Algorithmic Analysis</h3>
+              <h3>Multi-Model Implementation</h3>
               <p>
-                To ensure high predictive reliability, the dataset was subjected to rigorous testing across four distinct machine learning classifiers:
+                I implemented and benchmarked these adaptation techniques across three state-of-the-art Graph Neural Network architectures:
               </p>
               
-              <div class="algo-grid">
-                <div class="algo-item">Naive Bayes</div>
-                <div class="algo-item">J48 (Decision Tree)</div>
-                <div class="algo-item">K* (Instance-based)</div>
-                <div class="algo-item">Random Tree</div>
+              <div class="model-comparison-grid">
+                <div class="model-box">SchNet</div>
+                <div class="model-box">PAiNN</div>
+                <div class="model-box">ALIGNN</div>
               </div>
 
-              <h4 class="mt-4">Methodology</h4>
+              <h4>Core Methodology</h4>
+              <ul>
+                <li><strong>Weight Initialization:</strong> Utilizing pre-trained weights from single perovskites(ABX3) dataset.</li>
+                <li><strong>Fine-Tuning:</strong> Strategically unfreezing layers to adapt to specific chemical spaces double perovskites(AA'BB'X6).</li>
+                <li><strong>Parameter Matching:</strong> Ensuring feature consistency across different material distributions.</li>
+              </ul>
+
+              <h3 class="mt-4">Research Impact</h3>
               <p>
-                The model was trained on 90% of the dataset using grade-based predictor attributes. By mapping the correlation between prerequisite performance and advanced course success, the system achieved significant accuracy in forecasting final GPA trajectories.
+                The results demonstrated a <strong>1.5x to 2x increase in accuracy</strong> for property predictions. This improvement is pivotal for virtual screening, as it allows for the rapid and reliable identification of stable new halide perovskites before they are ever synthesized in a lab.
               </p>
-
-              <div class="publication-box">
-                <h4><i class="bx bx-book-bookmark"></i> Scholarly Publication</h4>
-                <p>This work was published in the Springer series <em>Lecture Notes in Networks and Systems (Vol 284)</em>. You can find the full details on pages 295–307 of the proceedings.</p>
-                <a href="assets/pdf/IntelligentComputing.pdf" class="download-btn" download>
-                  <i class="bx bxs-download mr-2"></i> Download Full Proceedings (PDF)
-                </a>
-              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project Specs</h3>
+              <h3>Technical Specs</h3>
               <ul>
-                <li><strong>Category</strong>: Machine Learning / EDM</li>
-                <li><strong>Publisher</strong>: Springer Nature</li>
-                <li><strong>Tools</strong>: Weka, Python</li>
-                <li><strong>Techniques</strong>: Supervised Classification</li>
+                <li><strong>Category</strong>: Transfer Learning / Domain Adaptation</li>
+                <li><strong>Target Materials</strong>: Halide Perovskites</li>
+                <li><strong>GNN Architectures</strong>: SchNet, PAiNN, ALIGNN</li>
+                <li><strong>Publication</strong>: arxiv.org/pdf/2401.10998</li>
               </ul>
             </div>
           </div>

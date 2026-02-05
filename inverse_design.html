@@ -3,22 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Result Prediction - Research Detail</title>
+  <title>Inverse Materials Design - Research Detail</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
-    .publication-box { background: #fdfdfd; border: 1px solid #e0e0e0; padding: 25px; border-radius: 10px; margin-top: 30px; }
-    .algo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 15px; }
-    .algo-item { background: #eef7ff; padding: 10px; border-radius: 5px; text-align: center; font-size: 14px; color: #0563af; font-weight: 600; }
-    .download-btn { background: #0563af; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; transition: 0.3s; }
-    .download-btn:hover { background: #003d73; color: white; text-decoration: none; }
+    .results-pill { background: #0563af; color: white; padding: 10px 20px; border-radius: 8px; display: inline-block; font-weight: 700; margin-bottom: 20px; }
+    .tech-list { list-style: none; padding: 0; }
+    .tech-list li { padding: 8px 0; border-bottom: 1px solid #eee; font-size: 14px; }
+    .tech-list i { color: #0563af; margin-right: 10px; }
   </style>
 </head>
 
 <body>
 
-    <!-- ======= Mobile nav toggle button ======= -->
+  <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -53,11 +52,12 @@
 
     </div>
   </header><!-- End Header -->
+  
   <main id="main">
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Result Prediction Research</h2>
+          <h2>Inverse Materials Design</h2>
           <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
         </div>
       </div>
@@ -68,46 +68,51 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Student Performance Forecasting using Data Mining</h2>
+              <div class="results-pill">🚀 5x Improvement in Generation Control</div>
+              <h2>Conditional Diffusion for Crystal Synthesis</h2>
               <p>
-                In this project, I explored the application of <strong>Educational Data Mining (EDM)</strong> to forecast academic outcomes. By analyzing historical grade distributions, we developed a system capable of predicting a student's performance in upcoming semesters, enabling early intervention and personalized academic support.
+                This research focuses on the <strong>Inverse Design Problem</strong>: generating inorganic crystal structures that satisfy specific physical property constraints, such as target bandgaps. I examined state-of-the-art diffusion models including <strong>MatterGen</strong> and <strong>CrystalGRW</strong>.
               </p>
 
-              <h3>Comparative Algorithmic Analysis</h3>
+              <h3>Technical Implementation</h3>
               <p>
-                To ensure high predictive reliability, the dataset was subjected to rigorous testing across four distinct machine learning classifiers:
+                To achieve high-fidelity generation, I utilized diffusion-based <strong>Equivariant GNN decoders</strong> (Equiformer, GemNet). These architectures ensure that the model respects the rotational and translational symmetries of crystal lattices.
               </p>
               
-              <div class="algo-grid">
-                <div class="algo-item">Naive Bayes</div>
-                <div class="algo-item">J48 (Decision Tree)</div>
-                <div class="algo-item">K* (Instance-based)</div>
-                <div class="algo-item">Random Tree</div>
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <h4>Conditioning Schemes</h4>
+                  <ul class="tech-list">
+                    <li><i class="bx bx-check-circle"></i> Adapter-based Conditioning</li>
+                    <li><i class="bx bx-check-circle"></i> Node-based Feature Injection</li>
+                    <li><i class="bx bx-check-circle"></i> Skewed-dataset Fine-tuning</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4>Core Architectures</h4>
+                  <ul class="tech-list">
+                    <li><i class="bx bx-cog"></i> Equiformer (Equivariant Transformer)</li>
+                    <li><i class="bx bx-cog"></i> GemNet (Geometric Message Passing)</li>
+                    <li><i class="bx bx-cog"></i> Riemannian Flow Matching</li>
+                  </ul>
+                </div>
               </div>
 
-              <h4 class="mt-4">Methodology</h4>
+              <h3 class="mt-4">Impact</h3>
               <p>
-                The model was trained on 90% of the dataset using grade-based predictor attributes. By mapping the correlation between prerequisite performance and advanced course success, the system achieved significant accuracy in forecasting final GPA trajectories.
+                By implementing these novel conditioning schemes, the models showed up to a <strong>5 times improvement</strong> in both generation control and novelty. This allows for the discovery of valid crystals in chemical spaces previously unexplored by standard generative approaches.
               </p>
-
-              <div class="publication-box">
-                <h4><i class="bx bx-book-bookmark"></i> Scholarly Publication</h4>
-                <p>This work was published in the Springer series <em>Lecture Notes in Networks and Systems (Vol 284)</em>. You can find the full details on pages 295–307 of the proceedings.</p>
-                <a href="assets/pdf/IntelligentComputing.pdf" class="download-btn" download>
-                  <i class="bx bxs-download mr-2"></i> Download Full Proceedings (PDF)
-                </a>
-              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project Specs</h3>
+              <h3>Research Specs</h3>
               <ul>
-                <li><strong>Category</strong>: Machine Learning / EDM</li>
-                <li><strong>Publisher</strong>: Springer Nature</li>
-                <li><strong>Tools</strong>: Weka, Python</li>
-                <li><strong>Techniques</strong>: Supervised Classification</li>
+                <li><strong>Category</strong>: Generative AI / Material Informatics</li>
+                <li><strong>Frameworks</strong>: PyTorch, MatterGen, CrystalGRW</li>
+                <li><strong>GNN Type</strong>: Equivariant Graph Neural Networks</li>
+                <li><strong>Focus</strong>: Targeted Property Generation (Bandgap)</li>
               </ul>
             </div>
           </div>

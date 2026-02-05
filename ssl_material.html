@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Result Prediction - Research Detail</title>
+  <title>Equivariant GNN SSL - Research Detail</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
-    .publication-box { background: #fdfdfd; border: 1px solid #e0e0e0; padding: 25px; border-radius: 10px; margin-top: 30px; }
-    .algo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 15px; }
-    .algo-item { background: #eef7ff; padding: 10px; border-radius: 5px; text-align: center; font-size: 14px; color: #0563af; font-weight: 600; }
-    .download-btn { background: #0563af; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; transition: 0.3s; }
-    .download-btn:hover { background: #003d73; color: white; text-decoration: none; }
+    .data-stat-box { background: #f8f9fa; border-top: 4px solid #0563af; padding: 20px; border-radius: 4px; text-align: center; margin-bottom: 25px; }
+    .data-number { font-size: 28px; font-weight: 800; color: #0563af; }
+    .critical-insight { background: #fff5f5; border-left: 5px solid #e53e3e; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .critical-insight h4 { color: #c53030; font-size: 18px; margin-bottom: 10px; }
   </style>
 </head>
 
@@ -57,7 +56,7 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Result Prediction Research</h2>
+          <h2>Equivariant GNN SSL</h2>
           <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
         </div>
       </div>
@@ -68,46 +67,53 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="portfolio-description">
-              <h2>Student Performance Forecasting using Data Mining</h2>
+              <h2>Evaluating Contrastive Learning for Crystal Encoders</h2>
               <p>
-                In this project, I explored the application of <strong>Educational Data Mining (EDM)</strong> to forecast academic outcomes. By analyzing historical grade distributions, we developed a system capable of predicting a student's performance in upcoming semesters, enabling early intervention and personalized academic support.
+                As Self-Supervised Learning (SSL) thrives in Image and Language domains, its application to <strong>3D Crystal Structures</strong> requires rigorous benchmarking. This project involved training Equivariant GNN encoders using contrastive learning strategies over massive unlabelled datasets.
               </p>
 
-              <h3>Comparative Algorithmic Analysis</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="data-stat-box">
+                    <div class="data-number">214,000</div>
+                    <div class="small">Double-Perovskites</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="data-stat-box">
+                    <div class="data-number">150,000</div>
+                    <div class="small">Materials Project Structures</div>
+                  </div>
+                </div>
+              </div>
+
+              <h3>The Challenge</h3>
               <p>
-                To ensure high predictive reliability, the dataset was subjected to rigorous testing across four distinct machine learning classifiers:
+                The primary objective was to determine if pre-training on 360,000+ unlabelled structures could provide a superior starting point for downstream property prediction tasks compared to standard supervised training from scratch.
               </p>
               
-              <div class="algo-grid">
-                <div class="algo-item">Naive Bayes</div>
-                <div class="algo-item">J48 (Decision Tree)</div>
-                <div class="algo-item">K* (Instance-based)</div>
-                <div class="algo-item">Random Tree</div>
+              <div class="critical-insight">
+                <h4><i class="bx bx-error-circle"></i> Research Finding</h4>
+                <p>Extensive downstream evaluations revealed <strong>limited gains</strong> for pre-trained SSL models over supervised baselines in this specific domain. This critical result helps define the boundaries of where SSL is—and isn't—effective for materials modeling, specifically highlighting the importance of labels in high-symmetry crystal systems.</p>
               </div>
 
-              <h4 class="mt-4">Methodology</h4>
-              <p>
-                The model was trained on 90% of the dataset using grade-based predictor attributes. By mapping the correlation between prerequisite performance and advanced course success, the system achieved significant accuracy in forecasting final GPA trajectories.
-              </p>
-
-              <div class="publication-box">
-                <h4><i class="bx bx-book-bookmark"></i> Scholarly Publication</h4>
-                <p>This work was published in the Springer series <em>Lecture Notes in Networks and Systems (Vol 284)</em>. You can find the full details on pages 295–307 of the proceedings.</p>
-                <a href="assets/pdf/IntelligentComputing.pdf" class="download-btn" download>
-                  <i class="bx bxs-download mr-2"></i> Download Full Proceedings (PDF)
-                </a>
-              </div>
+              <h4>Key Research Contributions</h4>
+              <ul>
+                <li>Implementation of <strong>Contrastive Learning</strong> objectives for 3D equivariant representations.</li>
+                <li>Scaling GNN training across high-performance computing (HPC) nodes for massive datasets.</li>
+                <li>Rigorous benchmarking across multiple downstream tasks (formation energy, bandgap, etc.).</li>
+              </ul>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project Specs</h3>
+              <h3>Research Specs</h3>
               <ul>
-                <li><strong>Category</strong>: Machine Learning / EDM</li>
-                <li><strong>Publisher</strong>: Springer Nature</li>
-                <li><strong>Tools</strong>: Weka, Python</li>
-                <li><strong>Techniques</strong>: Supervised Classification</li>
+                <li><strong>Category</strong>: Self-Supervised Learning</li>
+                <li><strong>Total Structures</strong>: 364,000+</li>
+                <li><strong>Techniques</strong>: Contrastive Learning, Representation Learning</li>
+                <li><strong>Downstream Focus</strong>: Model Generalization & Benchmarking</li>
               </ul>
             </div>
           </div>
