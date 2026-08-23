@@ -1,0 +1,21 @@
+# === Unpublished manuscripts ===
+# Keep these out of the public site repo until they are published.
+broadcasting_paper.pdf
+P624_MeanFlow_CSP__sourin_.pdf
+J002_ACM_AI4Science_MEX_MOO_Dipannoy.pdf
+
+# === Resume / CV ===
+# LaTeX sources are not website content.
+*.tex
+
+# Resume PDF - to be uploaded later.
+ai_ml_research_intenship_resume.pdf
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc

@@ -235,6 +235,157 @@
     margin-bottom: 12px;
     align-self: flex-start;
 }
+
+/* Hero Section Enhancements */
+#hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 130px 0 80px;
+}
+
+#hero .hero-container {
+    width: 100%;
+    max-width: 820px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.hero-availability {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    margin-bottom: 22px;
+    background: rgba(20, 157, 221, 0.15);
+    border: 1px solid rgba(20, 157, 221, 0.5);
+    border-radius: 50px;
+    color: #7cdcff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hero-availability i {
+    color: #2ee6a8;
+    font-size: 16px;
+}
+
+#hero p.hero-role {
+    margin-bottom: 22px;
+}
+
+.hero-pitch {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hero-pitch strong {
+    color: #fff;
+}
+
+.hero-hpc {
+    color: #ffd873;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+.hero-hpc i {
+    margin-right: 6px;
+    vertical-align: -2px;
+}
+
+.hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.hero-pill {
+    display: inline-block;
+    padding: 8px 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.hero-pill:hover {
+    background: #149ddd;
+    border-color: #149ddd;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(20, 157, 221, 0.35);
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.btn-hero {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-hero-primary {
+    background: #149ddd;
+    color: #fff;
+}
+
+.btn-hero-primary:hover {
+    background: #37b3ec;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(20, 157, 221, 0.4);
+}
+
+.btn-hero-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-hero-outline:hover {
+    background: #fff;
+    color: #173b6c;
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .hero-pitch {
+        font-size: 15px;
+    }
+    .hero-hpc {
+        font-size: 14px;
+    }
+    .hero-pill {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+}
   </style>
 </head>
 
@@ -279,8 +430,27 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
+      <span class="hero-availability"><i class="bx bx-check-circle"></i> Open to Summer 2026 Internships</span>
       <h1>Dipannoy Das Gupta</h1>
-      <p><span class="typed" data-typed-items="PhD Candidate, ML Enthusiast, Soccer Freak"></span></p>
+      <p class="hero-role"><span class="typed" data-typed-items="AI Researcher for Materials Innovation, PhD Candidate, Inverse Design Specialist, HPC Practitioner, Soccer Freak"></span></p>
+
+      <p class="hero-pitch">
+        I help turn raw computing power into new materials. Instead of years of trial-and-error in the lab, I start from the properties a product needs and let AI work backward to find the material that delivers them &mdash; while predictive models tell us how it will perform before it's ever synthesized.
+      </p>
+
+      <p class="hero-hpc"><i class="bx bx-bolt-circle"></i>Fueled by supercomputers &mdash; I run thousands of simulations while you're still waiting on your coffee to brew.</p>
+
+      <div class="hero-pills">
+        <span class="hero-pill" data-toggle="tooltip" title="Using AI to search the space of possible materials and surface promising new candidates, compressing years of guesswork into days.">Material Discovery</span>
+        <span class="hero-pill" data-toggle="tooltip" title="Starting from the properties a product needs and designing the material backward to match, instead of testing what already exists.">Inverse Design</span>
+        <span class="hero-pill" data-toggle="tooltip" title="Predicting how a material will behave before it's synthesized, cutting lab costs and speeding up decisions.">Predictive Modeling</span>
+        <span class="hero-pill" data-toggle="tooltip" title="Running large-scale simulations and model training on supercomputing clusters, daily.">High-Performance Computing</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn-hero btn-hero-primary">Explore My Work</a>
+        <a href="#resume" class="btn-hero btn-hero-outline">View Resume</a>
+      </div>
     </div>
   </section><!-- End Hero -->
 
