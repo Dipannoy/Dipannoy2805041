@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 450" width="960" height="450" role="img" aria-label="Cooperative GNN architecture">
+<title>Cooperative GNN architecture</title><desc>A learnable Action Net scores every bond in the crystal graph; the scores gate message passing and a threshold prunes the low-information bonds.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#bba97f"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#dc8ea0"/></marker></defs>
+<rect x="40" y="48" width="150" height="60" rx="10" ry="10" fill="#fdf3dc" stroke="#e7ca86" stroke-width="1.25"/>
+<text x="115.0" y="76.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#77540d" text-anchor="middle">Crystal</text>
+<text x="115.0" y="90.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#77540d" text-anchor="middle">structure</text>
+<path d="M192,78 L220,78" fill="none" stroke="#bba97f" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="222" y="48" width="200" height="60" rx="10" ry="10" fill="#f9e9c9" stroke="#d9b055" stroke-width="1.25"/>
+<text x="322.0" y="68.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#68470a" text-anchor="middle">k-NN bond graph</text>
+<text x="322.0" y="85.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">nodes = atomic sites, edges</text>
+<text x="322.0" y="97.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">= bonds inside the cutoff</text>
+<path d="M424,78 L452,78" fill="none" stroke="#bba97f" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="454" y="48" width="180" height="60" rx="10" ry="10" fill="#f9e9c9" stroke="#d9b055" stroke-width="1.25"/>
+<text x="544.0" y="76.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#68470a" text-anchor="middle">Atom + bond</text>
+<text x="544.0" y="90.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#68470a" text-anchor="middle">embeddings</text>
+<path d="M544,110 L544,140 L185,140 L185,176" fill="none" stroke="#bba97f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="40" y="160" width="594" height="184" rx="12" ry="12" fill="none" stroke="#bba97f" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.95"/>
+<text x="53" y="153" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#6b7c8f" letter-spacing="1.1">× L GRAPH-CONVOLUTION LAYERS</text>
+<rect x="60" y="180" width="250" height="58" rx="10" ry="10" fill="#fadfcb" stroke="#dd9a68" stroke-width="1.25"/>
+<text x="185.0" y="199.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7d3a12" text-anchor="middle">Action Net</text>
+<text x="185.0" y="216.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">LearnableCutoffScoringNet scores</text>
+<text x="185.0" y="228.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">every bond</text>
+<path d="M312,209 L342,209" fill="none" stroke="#bba97f" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="344" y="180" width="250" height="58" rx="10" ry="10" fill="#ffffff" stroke="#dbd2bf" stroke-width="1.25"/>
+<text x="469.0" y="198.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#4a4436" text-anchor="middle">Soft edge weight wₑ ∈ (0,</text>
+<text x="469.0" y="212.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#4a4436" text-anchor="middle">1)</text>
+<text x="469.0" y="229.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">one continuous gate per bond</text>
+<path d="M469,240 L469,268" fill="none" stroke="#bba97f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="60" y="270" width="534" height="54" rx="10" ry="10" fill="#44300a" stroke="#44300a" stroke-width="1.25"/>
+<text x="327.0" y="293.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">EGNN regressor — message passing gated by wₑ</text>
+<text x="327.0" y="310.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#eddcb4" text-anchor="middle">a bond contributes in proportion to the weight the Action Net gave it</text>
+<path d="M636,209 L662,209" fill="none" stroke="#bba97f" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="664" y="180" width="256" height="58" rx="10" ry="10" fill="#fbdee4" stroke="#dc8ea0" stroke-width="1.25"/>
+<text x="792.0" y="205.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#87172f" text-anchor="middle">Hard threshold θ</text>
+<text x="792.0" y="222.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">bonds with wₑ &lt; θ are pruned outright</text>
+<path d="M792,240 L792,254" fill="none" stroke="#bba97f" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="664" y="256" width="256" height="54" rx="10" ry="10" fill="#ffffff" stroke="#dbd2bf" stroke-width="1.25"/>
+<text x="792.0" y="288.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#4a4436" text-anchor="middle">Graph-mean readout → MLP</text>
+<path d="M792,312 L792,326" fill="none" stroke="#bba97f" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="664" y="328" width="256" height="48" rx="10" ry="10" fill="#e7f0da" stroke="#9dbf7c" stroke-width="1.25"/>
+<text x="792.0" y="357.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#3a5a1e" text-anchor="middle">Predicted property ŷ</text>
+<path d="M792,378 L792,400 L444,400" fill="none" stroke="#bba97f" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="40" y="376" width="402" height="52" rx="10" ry="10" fill="#44300a" stroke="#44300a" stroke-width="1.25"/>
+<text x="241.0" y="392.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">L = MAE + λ · w̄</text>
+<text x="241.0" y="409.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#eddcb4" text-anchor="middle">the sparsity term pushes chemically redundant bonds toward</text>
+<text x="241.0" y="421.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#eddcb4" text-anchor="middle">zero</text>
+<path d="M240,374 L240,348" fill="none" stroke="#dc8ea0" stroke-width="1.6" stroke-dasharray="5 4" stroke-linejoin="round" marker-end="url(#ahg)"/>
+<text x="302.0" y="362.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="600" fill="#87172f" text-anchor="middle">sparsity pressure</text>
+</svg>

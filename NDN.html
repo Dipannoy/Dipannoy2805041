@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Named Data Networking - Research Detail</title>
+
+  <title>NDN Cache Orchestration &middot; Dipannoy Das Gupta</title>
+  <meta content="A hybrid cache-replacement policy for Named Data Networking that balances recency against frequency, evaluated in ndnSIM against LRU and priority FIFO." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    .pdf-container { background: #444; padding: 20px; border-radius: 12px; margin-top: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-    .research-note { border-left: 5px solid #0563af; background: #f0f7ff; padding: 20px; border-radius: 0 8px 8px 0; margin-bottom: 25px; }
-  </style>
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="cyan">
 
-    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -23,84 +29,143 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Named Data Networking (NDN)</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Networking Research &middot; Undergraduate research at BUET</div>
+        <h1>A Hybrid Eviction Policy for Named Data Networking</h1>
+        <p class="pj-lede">In content-centric networking, every node caches named data &mdash; and every node has finite memory. Which content you throw away when the store fills up therefore decides network throughput. This work proposes an eviction policy that weighs recency against frequency instead of committing to either.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-network-chart"></i> Content-centric networking</span>
+          <span><i class="bx bx-slider-alt"></i> ndnSIM simulation</span>
+          <span><i class="bx bx-trophy"></i> Beats LRU and priority FIFO</span>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="portfolio-description">
-              <h2>Hybrid Cache Replacement Policy</h2>
-              <p>
-                As an undergraduate researcher, I focused on <strong>Content-Centric Networking (CCN)</strong>, specifically addressing the memory constraints of NDN nodes. Because these nodes have finite content stores, efficient eviction policies are critical for network throughput.
-              </p>
 
-              <div class="research-note">
-                <h4>Proposed Algorithm: The Hybrid Policy</h4>
-                <p>My proposed "Hybrid Policy" optimizes the selection of content for eviction by balancing frequency and recency. During simulation, this approach demonstrated superior hit rates compared to standard industrial baselines like <strong>LRU (Least Recently Used)</strong> and <strong>Priority FIFO</strong>.</p>
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>Hybrid policy</b><span>recency &oplus; frequency, not one or the other</span></div>
+              <div class="pj-metric"><b>ndnSIM</b><span>simulated traffic and cache behaviour</span></div>
+              <div class="pj-metric"><b>LRU &amp; FIFO</b><span>baselines outperformed on hit rate</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/ndn-cache.svg" alt="NDN caching flow: an interest packet, a content store lookup that hits or misses, insertion on miss, and a hybrid eviction policy combining recency and frequency scores.">
+              </div>
+              <figcaption><b>Where the policy lives.</b> An interest packet either hits the content store and is served locally, or misses and is forwarded upstream, with the returned data inserted on the way back. When insertion finds the store full, the hybrid policy ranks candidates by combining a recency score with a frequency score &mdash; balancing what was used last against what is used often.</figcaption>
+            </figure>
+
+              <h2>Why caching is the whole problem</h2>
+              <p>Named Data Networking replaces "where is this host" with "what is this content", and that
+                makes in-network caching a first-class part of the architecture rather than an optimisation
+                layered on top. Because NDN nodes have finite content stores, eviction policy is one of the
+                main levers on network throughput.</p>
+
+              <h3>The hybrid policy</h3>
+              <p>Classic policies each commit to one signal. LRU trusts recency: whatever was touched longest
+                ago goes first. Priority FIFO trusts insertion order and a static priority. Both are cheap
+                and both discard information the other one keeps.</p>
+              <p>The proposed <strong>hybrid policy</strong> optimises the choice of eviction victim by
+                balancing <strong>frequency</strong> and <strong>recency</strong> together, so content that
+                is requested steadily is not evicted just because it happened to go quiet, and content
+                touched once in a burst does not hold a slot indefinitely.</p>
+
+              <div class="pj-callout is-result">
+                <h4>Simulation outcome</h4>
+                <p>In simulation the hybrid approach showed superior hit rates compared with standard
+                  industrial baselines &mdash; <strong>LRU</strong> and <strong>priority FIFO</strong>.</p>
               </div>
 
-              <h3>Technical Scope</h3>
-              <p>
-                The research involved simulating network traffic and cache hits using the <strong>ndnSIM</strong> simulator. The findings contributed to a deeper understanding of how data naming conventions influence caching efficiency in next-generation internet architectures.
-              </p>
+              <h3>Method</h3>
+              <p>Network traffic and cache behaviour were simulated in <strong>ndnSIM</strong>. Beyond the
+                policy itself, the work contributed to understanding how data naming conventions influence
+                caching efficiency in next-generation internet architectures &mdash; because in NDN the name
+                is what the cache is keyed on, the naming scheme and the eviction policy are not independent
+                choices.</p>
 
-              <div class="pdf-container">
-                <h4 class="text-white mb-3"><i class="bx bxs-file-pdf"></i> Research Paper Preview</h4>
-                <iframe src="assets/pdf/NDN_Cache_Replacement_Policy.pdf" style="width:100%; height:600px; border:none; border-radius: 8px;"></iframe>
+              <h3>Paper</h3>
+              <div class="pj-figure">
+                <iframe src="assets/pdf/NDN_Cache_Replacement_Policy.pdf" title="NDN cache replacement policy paper"
+                        style="width:100%;height:600px;border:none;border-radius:8px"></iframe>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project Specs</h3>
-              <ul>
-                <li><strong>Category</strong>: Networking / CCN</li>
-                <li><strong>Objective</strong>: Cache Eviction Optimization</li>
-                <li><strong>Simulator</strong>: ndnSIM</li>
-                <li><strong>Outcome</strong>: Baseline Performance Improvement</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Category</strong>Networking / content-centric networking</li><li><strong>Objective</strong>Cache eviction optimisation</li><li><strong>Simulator</strong>ndnSIM</li><li><strong>Baselines</strong>LRU, priority FIFO</li><li><strong>Context</strong>Undergraduate research, BUET</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Paper</h3>
+              <a class="pj-cta" href="assets/pdf/NDN_Cache_Replacement_Policy.pdf"><i class="bx bx-file"></i> Open the paper (PDF)</a>
+            </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>ndnSIM</span><span>C++</span><span>NS-3</span><span>Simulation analysis</span></div>
+            </div>
+            </aside>
           </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
       </div>
     </section>
+
   </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470">
+<title>Property-conditioned crystal generation: conditioning schemes swapped between MatterGen and CrystalGRW</title>
+<defs>
+<marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#4d4d4d"/>
+</marker>
+</defs>
+<rect width="1120" height="470" fill="#ffffff"/>
+<rect x="14" y="30" width="666" height="424" rx="6" ry="6" fill="none" stroke="#9a9a9a" stroke-width="0.9" stroke-dasharray="4 3"/>
+<text x="347" y="56" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">(a) Each conditioning scheme run on both frameworks</text>
+<rect x="146" y="76" width="215" height="46" rx="4" ry="4" fill="#f0f0f0" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="253.5" y="96.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">MatterGen</text>
+<text x="253.5" y="111.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">diffusion, denoising score matching</text>
+<rect x="421" y="76" width="215" height="46" rx="4" ry="4" fill="#f0f0f0" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="528.5" y="96.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">CrystalGRW</text>
+<text x="528.5" y="111.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">geodesic random walk</text>
+<text x="138" y="168" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="11.5" fill="#1a1a1a" font-weight="700" text-anchor="end">Adapter module</text>
+<text x="138" y="183" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10" fill="#666666" font-weight="400" text-anchor="end">fine-tuning</text>
+<rect x="146" y="148" width="215" height="52" rx="4" ry="4" fill="#fbeddc" stroke="#c99a63" stroke-width="0.9"/>
+<text x="253.5" y="171.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">native</text>
+<text x="253.5" y="186.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">pre-train, then adapter</text>
+<rect x="421" y="148" width="215" height="52" rx="4" ry="4" fill="#e4dcf3" stroke="#8f7fb8" stroke-width="0.9"/>
+<text x="528.5" y="171.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">ported in</text>
+<text x="528.5" y="186.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">same adapter, new backbone</text>
+<path d="M 365 174.0 Q 390.0 159.0 415 174.0" fill="none" stroke="#4d4d4d" stroke-width="1.2" marker-end="url(#tip)"/>
+<text x="138" y="248" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="11.5" fill="#1a1a1a" font-weight="700" text-anchor="end">Node-level</text>
+<text x="138" y="263" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="11.5" fill="#1a1a1a" font-weight="700" text-anchor="end">conditioning</text>
+<rect x="146" y="228" width="215" height="52" rx="4" ry="4" fill="#e4dcf3" stroke="#8f7fb8" stroke-width="0.9"/>
+<text x="253.5" y="251.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">ported in</text>
+<text x="253.5" y="266.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">property at every node</text>
+<rect x="421" y="228" width="215" height="52" rx="4" ry="4" fill="#fbeddc" stroke="#c99a63" stroke-width="0.9"/>
+<text x="528.5" y="251.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">native</text>
+<text x="528.5" y="266.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">property at every node</text>
+<path d="M 415 254.0 Q 390.0 239.0 365 254.0" fill="none" stroke="#4d4d4d" stroke-width="1.2" marker-end="url(#tip)"/>
+<path d="M 146 300 L 636 300" fill="none" stroke="#d9d9d9" stroke-width="0.9"/>
+<text x="391" y="320" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">Swapping the two mechanisms separates the conditioning scheme from the</text>
+<text x="391" y="334" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">backbone, so a difference in control cannot be blamed on the model it came from.</text>
+<rect x="146" y="352" width="490" height="46" rx="4" ry="4" fill="#f0f0f0" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="391.0" y="372.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">Decoder GNN held common across every cell</text>
+<text x="391.0" y="387.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">GemNet  ·  EquiformerV2</text>
+<text x="391" y="424" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10" fill="#666666" font-weight="400" text-anchor="middle">Pre-trained on ALEX-MP-20, then fine-tuned on AA′BB′X<tspan font-size="7.2" baseline-shift="sub">6</tspan> and MP-20.</text>
+<rect x="696" y="30" width="410" height="424" rx="6" ry="6" fill="none" stroke="#9a9a9a" stroke-width="0.9" stroke-dasharray="4 3"/>
+<text x="901" y="56" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">(b) Third route: a training set re-centred on the target</text>
+<rect x="852.1" y="84" width="48.9" height="102" fill="#fbe1e1" opacity="0.75"/>
+<polygon points="730,186 730.0,121.4 734.9,118.7 739.8,116.3 744.7,114.5 749.5,113.1 754.4,112.3 759.3,112.0 764.2,112.3 769.1,113.1 774.0,114.5 778.9,116.3 783.7,118.7 788.6,121.4 793.5,124.5 798.4,127.9 803.3,131.5 808.2,135.3 813.1,139.2 817.9,143.1 822.8,146.9 827.7,150.7 832.6,154.4 837.5,157.9 842.4,161.2 847.3,164.3 852.1,167.1 857.0,169.7 861.9,172.0 866.8,174.1 871.7,176.0 876.6,177.6 881.5,179.0 886.3,180.3 891.2,181.3 896.1,182.2 901.0,182.9 905.9,183.5 910.8,184.0 915.7,184.5 920.5,184.8 925.4,185.1 930.3,185.3 935.2,185.4 940.1,185.6 945.0,185.7 949.9,185.8 954.7,185.8 959.6,185.9 964.5,185.9 969.4,185.9 974.3,186.0 979.2,186.0 984.1,186.0 988.9,186.0 993.8,186.0 998.7,186.0 1003.6,186.0 1008.5,186.0 1013.4,186.0 1018.3,186.0 1023.1,186.0 1028.0,186.0 1032.9,186.0 1037.8,186.0 1042.7,186.0 1047.6,186.0 1052.5,186.0 1057.3,186.0 1062.2,186.0 1067.1,186.0 1072.0,186.0 1072,186" fill="#eeeeee" stroke="#bdbdbd" stroke-width="0.9" opacity="1.0"/>
+<polygon points="730,186 730.0,186.0 734.9,186.0 739.8,186.0 744.7,186.0 749.5,186.0 754.4,186.0 759.3,185.9 764.2,185.9 769.1,185.8 774.0,185.7 778.9,185.5 783.7,185.2 788.6,184.6 793.5,183.9 798.4,182.7 803.3,181.1 808.2,178.8 813.1,175.8 817.9,171.9 822.8,166.9 827.7,160.9 832.6,153.9 837.5,146.0 842.4,137.4 847.3,128.4 852.1,119.5 857.0,111.3 861.9,104.2 866.8,98.7 871.7,95.2 876.6,94.0 881.5,95.2 886.3,98.7 891.2,104.2 896.1,111.3 901.0,119.5 905.9,128.4 910.8,137.4 915.7,146.0 920.5,153.9 925.4,160.9 930.3,166.9 935.2,171.9 940.1,175.8 945.0,178.8 949.9,181.1 954.7,182.7 959.6,183.9 964.5,184.6 969.4,185.2 974.3,185.5 979.2,185.7 984.1,185.8 988.9,185.9 993.8,185.9 998.7,186.0 1003.6,186.0 1008.5,186.0 1013.4,186.0 1018.3,186.0 1023.1,186.0 1028.0,186.0 1032.9,186.0 1037.8,186.0 1042.7,186.0 1047.6,186.0 1052.5,186.0 1057.3,186.0 1062.2,186.0 1067.1,186.0 1072.0,186.0 1072,186" fill="#dde8f6" stroke="#7f9dc4" stroke-width="1.1" opacity="0.92"/>
+<path d="M 730 186 L 1072 186" fill="none" stroke="#8c8c8c" stroke-width="1.0"/>
+<path d="M 876.5714285714286 186 L 876.5714285714286 90" fill="none" stroke="#c0392b" stroke-width="0.9" stroke-dasharray="3.5 3"/>
+<path d="M 730.0 186 L 730.0 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="730.0" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">0</text>
+<path d="M 778.8571428571429 186 L 778.8571428571429 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="778.8571428571429" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">1</text>
+<path d="M 827.7142857142857 186 L 827.7142857142857 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="827.7142857142857" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">2</text>
+<path d="M 876.5714285714286 186 L 876.5714285714286 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="876.5714285714286" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">3</text>
+<path d="M 925.4285714285714 186 L 925.4285714285714 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="925.4285714285714" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">4</text>
+<path d="M 974.2857142857142 186 L 974.2857142857142 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="974.2857142857142" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">5</text>
+<path d="M 1023.1428571428571 186 L 1023.1428571428571 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="1023.1428571428571" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">6</text>
+<path d="M 1072.0 186 L 1072.0 190" fill="none" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="1072.0" y="202" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9" fill="#666666" font-weight="400" text-anchor="middle">7</text>
+<text x="901" y="216" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10" fill="#666666" font-weight="400" text-anchor="middle">DFT band gap (eV)</text>
+<text x="876.5714285714286" y="80" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10" fill="#c0392b" font-weight="700" text-anchor="middle">3 eV</text>
+<text x="773.9714285714285" y="108" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9.5" fill="#666666" font-weight="400" text-anchor="middle">raw</text>
+<text x="952.3" y="112" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="9.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">skewed</text>
+<rect x="730" y="232" width="342" height="50" rx="4" ry="4" fill="#fbeddc" stroke="#c99a63" stroke-width="0.9"/>
+<text x="901.0" y="254.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">Skewed fine-tuning set</text>
+<text x="901.0" y="269.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">500 from AA′BB′X<tspan font-size="7.6" baseline-shift="sub">6</tspan>  ·  3,000 from MP-20</text>
+<path d="M 901 284 L 901 304" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<rect x="730" y="306" width="342" height="46" rx="4" ry="4" fill="#f0f0f0" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="901.0" y="333.375" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">Both frameworks fine-tuned on it</text>
+<path d="M 901 354 L 901 374" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<rect x="730" y="376" width="342" height="50" rx="4" ry="4" fill="#dff0d5" stroke="#7fa86a" stroke-width="0.9"/>
+<text x="901.0" y="398.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">Generated crystals</text>
+<text x="901.0" y="413.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">scored on validity, novelty and E<tspan font-size="7.6" baseline-shift="sub">g</tspan> = 3 ± 0.5 eV</text>
+</svg>

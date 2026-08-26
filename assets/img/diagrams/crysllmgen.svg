@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 292" width="960" height="292" role="img" aria-label="CrysLLMGen pipeline">
+<title>CrysLLMGen pipeline</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#c4b294"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#b39ddb"/></marker></defs>
+<rect x="30" y="76" width="150" height="56" rx="10" ry="10" fill="#fdf7e4" stroke="#e9cd82" stroke-width="1.25"/>
+<text x="105.0" y="102.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7a5806" text-anchor="middle">Chemical</text>
+<text x="105.0" y="116.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7a5806" text-anchor="middle">composition</text>
+<path d="M182,92 L206,68" fill="none" stroke="#c4b294" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M182,116 L206,152" fill="none" stroke="#c4b294" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="208" y="40" width="216" height="56" rx="10" ry="10" fill="#fdf2e0" stroke="#e8bd7c" stroke-width="1.25"/>
+<text x="316.0" y="58.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7a4a06" text-anchor="middle">BERTOS</text>
+<text x="316.0" y="75.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">transformer language model over</text>
+<text x="316.0" y="87.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">element sequences</text>
+<rect x="208" y="124" width="216" height="56" rx="10" ry="10" fill="#fdf2e0" stroke="#e8bd7c" stroke-width="1.25"/>
+<text x="316.0" y="142.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7a4a06" text-anchor="middle">TOSS</text>
+<text x="316.0" y="159.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">global optimisation of</text>
+<text x="316.0" y="171.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">oxidation states</text>
+<path d="M426,68 L460,92" fill="none" stroke="#c4b294" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M426,152 L460,116" fill="none" stroke="#c4b294" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<polygon points="530,52 596,104 530,156 464,104" fill="#e7f0fb" stroke="#93b8e0" stroke-width="1.25"/>
+<text x="530.0" y="100.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#123c6b" text-anchor="middle">charge</text>
+<text x="530.0" y="116.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#123c6b" text-anchor="middle">neutral?</text>
+<path d="M530,158 L530,196" fill="none" stroke="#c4b294" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="566.0" y="180.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="600" fill="#6b7c8f" text-anchor="middle">rejected</text>
+<rect x="432" y="198" width="196" height="44" rx="10" ry="10" fill="#fdeaef" stroke="#efa9bc" stroke-width="1.25"/>
+<text x="530.0" y="218.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#9f1239" text-anchor="middle">Discarded before</text>
+<text x="530.0" y="232.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#9f1239" text-anchor="middle">generation</text>
+<path d="M598,104 L632,104" fill="none" stroke="#c4b294" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="634" y="76" width="296" height="56" rx="10" ry="10" fill="#46300b" stroke="#46300b" stroke-width="1.25"/>
+<text x="782.0" y="100.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Materium generative backbone</text>
+<text x="782.0" y="117.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#f2ddc0" text-anchor="middle">diffusion over lattice and coordinates</text>
+<path d="M782,134 L782,170" fill="none" stroke="#c4b294" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="634" y="172" width="296" height="52" rx="10" ry="10" fill="#e6f6ef" stroke="#84d0b6" stroke-width="1.25"/>
+<text x="782.0" y="196.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0b5a41" text-anchor="middle">Candidate crystals → stability</text>
+<text x="782.0" y="210.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0b5a41" text-anchor="middle">screen</text>
+</svg>

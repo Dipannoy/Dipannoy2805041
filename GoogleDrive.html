@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Google Drive API Integration - Detail</title>
+
+  <title>Cloud File Management for an LMS &middot; Dipannoy Das Gupta</title>
+  <meta content="A Google Drive REST API integration for a learning management system, with size-routed multipart and resumable uploads and memory-flat streamed downloads." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    .feature-list { list-style: none; padding: 0; }
-    .feature-list li { padding: 12px; background: #f9f9f9; border-left: 4px solid #0563af; margin-bottom: 10px; border-radius: 0 5px 5px 0; font-size: 14px; }
-    .feature-list strong { color: #0563af; }
-    .context-box { background: #f0f7ff; padding: 25px; border-radius: 10px; margin-bottom: 30px; }
-  </style>
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="teal">
 
-    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -25,88 +29,133 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Google Drive API Integration</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">API Integration &middot; Edusoft Consultants Ltd.</div>
+        <h1>File Storage for an LMS Without Running Storage Servers</h1>
+        <p class="pj-lede">In a learning management system, file exchange is the core utility &mdash; question paper distribution, answer script submission, course material. Rather than buying and securing storage servers for it, I built the file layer on the Google Drive REST API from an ASP.NET Core backend.</p>
+        <div class="pj-chips">
+          <span><i class="bx bxl-google"></i> Google Drive REST API</span>
+          <span><i class="bx bx-code-alt"></i> ASP.NET Core</span>
+          <span><i class="bx bx-shield-quarter"></i> OAuth 2.0 / service accounts</span>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="portfolio-description">
-              <div class="context-box">
-                <h2>Scalable File Management for LMS</h2>
-                <p>
-                  In a modern Learning Management System (LMS), file exchange is a core utility—from question paper distribution to student answer script submissions. To ensure scalability and data integrity, I integrated <strong>Google Drive REST APIs</strong> with an <strong>ASP.NET Core</strong> backend.
-                </p>
-              </div>
 
-              <h3>Implementation Architecture</h3>
-              <p>
-                The system was designed to handle various file types and sizes efficiently, optimizing network bandwidth and ensuring successful transfers even over unstable connections.
-              </p>
-              
-              <ul class="feature-list">
-                <li><strong>Multipart Upload:</strong> Optimized for small metadata-heavy files (less than 5MB).</li>
-                <li><strong>Resumable Upload:</strong> Implemented a chunk-based protocol for large files (greater than 5MB), allowing transfers to resume if interrupted.</li>
-                <li><strong>Streamed Downloads:</strong> Implemented byte-array retrieval from the API, piping the data directly to the user's local stream to minimize server memory overhead.</li>
-                <li><strong>CRUD Operations:</strong> Full lifecycle management including programmatic file deletion and permission handling via FileID.</li>
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>5 MB</b><span>threshold between transfer modes</span></div>
+              <div class="pj-metric"><b>Resumable</b><span>survives an interrupted connection</span></div>
+              <div class="pj-metric"><b>Streamed</b><span>flat server memory on download</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/gdrive.svg" alt="Google Drive integration: an ASP.NET Core backend routing uploads by file size to multipart or resumable transfers, streaming downloads, and persisting file IDs in SQL.">
+              </div>
+              <figcaption><b>Routing by size and direction.</b> Small files take a multipart upload; anything over 5&nbsp;MB goes through the resumable chunked protocol so an interrupted transfer picks up where it stopped rather than starting again. Downloads stream the byte array straight to the client, so server memory does not scale with file size, and the Drive file ID is what gets persisted locally.</figcaption>
+            </figure>
+
+              <h2>Why offload the storage at all</h2>
+              <p>An LMS handling answer scripts for a whole institution accumulates files quickly, and every
+                one of them has to stay available and intact. Owning that storage means owning capacity
+                planning, backups, redundancy and physical security. Offloading it to Drive removes the need
+                for on-premise storage servers while inheriting enterprise-grade security and availability.</p>
+
+              <h3>Implementation</h3>
+              <ul>
+                <li><strong>Multipart upload</strong> &mdash; optimised for small, metadata-heavy files under
+                  5&nbsp;MB, where a single request is cheaper than negotiating a session.</li>
+                <li><strong>Resumable upload</strong> &mdash; a chunk-based protocol for files above
+                  5&nbsp;MB, so a transfer that drops on an unstable connection resumes rather than
+                  restarts. This is the difference between a usable and an unusable system for students
+                  uploading over mobile networks.</li>
+                <li><strong>Streamed downloads</strong> &mdash; byte-array retrieval from the API piped
+                  directly into the user's local stream, so server memory stays flat regardless of how large
+                  the file is.</li>
+                <li><strong>Full lifecycle management</strong> &mdash; programmatic deletion and permission
+                  handling by file ID, with the ID persisted in SQL as the link between the LMS record and
+                  the stored object.</li>
               </ul>
 
-              <h4 class="mt-4">Impact</h4>
-              <p>
-                By offloading storage to Google Drive, the system eliminated the need for expensive on-premise storage servers while providing enterprise-grade security and 99.9% availability for academic documents.
-              </p>
+              <div class="pj-callout is-result">
+                <h4>Outcome</h4>
+                <p>The system eliminated the need for expensive on-premise storage servers while providing
+                  enterprise-grade security and high availability for academic documents.</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>System Specs</h3>
-              <ul>
-                <li><strong>Category</strong>: API & Systems</li>
-                <li><strong>Tech Stack</strong>: ASP.NET Core, Razor</li>
-                <li><strong>Integration</strong>: Google Drive REST API</li>
-                <li><strong>Security</strong>: OAuth 2.0 / Service Accounts</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>Design and implementation</li><li><strong>Employer</strong>Edusoft Consultants Ltd., Dhaka</li><li><strong>Category</strong>API and systems integration</li><li><strong>Integration</strong>Google Drive REST API</li><li><strong>Security</strong>OAuth 2.0 / service accounts</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>ASP.NET Core</span><span>C#</span><span>Razor</span><span>Google Drive REST API</span><span>OAuth 2.0</span><span>SQL</span></div>
+            </div>
+            </aside>
           </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
       </div>
     </section>
+
   </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

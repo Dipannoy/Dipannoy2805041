@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320" role="img" aria-label="NDN hybrid cache replacement policy">
+<title>NDN hybrid cache replacement policy</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#8db2c0"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#b39ddb"/></marker></defs>
+<rect x="40" y="48" width="160" height="60" rx="10" ry="10" fill="#ddf3fc" stroke="#74cbea" stroke-width="1.25"/>
+<text x="120.0" y="68.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#08455c" text-anchor="middle">Interest packet</text>
+<text x="120.0" y="85.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">a request for named</text>
+<text x="120.0" y="97.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">content</text>
+<path d="M202,78 L230,78" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="232" y="48" width="200" height="60" rx="10" ry="10" fill="#e2f4fb" stroke="#7fc9e5" stroke-width="1.25"/>
+<text x="332.0" y="68.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0a4b63" text-anchor="middle">Content Store lookup</text>
+<text x="332.0" y="85.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">is the named data already</text>
+<text x="332.0" y="97.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">cached?</text>
+<path d="M434,68 L466,44" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M434,90 L466,116" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="468" y="16" width="220" height="52" rx="10" ry="10" fill="#e6f6ef" stroke="#84d0b6" stroke-width="1.25"/>
+<text x="578.0" y="47.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0b5a41" text-anchor="middle">Hit — served locally</text>
+<rect x="468" y="90" width="220" height="52" rx="10" ry="10" fill="#fdeaef" stroke="#efa9bc" stroke-width="1.25"/>
+<text x="578.0" y="114.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#9f1239" text-anchor="middle">Miss — forward</text>
+<text x="578.0" y="128.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#9f1239" text-anchor="middle">upstream</text>
+<path d="M690,116 L714,116" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="716" y="90" width="204" height="52" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.25"/>
+<text x="818.0" y="114.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" text-anchor="middle">Insert into Content</text>
+<text x="818.0" y="128.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" text-anchor="middle">Store</text>
+<path d="M818,144 L818,162 L520,162 L520,194" fill="none" stroke="#8db2c0" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="660.0" y="157.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="600" fill="#6b7c8f" text-anchor="middle">store is full → evict something</text>
+<rect x="430" y="180" width="490" height="112" rx="12" ry="12" fill="none" stroke="#8db2c0" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.95"/>
+<text x="443" y="173" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#6b7c8f" letter-spacing="1.1">HYBRID EVICTION POLICY</text>
+<rect x="450" y="196" width="140" height="48" rx="10" ry="10" fill="#e2f4fb" stroke="#7fc9e5" stroke-width="1.25"/>
+<text x="520.0" y="225.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0a4b63" text-anchor="middle">Recency</text>
+<path d="M592,220 L604,220" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="606" y="196" width="140" height="48" rx="10" ry="10" fill="#e2f4fb" stroke="#7fc9e5" stroke-width="1.25"/>
+<text x="676.0" y="225.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0a4b63" text-anchor="middle">Frequency</text>
+<path d="M748,220 L760,220" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="762" y="196" width="142" height="48" rx="10" ry="10" fill="#fdf2e2" stroke="#e9c184" stroke-width="1.25"/>
+<text x="833.0" y="225.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a5309" text-anchor="middle">Combined rank</text>
+<text x="675.0" y="268.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#6b7c8f" text-anchor="middle">balances what was used last against what is used often</text>
+<rect x="40" y="196" width="360" height="52" rx="10" ry="10" fill="#08324a" stroke="#08324a" stroke-width="1.25"/>
+<text x="220.0" y="211.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Higher hit rate than LRU and</text>
+<text x="220.0" y="225.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Priority-FIFO</text>
+<text x="220.0" y="242.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#bde2ef" text-anchor="middle">measured in ndnSIM simulation</text>
+</svg>

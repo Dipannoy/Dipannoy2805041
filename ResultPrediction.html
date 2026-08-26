@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Result Prediction - Research Detail</title>
+
+  <title>Predictive Academic Analytics &middot; Dipannoy Das Gupta</title>
+  <meta content="Educational data mining that forecasts student performance from prerequisite grades across four classifiers, published by Springer in Intelligent Computing." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    .publication-box { background: #fdfdfd; border: 1px solid #e0e0e0; padding: 25px; border-radius: 10px; margin-top: 30px; }
-    .algo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 15px; }
-    .algo-item { background: #eef7ff; padding: 10px; border-radius: 5px; text-align: center; font-size: 14px; color: #0563af; font-weight: 600; }
-    .download-btn { background: #0563af; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; transition: 0.3s; }
-    .download-btn:hover { background: #003d73; color: white; text-decoration: none; }
-  </style>
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="blue">
 
-    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -26,94 +29,140 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Result Prediction Research</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Educational Data Mining &middot; Published by Springer</div>
+        <h1>Forecasting Student Performance Before the Semester Goes Wrong</h1>
+        <p class="pj-lede">If you can predict which students are heading for trouble in an upcoming course, you can reach them while intervention is still cheap. This work mines historical grade distributions to forecast academic outcomes, comparing four classifiers so the prediction rests on more than one model’s idiosyncrasies.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-line-chart"></i> Educational data mining</span>
+          <span><i class="bx bx-book-bookmark"></i> Springer LNNS vol. 284</span>
+          <span><i class="bx bx-bar-chart-alt-2"></i> Four-classifier comparison</span>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
+
           <div class="col-lg-8">
-            <div class="portfolio-description">
-              <h2>Student Performance Forecasting using Data Mining</h2>
-              <p>
-                In this project, I explored the application of <strong>Educational Data Mining (EDM)</strong> to forecast academic outcomes. By analyzing historical grade distributions, we developed a system capable of predicting a student's performance in upcoming semesters, enabling early intervention and personalized academic support.
-              </p>
-
-              <h3>Comparative Algorithmic Analysis</h3>
-              <p>
-                To ensure high predictive reliability, the dataset was subjected to rigorous testing across four distinct machine learning classifiers:
-              </p>
-              
-              <div class="algo-grid">
-                <div class="algo-item">Naive Bayes</div>
-                <div class="algo-item">J48 (Decision Tree)</div>
-                <div class="algo-item">K* (Instance-based)</div>
-                <div class="algo-item">Random Tree</div>
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>4 classifiers</b><span>compared on identical splits</span></div>
+              <div class="pj-metric"><b>90 / 10</b><span>train / test split</span></div>
+              <div class="pj-metric"><b>Springer</b><span>LNNS vol. 284, pp. 295&ndash;307</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/result-prediction.svg" alt="Result prediction pipeline: historical course grades, attribute selection, a 90/10 split, four classifiers in parallel, and a predicted result feeding early intervention.">
               </div>
+              <figcaption><b>Four models, one decision.</b> Grade-based predictor attributes are extracted from historical course records and the same split is run through Naive Bayes, a J48 decision tree, the instance-based K* and a Random Tree. Agreement across methods is what makes the forecast trustworthy enough to act on.</figcaption>
+            </figure>
 
-              <h4 class="mt-4">Methodology</h4>
-              <p>
-                The model was trained on 90% of the dataset using grade-based predictor attributes. By mapping the correlation between prerequisite performance and advanced course success, the system achieved significant accuracy in forecasting final GPA trajectories.
-              </p>
+              <h2>The premise</h2>
+              <p>Academic performance is not random. How a student did in the prerequisites carries real
+                signal about how they will do in the courses that build on them. Educational data mining
+                turns that intuition into a forecast that an advisor can act on &mdash; identifying students
+                who need support early enough that support still helps.</p>
 
-              <div class="publication-box">
-                <h4><i class="bx bx-book-bookmark"></i> Scholarly Publication</h4>
-                <p>This work was published in the Springer series <em>Lecture Notes in Networks and Systems (Vol 284)</em>. You can find the full details on pages 295–307 of the proceedings.</p>
-                <a href="assets/pdf/IntelligentComputing.pdf" class="download-btn" download>
-                  <i class="bx bxs-download mr-2"></i> Download Full Proceedings (PDF)
-                </a>
+              <h3>Comparative algorithmic analysis</h3>
+              <p>To make the prediction reliable rather than merely plausible, the dataset was put through
+                four distinct classifiers under identical conditions:</p>
+              <ul>
+                <li><strong>Naive Bayes</strong> &mdash; probabilistic, strong baseline on categorical grade
+                  data.</li>
+                <li><strong>J48</strong> &mdash; a decision tree, chosen partly because its rules can be read
+                  and explained to a non-technical advisor.</li>
+                <li><strong>K*</strong> &mdash; instance-based, making no assumption about the shape of the
+                  underlying distribution.</li>
+                <li><strong>Random Tree</strong> &mdash; a randomised tree learner for variance
+                  comparison.</li>
+              </ul>
+
+              <h3>Method</h3>
+              <p>The model was trained on 90% of the dataset using grade-based predictor attributes. By
+                mapping the correlation between prerequisite performance and success in advanced courses, the
+                system achieved significant accuracy in forecasting final GPA trajectories.</p>
+
+              <div class="pj-callout is-result">
+                <h4>Publication</h4>
+                <p>This work was published in the Springer series <em>Lecture Notes in Networks and
+                  Systems</em>, volume 284 (<em>Intelligent Computing</em>), pages 295&ndash;307.</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project Specs</h3>
-              <ul>
-                <li><strong>Category</strong>: Machine Learning / EDM</li>
-                <li><strong>Publisher</strong>: Springer Nature</li>
-                <li><strong>Tools</strong>: Weka, Python</li>
-                <li><strong>Techniques</strong>: Supervised Classification</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Category</strong>Machine learning / educational data mining</li><li><strong>Publisher</strong>Springer Nature</li><li><strong>Venue</strong>Intelligent Computing, LNNS vol. 284, pp. 295&ndash;307</li><li><strong>Techniques</strong>Supervised classification, comparative evaluation</li><li><strong>Tools</strong>Weka, Python</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Publication</h3>
+              <a class="pj-cta" href="assets/pdf/IntelligentComputing.pdf"><i class="bx bx-download"></i> Download the proceedings</a>
+            </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>Weka</span><span>Python</span><span>Naive Bayes</span><span>J48</span><span>K*</span><span>Random Tree</span></div>
+            </div>
+            </aside>
           </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
       </div>
     </section>
+
   </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

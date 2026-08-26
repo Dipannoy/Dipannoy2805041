@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" role="img" aria-label="Self-supervised learning benchmark">
+<title>Self-supervised learning benchmark</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#a3aebc"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#b39ddb"/></marker></defs>
+<rect x="40" y="44" width="210" height="70" rx="10" ry="10" fill="#e9eff5" stroke="#98adc4" stroke-width="1.25"/>
+<text x="145.0" y="62.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#25384c" text-anchor="middle">364,000+ unlabelled</text>
+<text x="145.0" y="76.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#25384c" text-anchor="middle">crystals</text>
+<text x="145.0" y="93.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">214k double perovskites + 150k</text>
+<text x="145.0" y="105.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">Materials Project</text>
+<path d="M252,79 L280,79" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="282" y="44" width="196" height="70" rx="10" ry="10" fill="#eef1f6" stroke="#a8b6c9" stroke-width="1.25"/>
+<text x="380.0" y="62.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2c3e52" text-anchor="middle">Structure</text>
+<text x="380.0" y="76.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2c3e52" text-anchor="middle">augmentations</text>
+<text x="380.0" y="93.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">two correlated views of the</text>
+<text x="380.0" y="105.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">same crystal</text>
+<rect x="510" y="30" width="210" height="48" rx="10" ry="10" fill="#1f2c3c" stroke="#1f2c3c" stroke-width="1.25"/>
+<text x="615.0" y="52.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Equivariant GNN</text>
+<text x="615.0" y="66.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">encoder</text>
+<rect x="510" y="100" width="210" height="48" rx="10" ry="10" fill="#1f2c3c" stroke="#1f2c3c" stroke-width="1.25"/>
+<text x="615.0" y="122.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Same encoder, shared</text>
+<text x="615.0" y="136.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">weights</text>
+<path d="M480,66 L508,54" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M480,92 L508,124" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="752" y="44" width="168" height="70" rx="10" ry="10" fill="#fdf2e2" stroke="#e9c184" stroke-width="1.25"/>
+<text x="836.0" y="62.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a5309" text-anchor="middle">Contrastive</text>
+<text x="836.0" y="76.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a5309" text-anchor="middle">objective</text>
+<text x="836.0" y="93.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">InfoNCE over positive</text>
+<text x="836.0" y="105.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">pairs</text>
+<path d="M722,54 L750,66" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M722,124 L750,92" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M836,116 L940,116 L940,164 L145,164 L145,190" fill="none" stroke="#a3aebc" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="540.0" y="158.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.0" font-weight="600" fill="#6b7c8f" text-anchor="middle">pre-trained weights</text>
+<rect x="40" y="192" width="210" height="64" rx="10" ry="10" fill="#eef1f6" stroke="#a8b6c9" stroke-width="1.25"/>
+<text x="145.0" y="229.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2c3e52" text-anchor="middle">Pre-trained encoder</text>
+<path d="M252,224.0 L280,224.0" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="282" y="192" width="196" height="64" rx="10" ry="10" fill="#eef1f6" stroke="#a8b6c9" stroke-width="1.25"/>
+<text x="380.0" y="213.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2c3e52" text-anchor="middle">Fine-tune on</text>
+<text x="380.0" y="227.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#2c3e52" text-anchor="middle">labelled tasks</text>
+<text x="380.0" y="244.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">formation energy · band gap</text>
+<path d="M480,224.0 L508,224.0" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="510" y="192" width="210" height="64" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.25"/>
+<text x="615.0" y="207.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" text-anchor="middle">Head-to-head vs.</text>
+<text x="615.0" y="221.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" text-anchor="middle">supervised</text>
+<text x="615.0" y="238.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">identical encoder trained from</text>
+<text x="615.0" y="250.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">scratch</text>
+<path d="M722,224.0 L750,224.0" fill="none" stroke="#a3aebc" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="752" y="192" width="168" height="64" rx="10" ry="10" fill="#fdeaef" stroke="#efa9bc" stroke-width="1.25"/>
+<text x="836.0" y="214.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#9f1239" text-anchor="middle">Limited gain</text>
+<text x="836.0" y="231.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">labels still carry most</text>
+<text x="836.0" y="243.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">of the signal</text>
+<rect x="40" y="296" width="280" height="52" rx="10" ry="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="180.0" y="321" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#334155" text-anchor="middle">364,000+</text>
+<text x="180.0" y="338" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#6b7c8f" text-anchor="middle">unlabelled structures pre-trained on</text>
+<rect x="340" y="296" width="280" height="52" rx="10" ry="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="480.0" y="321" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#334155" text-anchor="middle">2 chemistries</text>
+<text x="480.0" y="338" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#6b7c8f" text-anchor="middle">double perovskites + Materials Project</text>
+<rect x="640" y="296" width="280" height="52" rx="10" ry="10" fill="#1f2c3c" stroke="#1f2c3c"/>
+<text x="780.0" y="321" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">honest negative result</text>
+<text x="780.0" y="338" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="500" fill="#ccd6e2" text-anchor="middle">maps where SSL does not yet pay off</text>
+</svg>

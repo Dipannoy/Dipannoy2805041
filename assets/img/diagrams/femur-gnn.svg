@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 276" width="960" height="276" role="img" aria-label="Osteoporotic fracture-risk pipeline">
+<title>Osteoporotic fracture-risk pipeline</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#c9a5ad"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#b39ddb"/></marker></defs>
+<rect x="40" y="48" width="180" height="68" rx="10" ry="10" fill="#fdecef" stroke="#f0a8b6" stroke-width="1.25"/>
+<text x="130.0" y="80.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7f1128" text-anchor="middle">CT scan · DICOM</text>
+<text x="130.0" y="94.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7f1128" text-anchor="middle">slices</text>
+<path d="M222,82.0 L250,82.0" fill="none" stroke="#c9a5ad" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="252" y="48" width="200" height="68" rx="10" ry="10" fill="#fdf6e0" stroke="#e9cb80" stroke-width="1.25"/>
+<text x="352.0" y="72.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a5b09" text-anchor="middle">Pixel clustering</text>
+<text x="352.0" y="89.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">our proposed segmentation</text>
+<text x="352.0" y="101.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">approach</text>
+<path d="M454,82.0 L482,82.0" fill="none" stroke="#c9a5ad" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="484" y="48" width="190" height="68" rx="10" ry="10" fill="#fdeaee" stroke="#eda3b3" stroke-width="1.25"/>
+<text x="579.0" y="80.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a1330" text-anchor="middle">3D femur</text>
+<text x="579.0" y="94.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a1330" text-anchor="middle">reconstruction</text>
+<path d="M676,82.0 L704,82.0" fill="none" stroke="#c9a5ad" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="706" y="48" width="214" height="68" rx="10" ry="10" fill="#fdeaee" stroke="#eda3b3" stroke-width="1.25"/>
+<text x="813.0" y="71.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a1330" text-anchor="middle">Region graph of the</text>
+<text x="813.0" y="85.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a1330" text-anchor="middle">femoral head</text>
+<text x="813.0" y="102.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">complex regions become nodes</text>
+<path d="M813,118 L813,148 L170,148 L170,174" fill="none" stroke="#c9a5ad" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="40" y="176" width="260" height="64" rx="10" ry="10" fill="#4d0c1e" stroke="#4d0c1e" stroke-width="1.25"/>
+<text x="170.0" y="206.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">GNN over femoral-head</text>
+<text x="170.0" y="220.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">regions</text>
+<path d="M302,208.0 L330,208.0" fill="none" stroke="#c9a5ad" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="332" y="176" width="220" height="64" rx="10" ry="10" fill="#e6f6ef" stroke="#84d0b6" stroke-width="1.25"/>
+<text x="442.0" y="213.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0b5a41" text-anchor="middle">Fracture-risk score</text>
+<path d="M554,208.0 L582,208.0" fill="none" stroke="#c9a5ad" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="584" y="176" width="336" height="64" rx="10" ry="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.25"/>
+<text x="752.0" y="204.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" text-anchor="middle">One automated pipeline</text>
+<text x="752.0" y="221.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">replaces manual, licence-heavy imaging software</text>
+</svg>

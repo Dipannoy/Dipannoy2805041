@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Domain Adaptation for Materials - Detail</title>
+
+  <title>Domain Adaptation for Halide Perovskite Discovery &middot; Dipannoy Das Gupta</title>
+  <meta content="Parameter-based domain adaptation across SchNet, PAiNN and ALIGNN, combined with active learning, to screen 222,960 halide perovskites for stability and photovoltaic-relevant band gaps." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    .impact-badge { background: #28a745; color: #fff; padding: 10px 15px; border-radius: 5px; font-weight: 700; margin-bottom: 20px; display: inline-block; }
-    .model-comparison-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 25px 0; }
-    .model-box { background: #f0f7ff; border: 1px solid #0563af; padding: 15px; border-radius: 8px; text-align: center; font-weight: 600; color: #0563af; }
-  </style>
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="rust">
 
-    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -24,93 +29,164 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Domain Adaptation for Materials</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Domain Adaptation for Materials &middot; Published</div>
+        <h1>Transferring What a Model Already Knows About Perovskites</h1>
+        <p class="pj-lede">AA'BB'X<sub>6</sub> double perovskites have unit cells at least twice the size of ABX<sub>3</sub>, which makes DFT roughly eight times more expensive under cubic scaling. Labelled data is therefore scarce exactly where the unexplored chemistry is. This work transfers parameters from a model trained on simple perovskites and sharpens it with uncertainty-driven active learning.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-user-voice"></i> First author</span>
+          <span><i class="bx bx-transfer-alt"></i> SchNet &middot; PAiNN &middot; ALIGNN</span>
+          <span><i class="bx bx-buildings"></i> USC &middot; CU Boulder &middot; NIST</span>
+          <a href="https://arxiv.org/abs/2401.10998" target="_blank" rel="noopener"><i class="bx bx-link-external"></i> Read the paper</a>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="portfolio-description">
-              <div class="impact-badge"><i class="bx bx-trending-up"></i> 1.5x - 2x Accuracy Improvement</div>
-              <h2>Overcoming Data Scarcity via Transfer Learning</h2>
-              <p>
-                A major challenge in discovering new materials, such as <strong>Halide Perovskites</strong>, is the limited amount of high-quality annotated data. This project focused on <strong>Parameter-based Domain Adaptation</strong> to leverage knowledge from large datasets (source domains) to improve performance on specialized subsets (target domains).
-              </p>
 
-              <h3>Multi-Model Implementation</h3>
-              <p>
-                I implemented and benchmarked these adaptation techniques across three state-of-the-art Graph Neural Network architectures:
-              </p>
-              
-              <div class="model-comparison-grid">
-                <div class="model-box">SchNet</div>
-                <div class="model-box">PAiNN</div>
-                <div class="model-box">ALIGNN</div>
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>1.6&times;</b><span>better formation energy than direct training</span></div>
+              <div class="pj-metric"><b>1.2&ndash;1.35&times;</b><span>better HSE band gap</span></div>
+              <div class="pj-metric"><b>38 meV/atom</b><span>final &Delta;H<sub>f</sub> MAE</span></div>
+              <div class="pj-metric"><b>0.18 eV</b><span>final E<sub>g</sub>(HSE) MAE</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/domain-adaptation.svg" alt="Domain adaptation pipeline: a source model trained on 500 ABX3 compounds transfers weights to a double-perovskite target model, refined by three active-learning rounds, then used to screen 222,960 candidates.">
+              </div>
+              <figcaption><b>Two pipelines, one set of weights.</b> The source pipeline trains on 500 ABX<sub>3</sub> compounds. The optimal parameters from that run initialise a new model on the target AA'BB'X<sub>6</sub> dataset, whose structures come from the inexpensive bond-valence method rather than from DFT relaxation. Three rounds of active learning then add the samples the ensemble is most and least certain about, growing the training set from 700 to 3,593 before the final models screen the full candidate space.</figcaption>
+            </figure>
+
+              <h2>A chemical space too large to compute and too sparse to learn</h2>
+              <p>Halide perovskites are used across light-emitting diodes, photocatalysis and &mdash; most
+                promisingly &mdash; as light-absorbing materials for photovoltaics. Their appeal is the sheer
+                breadth of the chemical space: swap compositions and you tune optical, electronic and
+                thermodynamic properties. That breadth is also the problem. ABX<sub>3</sub> compounds have
+                been examined at scale; AA'BB'X<sub>6</sub> compounds have not, precisely because the larger
+                unit cell makes the calculations so much more expensive.</p>
+              <p>Machine learning can predict DFT properties at orders of magnitude lower cost &mdash; but
+                only with enough labelled examples, which is the resource this chemistry does not have.</p>
+
+              <h3>Getting structures without DFT relaxation</h3>
+              <p>Before a GNN can learn anything it needs structures. Rather than relaxing each candidate
+                with DFT, structures were generated with the <strong>bond-valence method</strong>, which is
+                inexpensive and reliable enough to serve as model input. That choice is what makes screening
+                222,960 compositions feasible at all.</p>
+
+              <h3>The domain-adaptation scheme</h3>
+              <p>The approach involves two distinct pipelines with two different datasets. A source model is
+                trained on 500 ABX<sub>3</sub> compounds. Its optimal weights are then transferred to
+                initialise training of a new model on the target AA'BB'X<sub>6</sub> dataset, which is
+                refined through standard validation and testing. The same procedure was implemented and
+                benchmarked across three GNN architectures &mdash; <strong>SchNet</strong>,
+                <strong>PAiNN</strong> and <strong>ALIGNN</strong> &mdash; so the gain could be attributed to
+                the transfer rather than to one architecture's quirks.</p>
+
+              <div class="pj-callout">
+                <h4>A first, as far as we are aware</h4>
+                <p>This is the first demonstration of domain adaptation for graph neural networks in
+                  materials science. The transfer yields a factor of 1.6 improvement in formation energy and
+                  1.2&ndash;1.35 in HSE band gap compared with direct training.</p>
               </div>
 
-              <h4>Core Methodology</h4>
-              <ul>
-                <li><strong>Weight Initialization:</strong> Utilizing pre-trained weights from single perovskites(ABX3) dataset.</li>
-                <li><strong>Fine-Tuning:</strong> Strategically unfreezing layers to adapt to specific chemical spaces double perovskites(AA'BB'X6).</li>
-                <li><strong>Parameter Matching:</strong> Ensuring feature consistency across different material distributions.</li>
-              </ul>
+              <h3>Active learning on the model's own uncertainty</h3>
+              <p>Three models were trained independently per property, and the standard deviation across them
+                gives a per-sample uncertainty. Compounds above the 99th percentile were labelled
+                high-uncertainty and those below the 1st percentile low-uncertainty; both were fed into the
+                next iteration, so the training set grows where the model is confused <em>and</em> keeps a
+                confident anchor. Because domain adaptation already outperformed direct training at iteration
+                one, the DA approach was the one carried through the loop.</p>
+              <p>Training samples grew 700 &rarr; 1,970 &rarr; 3,593 across the three iterations. At the end,
+                the best model reached a mean absolute error of <strong>38&nbsp;meV/atom</strong> against
+                DFT/PBE formation energy on entirely unseen materials, and <strong>0.18&nbsp;eV</strong> for
+                the HSE band gap.</p>
 
-              <h3 class="mt-4">Research Impact</h3>
-              <p>
-                The results demonstrated a <strong>1.5x to 2x increase in accuracy</strong> for property predictions. This improvement is pivotal for virtual screening, as it allows for the rapid and reliable identification of stable new halide perovskites before they are ever synthesized in a lab.
-              </p>
+              <div class="pj-callout is-result">
+                <h4>What came out of the screen</h4>
+                <p>Applying both models to all 222,960 candidates identified <strong>48 compounds</strong>
+                  that are simultaneously stable and have an HSE band gap in the range relevant for
+                  photovoltaics. Only 8 of them have been reported to date &mdash; leaving
+                  <strong>40 unexplored compounds</strong> as concrete candidates for experimental
+                  examination.</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Technical Specs</h3>
-              <ul>
-                <li><strong>Category</strong>: Transfer Learning / Domain Adaptation</li>
-                <li><strong>Target Materials</strong>: Halide Perovskites</li>
-                <li><strong>GNN Architectures</strong>: SchNet, PAiNN, ALIGNN</li>
-                <li><strong>Publication</strong>: arxiv.org/pdf/2401.10998</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>First author &mdash; domain adaptation, model training, screening</li><li><strong>Collaborators</strong>USC Chemistry &amp; Biochemistry, USC Computer Science, CU Boulder, NIST</li><li><strong>Architectures</strong>SchNet, PAiNN, ALIGNN</li><li><strong>Screened</strong>222,960 halide AA'BB'X<sub>6</sub> compositions</li><li><strong>Properties</strong>&Delta;H<sub>f</sub><sup>PBE</sup>, E<sub>g</sub><sup>PBE</sup>, E<sub>g</sub><sup>HSE</sup></li><li><strong>Status</strong>Published</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Paper</h3>
+              <a class="pj-cta" href="https://arxiv.org/abs/2401.10998" target="_blank" rel="noopener"><i class="bx bx-file"></i> Read on arXiv</a>
+            </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>PyTorch</span><span>SchNet</span><span>PAiNN</span><span>ALIGNN</span><span>Bond-valence method</span><span>Active learning</span><span>DFT / PBE &amp; HSE</span><span>Pymatgen</span><span>ASE</span><span>Slurm / HPC</span></div>
+            </div>
+            </aside>
           </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
       </div>
     </section>
+
   </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

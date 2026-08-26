@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" width="400" height="170" role="img" aria-label="sso overview">
+<title>sso overview</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#ada4c2"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#efa9bc"/></marker></defs>
+<text x="52.0" y="22.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0b2545" text-anchor="middle">User</text>
+<line x1="52" y1="30" x2="52" y2="126" stroke="#ada4c2" stroke-width="1.1" stroke-dasharray="3 3" opacity="1.0"/>
+<text x="196.0" y="22.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0b2545" text-anchor="middle">Client app</text>
+<line x1="196" y1="30" x2="196" y2="126" stroke="#ada4c2" stroke-width="1.1" stroke-dasharray="3 3" opacity="1.0"/>
+<text x="344.0" y="22.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0b2545" text-anchor="middle">SSO server</text>
+<line x1="344" y1="30" x2="344" y2="126" stroke="#ada4c2" stroke-width="1.1" stroke-dasharray="3 3" opacity="1.0"/>
+<path d="M54,52 L192,52" fill="none" stroke="#ada4c2" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<text x="123.0" y="45.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#6b7c8f" text-anchor="middle">signs in once</text>
+<path d="M198,84 L340,84" fill="none" stroke="#ada4c2" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<text x="269.0" y="77.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#6b7c8f" text-anchor="middle">OIDC code flow</text>
+<path d="M342,116 L200,116" fill="none" stroke="#ada4c2" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<text x="271.0" y="109.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#6b7c8f" text-anchor="middle">id_token + access token</text>
+<text x="200.0" y="147.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#6b3fc0" text-anchor="middle">one credential across every university portal</text>
+</svg>

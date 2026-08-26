@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Equivariant GNN SSL - Research Detail</title>
+
+  <title>Large-Scale Self-Supervised Learning for Materials &middot; Dipannoy Das Gupta</title>
+  <meta content="Contrastive pre-training of equivariant GNN encoders on 364,000+ unlabelled crystal structures, benchmarked against supervised training on downstream property prediction." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    .data-stat-box { background: #f8f9fa; border-top: 4px solid #0563af; padding: 20px; border-radius: 4px; text-align: center; margin-bottom: 25px; }
-    .data-number { font-size: 28px; font-weight: 800; color: #0563af; }
-    .critical-insight { background: #fff5f5; border-left: 5px solid #e53e3e; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
-    .critical-insight h4 { color: #c53030; font-size: 18px; margin-bottom: 10px; }
-  </style>
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="steel">
 
-    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -25,101 +29,143 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Equivariant GNN SSL</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Self-Supervised Learning &middot; University of South Carolina</div>
+        <h1>Does Contrastive Pre-Training Actually Help on Crystals?</h1>
+        <p class="pj-lede">Self-supervised learning transformed vision and language, and the obvious next question is whether it does the same for 3D crystal structures. Answering it properly meant pre-training equivariant GNN encoders on 364,000+ unlabelled structures and benchmarking them honestly against supervised baselines &mdash; including reporting the answer when it came back negative.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-data"></i> 364,000+ structures</span>
+          <span><i class="bx bx-repost"></i> Contrastive learning</span>
+          <span><i class="bx bx-server"></i> HPC-scale training</span>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
+
           <div class="col-lg-8">
-            <div class="portfolio-description">
-              <h2>Evaluating Contrastive Learning for Crystal Encoders</h2>
-              <p>
-                As Self-Supervised Learning (SSL) thrives in Image and Language domains, its application to <strong>3D Crystal Structures</strong> requires rigorous benchmarking. This project involved training Equivariant GNN encoders using contrastive learning strategies over massive unlabelled datasets.
-              </p>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="data-stat-box">
-                    <div class="data-number">214,000</div>
-                    <div class="small">Double-Perovskites</div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="data-stat-box">
-                    <div class="data-number">150,000</div>
-                    <div class="small">Materials Project Structures</div>
-                  </div>
-                </div>
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>364,000+</b><span>unlabelled structures</span></div>
+              <div class="pj-metric"><b>214,000</b><span>double perovskites</span></div>
+              <div class="pj-metric"><b>150,000</b><span>Materials Project structures</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/ssl-materials.svg" alt="SSL benchmark: augmented views of unlabelled crystals through a shared equivariant GNN encoder trained with InfoNCE, then fine-tuned and compared against supervised training from scratch.">
               </div>
+              <figcaption><b>The experiment.</b> Two correlated views of each unlabelled crystal pass through the same equivariant GNN encoder and are pulled together by a contrastive objective. The pre-trained encoder is then fine-tuned on labelled property tasks and compared head to head against an identical encoder trained from scratch &mdash; the only fair way to know whether the pre-training paid for itself.</figcaption>
+            </figure>
 
-              <h3>The Challenge</h3>
-              <p>
-                The primary objective was to determine if pre-training on 360,000+ unlabelled structures could provide a superior starting point for downstream property prediction tasks compared to standard supervised training from scratch.
-              </p>
-              
-              <div class="critical-insight">
-                <h4><i class="bx bx-error-circle"></i> Research Finding</h4>
-                <p>Extensive downstream evaluations revealed <strong>limited gains</strong> for pre-trained SSL models over supervised baselines in this specific domain. This critical result helps define the boundaries of where SSL is—and isn't—effective for materials modeling, specifically highlighting the importance of labels in high-symmetry crystal systems.</p>
-              </div>
+              <h2>What was being tested</h2>
+              <p>The premise of self-supervised learning is that unlabelled data is abundant and labels are
+                expensive &mdash; which describes computational materials science exactly. If contrastive
+                pre-training on hundreds of thousands of structures gave downstream property models a better
+                starting point, it would change how the whole field allocates compute.</p>
+              <p>So the question was posed sharply: does pre-training on 364,000+ unlabelled structures
+                provide a superior starting point for downstream property prediction compared with standard
+                supervised training from scratch?</p>
 
-              <h4>Key Research Contributions</h4>
+              <h3>How it was set up</h3>
               <ul>
-                <li>Implementation of <strong>Contrastive Learning</strong> objectives for 3D equivariant representations.</li>
-                <li>Scaling GNN training across high-performance computing (HPC) nodes for massive datasets.</li>
-                <li>Rigorous benchmarking across multiple downstream tasks (formation energy, bandgap, etc.).</li>
+                <li><strong>Contrastive objectives for 3D equivariant representations</strong>, adapted so
+                  that the augmented views respect crystal symmetry rather than breaking it.</li>
+                <li><strong>Two chemistries, deliberately.</strong> 214,000 double perovskites and 150,000
+                  Materials Project structures, so the result would not be an artefact of one narrow
+                  chemical space.</li>
+                <li><strong>GNN training scaled across HPC nodes</strong> to make datasets of this size
+                  tractable.</li>
+                <li><strong>Rigorous downstream benchmarking</strong> across multiple property tasks
+                  including formation energy and band gap, with the supervised baseline sharing the encoder
+                  architecture exactly.</li>
               </ul>
+
+              <div class="pj-callout is-finding">
+                <h4>The finding</h4>
+                <p>Extensive downstream evaluation showed <strong>limited gains</strong> for pre-trained SSL
+                  models over supervised baselines in this domain. Labels still carry most of the usable
+                  signal, particularly in high-symmetry crystal systems where the augmentations have less
+                  structure to vary.</p>
+              </div>
+
+              <h3>Why a negative result is worth publishing</h3>
+              <p>A result like this maps a boundary. It tells the next person where SSL for materials does
+                <em>not</em> currently pay off, which saves them the compute of finding out &mdash; and it
+                points at the more interesting question of what augmentations or objectives would be needed
+                before it does. Reporting it plainly, rather than searching for a framing where the numbers
+                look better, is the part of research training I found most valuable here.</p>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Research Specs</h3>
-              <ul>
-                <li><strong>Category</strong>: Self-Supervised Learning</li>
-                <li><strong>Total Structures</strong>: 364,000+</li>
-                <li><strong>Techniques</strong>: Contrastive Learning, Representation Learning</li>
-                <li><strong>Downstream Focus</strong>: Model Generalization & Benchmarking</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>Pre-training implementation, scaling and downstream benchmarking</li><li><strong>Group</strong>University of South Carolina</li><li><strong>Total structures</strong>364,000+ unlabelled</li><li><strong>Techniques</strong>Contrastive learning, representation learning</li><li><strong>Downstream</strong>Formation energy, band gap, model generalisation</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>PyTorch</span><span>Equivariant GNNs</span><span>InfoNCE</span><span>Slurm / HPC</span><span>Weights &amp; Biases</span></div>
+            </div>
+            </aside>
           </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
       </div>
     </section>
+
   </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

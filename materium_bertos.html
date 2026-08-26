@@ -4,38 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>CrysLLMGen Framework - Detail</title>
-  
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
 
-  <style>
-    /* Professional Highlight for PhD Research */
-    .research-highlight-box {
-        background: #f0f7ff;
-        border-left: 5px solid #0563af;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 0 8px 8px 0;
-    }
-    .tech-pill {
-        display: inline-block;
-        background: #0563af;
-        color: #fff;
-        padding: 3px 12px;
-        border-radius: 50px;
-        font-size: 12px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-    }
-  </style>
+  <title>CrysLLMGen &mdash; LLM-Guided Crystal Generation &middot; Dipannoy Das Gupta</title>
+  <meta content="A generative framework that folds transformer-based oxidation-state prediction into crystal generation so the structures produced are electronically plausible, not just geometrically valid." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="ochre">
 
-    <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -43,91 +29,134 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>CrysLLMGen Framework</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
-          </ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">LLM for Material Generation &middot; University of South Carolina</div>
+        <h1>CrysLLMGen &mdash; Generating Crystals That Are Electronically Plausible</h1>
+        <p class="pj-lede">Generative models for inorganic crystals are good at geometry and much weaker on chemistry: they will happily produce arrangements that are charge-imbalanced or physically unrealistic. CrysLLMGen puts oxidation-state prediction inside the generation loop so charge neutrality is a constraint rather than an afterthought.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-atom"></i> BERTOS &amp; TOSS</span>
+          <span><i class="bx bx-package"></i> Materium backbone</span>
+          <span><i class="bx bx-check-shield"></i> Charge-neutrality filtering</span>
         </div>
       </div>
     </section>
 
-    <section id="portfolio-details" class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-8">
-            <div class="portfolio-description">
-              <h2>Hybrid Generative Framework for Stable Crystal Synthesis</h2>
-              <p>
-                The <strong>CrysLLMGen</strong> project addresses a critical bottleneck in material informatics: the generation of chemically valid and stable inorganic crystals. Current generative models often struggle with charge neutrality and realistic atomic arrangements. 
-              </p>
-
-              <div class="research-highlight-box">
-                <h4>Technical Core: Oxidation State Integration</h4>
-                <p>My primary contribution involves the integration of <strong>BERTOS</strong> and <strong>TOSS</strong> models to predict high-accuracy oxidation states. By embedding these specialized models, we ensure that the generated structures are not just geometrically plausible, but electronically stable.</p>
-                <div class="mt-3">
-                  <span class="tech-pill">TOSS Integration</span>
-                  <span class="tech-pill">BERTOS NLP</span>
-                  <span class="tech-pill">Materium Backbone</span>
-                  <span class="tech-pill">Charge Neutrality</span>
-                </div>
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>2 predictors</b><span>BERTOS and TOSS, used together</span></div>
+              <div class="pj-metric"><b>Charge neutral</b><span>enforced, not hoped for</span></div>
+              <div class="pj-metric"><b>Inverse design</b><span>target property &rarr; structure</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/crysllmgen.svg" alt="CrysLLMGen pipeline: composition through BERTOS and TOSS oxidation-state predictors and a charge-neutrality filter, into the Materium generative backbone and a stability screen.">
               </div>
+              <figcaption><b>Chemistry first, then geometry.</b> A composition is passed through two complementary oxidation-state predictors &mdash; a transformer language model over element sequences and a global optimiser &mdash; and candidates that cannot be balanced are rejected before generation. Those oxidation-state priors then constrain what the Materium backbone is allowed to produce, and the output is screened for stability and validity.</figcaption>
+            </figure>
 
-              <p>
-                By coupling these oxidation-state predictors with the <strong>Materium</strong> codebase, the framework can filter and refine generated structures in real-time. This pipeline facilitates "Inverse Design," where we start with a desired property and work backward to the atomic coordinates, significantly reducing the time required for lab synthesis.
-              </p>
+              <h2>The bottleneck this addresses</h2>
+              <p>The hard part of material informatics is not producing <em>a</em> structure &mdash; it is
+                producing one that could actually exist. Current generative models routinely violate charge
+                neutrality and place atoms in arrangements no chemist would accept. Filtering those out
+                afterwards wastes most of what the model generates.</p>
+
+              <h3>Oxidation states as the constraint</h3>
+              <p>My contribution was integrating <strong>BERTOS</strong> and <strong>TOSS</strong> to predict
+                high-accuracy oxidation states, and wiring their output into the generation pipeline. BERTOS
+                treats a composition as a sequence and predicts oxidation states the way a language model
+                predicts tokens; TOSS approaches the same problem as global optimisation. Using them together
+                gives a cross-check that neither provides alone.</p>
+              <p>With oxidation states in hand, charge neutrality becomes checkable before a structure is
+                generated rather than after &mdash; so the generator spends its capacity on candidates that
+                are electronically stable, not merely geometrically plausible.</p>
+
+              <h3>Coupling to the generative backbone</h3>
+              <p>Those predictors are coupled to the <strong>Materium</strong> codebase, which lets the
+                framework filter and refine generated structures as they emerge. The pipeline supports
+                inverse design in the proper sense: start from a desired property and work backward to atomic
+                coordinates, rather than generating broadly and screening afterwards.</p>
+
+              <div class="pj-callout is-result">
+                <h4>Why it matters downstream</h4>
+                <p>Every implausible structure that never gets generated is lab time not spent trying to
+                  synthesise something that cannot exist. Tightening the chemistry at generation time is the
+                  cheapest place in the whole pipeline to apply that constraint.</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project Specifications</h3>
-              <ul>
-                <li><strong>Category</strong>: Generative AI / Material Informatics</li>
-                <li><strong>Institution</strong>: University of South Carolina (MLEG)</li>
-                <li><strong>Primary Tools</strong>: Python, PyTorch, Materium</li>
-                <li><strong>Key Models</strong>: TOSS, BERTOS, Diffusion Models</li>
-                <li><strong>Focus</strong>: Crystal Structure Stability</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>Oxidation-state model integration and pipeline coupling</li><li><strong>Group</strong>Machine Learning and Evolution Laboratory, University of South Carolina</li><li><strong>Key models</strong>BERTOS, TOSS, diffusion-based generators</li><li><strong>Focus</strong>Charge neutrality and crystal structure stability</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>Python</span><span>PyTorch</span><span>Materium</span><span>BERTOS</span><span>TOSS</span><span>Pymatgen</span></div>
+            </div>
+            </aside>
           </div>
 
         </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        </div>
       </div>
     </section>
+
   </main>
 
-  </body>
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
+</body>
+
 </html>

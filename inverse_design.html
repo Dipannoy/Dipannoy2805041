@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Inverse Materials Design - Research Detail</title>
+
+  <title>Conditional Generative Models for Inverse Design &middot; Dipannoy Das Gupta</title>
+  <meta content="Comparing adapter-based, node-based and skewed fine-tuning conditioning schemes for diffusion-based crystal generation with equivariant GNN decoders." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    .results-pill { background: #0563af; color: white; padding: 10px 20px; border-radius: 8px; display: inline-block; font-weight: 700; margin-bottom: 20px; }
-    .tech-list { list-style: none; padding: 0; }
-    .tech-list li { padding: 8px 0; border-bottom: 1px solid #eee; font-size: 14px; }
-    .tech-list i { color: #0563af; margin-right: 10px; }
-  </style>
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="wine">
 
-  <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -25,100 +29,170 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
-  
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Inverse Materials Design</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Conditional Generative Models &middot; University of South Carolina</div>
+        <h1>Steering Crystal Generation Toward a Target Band Gap</h1>
+        <p class="pj-lede">A generative model that produces valid crystals has solved only half of inverse design. The other half is control &mdash; actually getting the material you asked for. This work compares three ways of injecting a target band gap into diffusion-based generators and measures what each one buys in control and in novelty.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-user-voice"></i> Contributor</span>
+          <span><i class="bx bx-shape-polygon"></i> Diffusion &amp; flow matching</span>
+          <span><i class="bx bx-atom"></i> Equivariant GNN decoders</span>
+          <span><i class="bx bx-time-five"></i> Work in progress</span>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="portfolio-description">
-              <div class="results-pill">🚀 5x Improvement in Generation Control</div>
-              <h2>Conditional Diffusion for Crystal Synthesis</h2>
-              <p>
-                This research focuses on the <strong>Inverse Design Problem</strong>: generating inorganic crystal structures that satisfy specific physical property constraints, such as target bandgaps. I examined state-of-the-art diffusion models including <strong>MatterGen</strong> and <strong>CrystalGRW</strong>.
-              </p>
 
-              <h3>Technical Implementation</h3>
-              <p>
-                To achieve high-fidelity generation, I utilized diffusion-based <strong>Equivariant GNN decoders</strong> (Equiformer, GemNet). These architectures ensure that the model respects the rotational and translational symmetries of crystal lattices.
-              </p>
-              
-              <div class="row mt-4">
-                <div class="col-md-6">
-                  <h4>Conditioning Schemes</h4>
-                  <ul class="tech-list">
-                    <li><i class="bx bx-check-circle"></i> Adapter-based Conditioning</li>
-                    <li><i class="bx bx-check-circle"></i> Node-based Feature Injection</li>
-                    <li><i class="bx bx-check-circle"></i> Skewed-dataset Fine-tuning</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <h4>Core Architectures</h4>
-                  <ul class="tech-list">
-                    <li><i class="bx bx-cog"></i> Equiformer (Equivariant Transformer)</li>
-                    <li><i class="bx bx-cog"></i> GemNet (Geometric Message Passing)</li>
-                    <li><i class="bx bx-cog"></i> Riemannian Flow Matching</li>
-                  </ul>
-                </div>
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>up to 5&times;</b><span>improvement in control and novelty</span></div>
+              <div class="pj-metric"><b>2.5&ndash;3.5 eV</b><span>target band-gap window</span></div>
+              <div class="pj-metric"><b>3 schemes</b><span>compared head to head</span></div>
+              <div class="pj-metric"><b>600 structures</b><span>generated per configuration</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/cond-gen.svg" alt="Conditional generation architecture: a target band gap enters a diffusion backbone through three conditioning schemes; generated crystals are checked for validity, uniqueness, novelty and property match.">
+              </div>
+              <figcaption><b>Three routes for the same signal.</b> The target property reaches the generator either through lightweight adapter modules bolted onto a frozen backbone, through injection into the node embeddings, or by shifting the fine-tuning distribution onto the target window. The backbone denoises lattice, fractional coordinates and atom types, decoded by an SE(3)-equivariant GNN; every generated batch is then scored for validity, uniqueness, novelty and whether the band gap actually landed where it was asked to.</figcaption>
+            </figure>
+
+              <h2>Why the band gap is the property to control</h2>
+              <p>Band gap governs the electronic and optical behaviour of an inorganic crystal. It decides
+                whether the material is a metal, a semiconductor or an insulator, and it fixes absorption and
+                emission wavelength &mdash; which is what makes it the property that matters for LEDs,
+                lasers, photovoltaics and semiconductor devices generally.</p>
+              <p>It is also hard. Band gap is difficult for machine learning models to predict in the first
+                place, and DFT datasets systematically underestimate experimental values. Generative models
+                inherit all of that difficulty and add their own: producing a crystal that is valid is
+                routine, producing one whose band gap lands in a requested window is not.</p>
+
+              <h3>How existing models take conditioning</h3>
+              <p>Part of this project was mapping how the field currently injects property information,
+                because the schemes differ in how deeply the signal reaches:</p>
+              <ul>
+                <li><strong>DiffCSP</strong> embeds the target property into a latent vector and concatenates
+                  it with the input at every diffusion step.</li>
+                <li><strong>CDVAE</strong> conditions only at sampling, projecting the target into the VAE
+                  latent space to guide the diffusion decoder after encoding.</li>
+                <li><strong>Con-CDVAE</strong> conditions both encoder and decoder, during training as well
+                  as sampling, so the model learns a joint representation of structure and property.</li>
+                <li><strong>DP-CDVAE</strong> integrates the target into the posterior distribution, encoding
+                  structure and property into a joint latent space.</li>
+                <li><strong>FTCP</strong> attaches a target-learning branch to the latent space, mapping
+                  latent points to user-specified properties.</li>
+              </ul>
+
+              <h3>The three schemes implemented</h3>
+              <ol class="pj-steps">
+                <li><b>Adapter-based conditioning.</b> The pretrained backbone stays frozen and lightweight
+                  adapter modules carry the property signal &mdash; cheap to train and easy to swap per
+                  target property.</li>
+                <li><b>Node-based conditioning.</b> The property is injected directly into the node
+                  embeddings, so it reaches the message-passing computation rather than sitting alongside
+                  it.</li>
+                <li><b>Skewed-dataset fine-tuning.</b> The fine-tuning distribution is deliberately shifted
+                  onto the target band-gap window, changing what the model considers typical instead of
+                  telling it what to aim for.</li>
+              </ol>
+
+              <h3>Backbones and decoders</h3>
+              <p>The schemes were examined on state-of-the-art generative backbones including
+                <strong>MatterGen</strong>, <strong>CrystalGRW</strong> and <strong>DiffCSP</strong>, using
+                diffusion-based <strong>equivariant GNN decoders</strong> &mdash; Equiformer and GemNet.
+                Equivariance is not decorative here: it is what makes the model respect the rotational and
+                translational symmetries of a crystal lattice, so a generated structure does not depend on
+                the arbitrary frame it was written in. Riemannian flow matching provides the alternative
+                generative formulation in the comparison.</p>
+
+              <div class="pj-callout is-result">
+                <h4>Outcome</h4>
+                <p>Across the conditioning schemes the models showed up to a <strong>five-fold
+                  improvement</strong> in both generation control and novelty &mdash; valid crystals with the
+                  target band gap, in regions of chemical space that standard generative approaches had not
+                  been reaching.</p>
               </div>
 
-              <h3 class="mt-4">Impact</h3>
-              <p>
-                By implementing these novel conditioning schemes, the models showed up to a <strong>5 times improvement</strong> in both generation control and novelty. This allows for the discovery of valid crystals in chemical spaces previously unexplored by standard generative approaches.
-              </p>
+              <h3>Evaluation</h3>
+              <p>Models were fine-tuned on AA'BB'X<sub>6</sub> double perovskites and on MP-20, with
+                adapter-module runs pretrained on ALEX-MP-20. Each configuration generates several hundred
+                structures &mdash; 10-atom cells in one protocol, 2&ndash;20 atom cells in another &mdash;
+                scored on validity, uniqueness, novelty against the fine-tuning set, and the fraction whose
+                band gap falls inside the requested 2.5&ndash;3.5&nbsp;eV window.</p>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Research Specs</h3>
-              <ul>
-                <li><strong>Category</strong>: Generative AI / Material Informatics</li>
-                <li><strong>Frameworks</strong>: PyTorch, MatterGen, CrystalGRW</li>
-                <li><strong>GNN Type</strong>: Equivariant Graph Neural Networks</li>
-                <li><strong>Focus</strong>: Targeted Property Generation (Bandgap)</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>Equiformer / MatterGen conditioning, adapter implementation, evaluation</li><li><strong>Group</strong>University of South Carolina</li><li><strong>Backbones</strong>MatterGen, CrystalGRW, DiffCSP</li><li><strong>Decoders</strong>Equiformer, GemNet</li><li><strong>Datasets</strong>AA'BB'X<sub>6</sub>, MP-20, ALEX-MP-20</li><li><strong>Status</strong>Work in progress &mdash; manuscript in preparation</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>PyTorch</span><span>MatterGen</span><span>CrystalGRW</span><span>DiffCSP</span><span>Equiformer</span><span>GemNet</span><span>Riemannian flow matching</span><span>Adapter tuning</span><span>Pymatgen</span></div>
+            </div>
+            </aside>
           </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
       </div>
     </section>
+
   </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

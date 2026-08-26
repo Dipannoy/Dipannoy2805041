@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" width="400" height="170" role="img" aria-label="gdrive overview">
+<title>gdrive overview</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#8fb4b6"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#efa9bc"/></marker></defs>
+<rect x="6" y="50" width="56" height="40" rx="10" ry="10" fill="#dff4f7" stroke="#77c9d8" stroke-width="1.25"/>
+<text x="34.0" y="74.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#08484f" text-anchor="middle">LMS</text>
+<path d="M64,70 L76,70" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="78" y="50" width="76" height="40" rx="10" ry="10" fill="#0a3a3e" stroke="#0a3a3e" stroke-width="1.25"/>
+<text x="116.0" y="61.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Backend</text>
+<text x="116.0" y="76.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#bfe3e0" text-anchor="middle">routes by</text>
+<text x="116.0" y="86.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#bfe3e0" text-anchor="middle">size</text>
+<rect x="172" y="20" width="120" height="26" rx="10" ry="10" fill="#e3f5f4" stroke="#83ccc7" stroke-width="1.25"/>
+<text x="232.0" y="31.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0a4f4a" text-anchor="middle">&lt; 5 MB</text>
+<text x="232.0" y="43.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0a4f4a" text-anchor="middle">multipart</text>
+<path d="M156,70 L170,33" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M294,33 L310,33" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="172" y="56" width="120" height="26" rx="10" ry="10" fill="#e3f5f4" stroke="#83ccc7" stroke-width="1.25"/>
+<text x="232.0" y="67.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0a4f4a" text-anchor="middle">&gt; 5 MB</text>
+<text x="232.0" y="79.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0a4f4a" text-anchor="middle">resumable</text>
+<path d="M156,70 L170,69" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M294,69 L310,69" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="172" y="92" width="120" height="26" rx="10" ry="10" fill="#e3f5f4" stroke="#83ccc7" stroke-width="1.25"/>
+<text x="232.0" y="103.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0a4f4a" text-anchor="middle">streamed</text>
+<text x="232.0" y="115.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0a4f4a" text-anchor="middle">download</text>
+<path d="M156,70 L170,105" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M294,105 L310,105" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="312" y="20" width="80" height="98" rx="12" ry="12" fill="#e6f6ef" stroke="#84d0b6" stroke-width="1.1"/>
+<text x="352.0" y="62.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0b5a41" text-anchor="middle">Drive</text>
+<text x="352.0" y="76.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0b5a41" text-anchor="middle">REST API</text>
+<text x="200.0" y="147.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0d7d78" text-anchor="middle">resumable uploads and streamed downloads at LMS scale</text>
+</svg>

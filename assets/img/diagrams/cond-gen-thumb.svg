@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 136" width="400" height="136" role="img" aria-label="cond-gen overview">
+<title>cond-gen overview</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#bb96a2"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#dd908c"/></marker></defs>
+<text x="200.0" y="14.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#6b7c8f" text-anchor="middle">One target band gap, three ways in</text>
+<rect x="8" y="26" width="132" height="30" rx="10" ry="10" fill="#f8dfe6" stroke="#d38ba4" stroke-width="1.25"/>
+<text x="74.0" y="45.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#6d1030" text-anchor="middle">Adapters</text>
+<path d="M142,41 L162,77" fill="none" stroke="#bb96a2" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="8" y="62" width="132" height="30" rx="10" ry="10" fill="#f8dfe6" stroke="#d38ba4" stroke-width="1.25"/>
+<text x="74.0" y="81.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#6d1030" text-anchor="middle">Node injection</text>
+<path d="M142,77 L162,77" fill="none" stroke="#bb96a2" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="8" y="98" width="132" height="30" rx="10" ry="10" fill="#f8dfe6" stroke="#d38ba4" stroke-width="1.25"/>
+<text x="74.0" y="117.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#6d1030" text-anchor="middle">Skewed dataset</text>
+<path d="M142,113 L162,77" fill="none" stroke="#bb96a2" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="166" y="46" width="118" height="62" rx="10" ry="10" fill="#450b20" stroke="#450b20" stroke-width="1.25"/>
+<text x="225.0" y="62.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Diffusion</text>
+<text x="225.0" y="74.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">model</text>
+<text x="225.0" y="89.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#f0c9d6" text-anchor="middle">Equivariant GNN</text>
+<text x="225.0" y="99.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#f0c9d6" text-anchor="middle">decoder</text>
+<path d="M286,77 L296,77" fill="none" stroke="#bb96a2" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="298" y="46" width="92" height="62" rx="10" ry="10" fill="#fbe9c2" stroke="#d9a832" stroke-width="1.25"/>
+<text x="344.0" y="73.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#6b4903" text-anchor="middle">Crystal</text>
+<text x="344.0" y="88.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#6b7c8f" text-anchor="middle">Eg 2.5–3.5 eV</text>
+</svg>

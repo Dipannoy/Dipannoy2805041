@@ -5,39 +5,23 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Single Sign On</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Single Sign-On Gateway &middot; Dipannoy Das Gupta</title>
+  <meta content="An OpenID Connect single sign-on provider built with ASP.NET Core, giving university users one credential across every academic portal." name="description">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.5.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="violet">
 
-  <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -45,15 +29,13 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-         <!--  <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
@@ -62,12 +44,12 @@
           <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
@@ -75,99 +57,106 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section class="pj-hero">
       <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Single Sign On</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
-          </ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Identity &amp; Infrastructure &middot; Edusoft Consultants Ltd.</div>
+        <h1>One Credential Across Every University Portal</h1>
+        <p class="pj-lede">A university does not run one application, it runs many &mdash; and asking students and faculty to keep a separate username and password for each of them is a support burden and a security problem at the same time. This single sign-on gateway gives them one login for all of it.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-shield-quarter"></i> OAuth 2.0 / OpenID Connect</span>
+          <span><i class="bx bx-code-alt"></i> ASP.NET Core</span>
+          <span><i class="bx bx-key"></i> Authorization-code flow</span>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
+        <div class="row">
 
-        <div class="portfolio-details-container">
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>1 credential</b><span>across every application</span></div>
+              <div class="pj-metric"><b>OIDC</b><span>response type: code</span></div>
+              <div class="pj-metric"><b>2 client apps</b><span>ASP.NET Core and ASP.NET</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/sso.svg" alt="Single sign-on architecture: a user reaching two client applications that both redirect to an OpenID Connect server, which returns an authorization code exchanged for tokens.">
+              </div>
+              <figcaption><b>The authorization-code flow.</b> Either client application redirects an unauthenticated user to the SSO server. After login and consent the server returns an authorization code, which the client exchanges at the token endpoint for an id_token and an access token &mdash; and the resulting session is valid across every portal, not just the one that started it.</figcaption>
+            </figure>
 
-          <div class="owl-carousel portfolio-details-carousel">
-          <!--   <img src="assets/img/SSO1.jpg" class="img-fluid" alt="">
-            <img src="assets/img/SSO3.png" class="img-fluid" alt=""> -->
+              <h2>The problem worth solving</h2>
+              <p>In daily life we come across a great many applications, and juggling different usernames and
+                passwords for each is genuinely difficult. Within a single organisation it is worse, because
+                the applications belong to the same institution and users reasonably expect them to know who
+                they are. A university is the clearest case of this, and it is the case this project was
+                built for.</p>
+
+              <h3>How it is put together</h3>
+              <ul>
+                <li><strong>SSO server</strong> &mdash; built with ASP.NET Core, acting as the OpenID Connect
+                  identity provider, using IdentityModel version 4.</li>
+                <li><strong>Two client applications</strong> &mdash; one on ASP.NET Core and one on classic
+                  ASP.NET, deliberately different so the integration could not quietly depend on a single
+                  framework's conveniences.</li>
+                <li><strong>Authorization-code response type</strong> &mdash; the code is exchanged
+                  server-side for tokens, so tokens never travel through the browser's address bar.</li>
+              </ul>
+
+              <div class="pj-callout">
+                <h4>Why the code flow</h4>
+                <p>Choosing the authorization-code response type over an implicit flow keeps the access token
+                  off the front channel entirely. It is one extra round trip and a meaningfully smaller
+                  attack surface.</p>
+              </div>
+
+              <h3>What it changes for users</h3>
+              <p>A student logs in once and moves between the academic portals without being asked again. For
+                the institution, credential management, password resets and access revocation all collapse to
+                a single place instead of being duplicated per application.</p>
+            </div>
           </div>
 
-          <div class="portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Tech Stack</strong>: ASP.Net Core, ASP.Net</li>
-              <li><strong>Protocols</strong>: OAuth, OIDC</li>
-              <li><strong>Identity Provider</strong>: IdentityModel, Version:4</li>
-            </ul>
+          <div class="col-lg-4">
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>Design and implementation</li><li><strong>Employer</strong>Edusoft Consultants Ltd., Dhaka</li><li><strong>Protocols</strong>OAuth 2.0, OpenID Connect</li><li><strong>Identity provider</strong>IdentityModel, version 4</li><li><strong>Response type</strong>Code</li></ul>
+            </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>ASP.NET Core</span><span>ASP.NET</span><span>C#</span><span>IdentityModel</span><span>OAuth 2.0</span><span>OpenID Connect</span></div>
+            </div>
+            </aside>
           </div>
 
         </div>
 
-        <div class="portfolio-description">
-          <h2>Single Sign On(SSO) is an authentication scheme which allows a user to log in multiple applications
-            with single credential.
-
-           </h2>
-          <p>
-            In our daily life, we come accross lots of applications. Using different usernames and passwords
-            is difficult. Moreover, for a particular organaization there can  exist multiple applications. So, it will be a great favor for the users if they can access all applications from a single platform. Similar scenario can be plotted for a university. Actually, my SSO project was built considering university users. 
-          </p>
-
-            <ul>
-              <li><strong>SSO Server</strong>: Built with ASP.Net Core</li>
-              <li><strong>SSO Clients</strong>: Two client apps were developed with ASP.Net & ASP.Net Core Respectively. </li>
-              <li><strong>OIDC Respons Type</strong>: Code</li>
-           
-            </ul>
-
-
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
 
 </body>
 

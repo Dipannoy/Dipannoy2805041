@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" width="400" height="170" role="img" aria-label="result-prediction overview">
+<title>result-prediction overview</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#93a9bd"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#efa9bc"/></marker></defs>
+<rect x="8" y="52" width="64" height="36" rx="10" ry="10" fill="#e0f2fd" stroke="#7cc9ee" stroke-width="1.25"/>
+<text x="40.0" y="66.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0a4f6b" text-anchor="middle">Grades</text>
+<text x="40.0" y="81.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#6b7c8f" text-anchor="middle">history</text>
+<rect x="94" y="14" width="106" height="24" rx="10" ry="10" fill="#eaf3fb" stroke="#8fbbdf" stroke-width="1.25"/>
+<text x="147.0" y="30.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b3d6b" text-anchor="middle">Naive Bayes</text>
+<path d="M74,70 L92,26" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M202,26 L226,70" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="94" y="42" width="106" height="24" rx="10" ry="10" fill="#eaf3fb" stroke="#8fbbdf" stroke-width="1.25"/>
+<text x="147.0" y="58.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b3d6b" text-anchor="middle">J48 tree</text>
+<path d="M74,70 L92,54" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M202,54 L226,70" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="94" y="70" width="106" height="24" rx="10" ry="10" fill="#eaf3fb" stroke="#8fbbdf" stroke-width="1.25"/>
+<text x="147.0" y="86.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b3d6b" text-anchor="middle">K* instance</text>
+<path d="M74,70 L92,82" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M202,82 L226,70" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="94" y="98" width="106" height="24" rx="10" ry="10" fill="#eaf3fb" stroke="#8fbbdf" stroke-width="1.25"/>
+<text x="147.0" y="114.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b3d6b" text-anchor="middle">Random Tree</text>
+<path d="M74,70 L92,110" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M202,110 L226,70" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="228" y="48" width="88" height="44" rx="10" ry="10" fill="#0b2545" stroke="#0b2545" stroke-width="1.25"/>
+<text x="272.0" y="68.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Predicted</text>
+<text x="272.0" y="80.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">result</text>
+<path d="M318,70 L330,70" fill="none" stroke="#93a9bd" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="332" y="48" width="58" height="44" rx="10" ry="10" fill="#e6f6ef" stroke="#84d0b6" stroke-width="1.25"/>
+<text x="361.0" y="68.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b5a41" text-anchor="middle">Early</text>
+<text x="361.0" y="80.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b5a41" text-anchor="middle">support</text>
+<text x="200.0" y="147.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#0563af" text-anchor="middle">published by Springer — LNNS vol. 284</text>
+</svg>

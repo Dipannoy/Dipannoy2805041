@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="470" viewBox="0 0 1120 470">
+<title>MFCSP: chemistry- and symmetry-aware MeanFlow crystal structure prediction</title>
+<defs>
+<marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#4d4d4d"/>
+</marker>
+</defs>
+<rect width="1120" height="470" fill="#ffffff"/>
+<rect x="14" y="30" width="726" height="424" rx="6" ry="6" fill="none" stroke="#9a9a9a" stroke-width="0.9" stroke-dasharray="4 3"/>
+<text x="377" y="56" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">(a) Training: one average-velocity field over the atom-token sequence</text>
+<rect x="34" y="84" width="132" height="46" rx="4" ry="4" fill="#f0f0f0" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="100.0" y="104.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">Crystal x = (X, L)</text>
+<text x="100.0" y="119.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">MP-20, N ≤ 20 atoms</text>
+<path d="M 168 107 L 196 107" fill="none" stroke="#4d4d4d" stroke-width="1.1" marker-end="url(#tip)"/>
+<rect x="198" y="84" width="150" height="46" rx="4" ry="4" fill="#fbeddc" stroke="#c99a63" stroke-width="0.9"/>
+<text x="273.0" y="104.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">Canonical ordering</text>
+<text x="273.0" y="119.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">electronegativity, Wyckoff</text>
+<path d="M 350 107 L 378 107" fill="none" stroke="#4d4d4d" stroke-width="1.1" marker-end="url(#tip)"/>
+<rect x="382" y="86" width="48" height="42" rx="4" ry="4" fill="#dde8f6" stroke="#7f9dc4" stroke-width="0.9"/>
+<text x="406.0" y="111.55" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">z<tspan font-size="9.4" baseline-shift="sub">1</tspan></text>
+<rect x="444" y="86" width="48" height="42" rx="4" ry="4" fill="#dde8f6" stroke="#7f9dc4" stroke-width="0.9"/>
+<text x="468.0" y="111.55" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">z<tspan font-size="9.4" baseline-shift="sub">2</tspan></text>
+<rect x="506" y="86" width="48" height="42" rx="4" ry="4" fill="#dde8f6" stroke="#7f9dc4" stroke-width="0.9"/>
+<text x="530.0" y="111.55" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">z<tspan font-size="9.4" baseline-shift="sub">3</tspan></text>
+<text x="592" y="112" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="15" fill="#666666" font-weight="400" text-anchor="middle">⋯</text>
+<rect x="630" y="86" width="48" height="42" rx="4" ry="4" fill="#dde8f6" stroke="#7f9dc4" stroke-width="0.9"/>
+<text x="654.0" y="111.55" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">z<tspan font-size="9.4" baseline-shift="sub">N</tspan></text>
+<text x="561" y="148" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">per token: type embedding, χ, radius, period, group, x<tspan font-size="7.6" baseline-shift="sub">i</tspan>, L</text>
+<path d="M 561 156 L 561 186" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<rect x="430" y="188" width="262" height="52" rx="4" ry="4" fill="#e4dcf3" stroke="#8f7fb8" stroke-width="0.9"/>
+<text x="561.0" y="211.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">Transformer u<tspan font-size="9.4" baseline-shift="sub">θ</tspan></text>
+<text x="561.0" y="226.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">12 layers · d = 768 · 12 heads</text>
+<rect x="60" y="188" width="330" height="52" rx="4" ry="4" fill="#f0f0f0" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="225.0" y="211.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">c = e<tspan font-size="9.4" baseline-shift="sub">t</tspan> + e<tspan font-size="9.4" baseline-shift="sub">r</tspan> + e<tspan font-size="9.4" baseline-shift="sub">formula</tspan> + e<tspan font-size="9.4" baseline-shift="sub">sys</tspan></text>
+<text x="225.0" y="226.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">adaptive LayerNorm modulates every block</text>
+<path d="M 392 214 L 428 214" fill="none" stroke="#4d4d4d" stroke-width="1.1" marker-end="url(#tip)"/>
+<path d="M 225 244 L 225 272" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<rect x="60" y="274" width="330" height="44" rx="4" ry="4" fill="#fbe1e1" stroke="#c98686" stroke-width="0.9"/>
+<text x="225.0" y="293.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">e<tspan font-size="9.4" baseline-shift="sub">sys</tspan> → null token, p = 0.8</text>
+<text x="225.0" y="308.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">classifier-free dropout; inference is formula-only</text>
+<path d="M 561 242 L 561 300" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="573" y="268" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="start">u<tspan font-size="7.6" baseline-shift="sub">θ</tspan>(x<tspan font-size="7.6" baseline-shift="sub">t</tspan>, t, r): average velocity</text>
+<rect x="430" y="302" width="262" height="52" rx="4" ry="4" fill="#dff0d5" stroke="#7fa86a" stroke-width="0.9"/>
+<text x="561.0" y="325.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">MeanFlow self-consistency loss</text>
+<text x="561.0" y="340.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">Jacobian–vector products, forward-mode AD</text>
+<text x="377" y="400" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">The space group is used only as an auxiliary training signal, never as an</text>
+<text x="377" y="415" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">inference condition, so generation needs the chemical formula alone.</text>
+<rect x="756" y="30" width="350" height="424" rx="6" ry="6" fill="none" stroke="#9a9a9a" stroke-width="0.9" stroke-dasharray="4 3"/>
+<text x="931" y="56" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">(b) Inference: five steps, no integration</text>
+<rect x="786" y="84" width="290" height="40" rx="4" ry="4" fill="#fbeddc" stroke="#c99a63" stroke-width="0.9"/>
+<text x="931.0" y="108.55" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="13" fill="#1a1a1a" font-weight="700" text-anchor="middle">Chemical formula</text>
+<path d="M 931 126 L 931 146" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<rect x="786" y="148" width="290" height="38" rx="4" ry="4" fill="#f0f0f0" stroke="#8c8c8c" stroke-width="0.9"/>
+<text x="931.0" y="171.375" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">x<tspan font-size="9.0" baseline-shift="sub">t</tspan> ~ N(0, I)</text>
+<path d="M 931 188 L 931 208" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<rect x="786" y="210" width="290" height="56" rx="4" ry="4" fill="#e4dcf3" stroke="#8f7fb8" stroke-width="0.9"/>
+<text x="931.0" y="235.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="middle">x<tspan font-size="9.0" baseline-shift="sub">r</tspan> = x<tspan font-size="9.0" baseline-shift="sub">t</tspan> − (t − r) u<tspan font-size="9.0" baseline-shift="sub">θ</tspan>(x<tspan font-size="9.0" baseline-shift="sub">t</tspan>, t, r)</text>
+<text x="931.0" y="250.0" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">one network evaluation per step</text>
+<circle cx="812" cy="298" r="6.5" fill="#dde8f6" stroke="#7f9dc4" stroke-width="1"/>
+<path d="M 820 298 L 865 298" fill="none" stroke="#4d4d4d" stroke-width="1.1" marker-end="url(#tip)"/>
+<circle cx="874" cy="298" r="6.5" fill="#dde8f6" stroke="#7f9dc4" stroke-width="1"/>
+<path d="M 882 298 L 927 298" fill="none" stroke="#4d4d4d" stroke-width="1.1" marker-end="url(#tip)"/>
+<circle cx="936" cy="298" r="6.5" fill="#dde8f6" stroke="#7f9dc4" stroke-width="1"/>
+<path d="M 944 298 L 989 298" fill="none" stroke="#4d4d4d" stroke-width="1.1" marker-end="url(#tip)"/>
+<circle cx="998" cy="298" r="6.5" fill="#dde8f6" stroke="#7f9dc4" stroke-width="1"/>
+<path d="M 1006 298 L 1051 298" fill="none" stroke="#4d4d4d" stroke-width="1.1" marker-end="url(#tip)"/>
+<circle cx="1060" cy="298" r="6.5" fill="#dde8f6" stroke="#7f9dc4" stroke-width="1"/>
+<path d="M 931 268 L 931 284" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="931" y="322" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10" fill="#666666" font-weight="400" text-anchor="middle">five steps  (a single step already matches CrystalFlow)</text>
+<path d="M 931 330 L 931 352" fill="none" stroke="#4d4d4d" stroke-width="1.1" stroke-linejoin="round" marker-end="url(#tip)"/>
+<rect x="786" y="354" width="290" height="40" rx="4" ry="4" fill="#dff0d5" stroke="#7fa86a" stroke-width="0.9"/>
+<text x="931.0" y="378.2" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="12" fill="#1a1a1a" font-weight="700" text-anchor="middle">Crystal: coordinates X and lattice L</text>
+<text x="931" y="424" font-family="'Latin Modern Roman','Nimbus Roman','Times New Roman',Times,serif" font-size="10.5" fill="#666666" font-weight="400" text-anchor="middle">5 evaluations vs 2,000 (CrystalFlow) and ≈20,000 (DiffCSP)</text>
+</svg>

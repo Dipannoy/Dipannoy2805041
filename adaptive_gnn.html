@@ -1,124 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Adaptive Message-Passing GNN - Detail</title>
+
+  <title>Cooperative GNN &mdash; Adaptive Message Passing &middot; Dipannoy Das Gupta</title>
+  <meta content="A cooperative graph neural network that learns a soft weight for every bond in a crystal graph, pruning chemically redundant edges while improving property prediction and mitigating over-smoothing." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    .efficiency-card { background: #fff; border: 1px solid #0563af; border-left: 5px solid #0563af; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
-    .stat-circle { width: 100px; height: 100px; border: 4px solid #0563af; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0563af; margin: 0 auto 10px; }
-    .tech-list { list-style: none; padding: 0; }
-    .tech-list li { padding: 10px 0; border-bottom: 1px dotted #ccc; font-size: 14px; }
-    .tech-list i { color: #0563af; margin-right: 10px; }
-  </style>
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="caramel">
 
-    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-      <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-     <!--      <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-             <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
+
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <section class="pj-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Adaptive Message-Passing GNN</h2>
-          <ol><li><a href="index.html">Home</a></li><li>Project Detail</li></ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Cooperative GNN for Materials &middot; University of South Carolina</div>
+        <h1>Teaching a GNN Which Bonds Are Worth Talking Over</h1>
+        <p class="pj-lede">In a crystal graph, every atom is normally wired to all its neighbours inside a fixed cutoff. That guarantees chemically irrelevant long-range contacts and it drives over-smoothing during message passing. CoGNN adds a learnable scoring network that decides, bond by bond, whether the message is worth sending at all.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-user-voice"></i> First author</span>
+          <span><i class="bx bx-git-branch"></i> Learnable edge pruning</span>
+          <span><i class="bx bx-data"></i> JARVIS &amp; Materials Project</span>
+          <span><i class="bx bx-time-five"></i> Manuscript under review</span>
         </div>
       </div>
     </section>
 
-    <section class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
         <div class="row">
+
           <div class="col-lg-8">
-            <div class="portfolio-description">
-              <h2>Trainable Control Networks for Selective Communication</h2>
-              <p>
-                In large-scale crystal structure prediction, the computational cost of full message-passing can be prohibitive. This project involved designing <strong>trainable control networks</strong> that sit on top of standard GNN architectures to manage selective node communication.
-              </p>
-
-              <div class="efficiency-card">
-                <h4>Key Optimization Achievements</h4>
-                <div class="row text-center mt-4">
-                  <div class="col-6">
-                    <div class="stat-circle">20%</div>
-                    <p>Edges Pruned</p>
-                  </div>
-                  <div class="col-6">
-                    <div class="stat-circle">0%</div>
-                    <p>Accuracy Loss</p>
-                  </div>
-                </div>
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>up to 38%</b><span>of bonds removed as redundant</span></div>
+              <div class="pj-metric"><b>2.5 / 2.8%</b><span>lower band-gap MAE (JARVIS / MP)</span></div>
+              <div class="pj-metric"><b>0.037 eV/atom</b><span>formation-energy MAE on MP</span></div>
+              <div class="pj-metric"><b>higher MADGap</b><span>less over-smoothing at depth</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/cognn.svg" alt="CoGNN pipeline: crystal to k-NN bond graph, an Action Net scoring every bond, EGNN message passing gated by those weights, hard threshold pruning, readout MLP and a sparsity-regularised loss.">
               </div>
+              <figcaption><b>The cooperative loop.</b> Inside each of <em>L</em> graph-convolution layers, an Action Net assigns a soft weight to every bond and the EGNN regressor uses those weights as edge gates, so a bond contributes in proportion to how much the scorer values it. The sparsity term in the loss pushes uninformative bonds toward zero, and a hard threshold &theta; prunes them outright at both training and inference time.</figcaption>
+            </figure>
 
-              <h3>Methodology</h3>
-              <p>
-                The control network learns which edges in the crystal graph are vital for property prediction and which are redundant. By dynamically pruning these edges during the forward pass, we significantly reduce the number of message-passing operations.
-              </p>
-              
-              <h4>Implementation Highlights</h4>
-              <ul class="tech-list">
-                <li><i class="bx bxs-bolt"></i> Trainable gating mechanisms for adaptive adjacency matrices.</li>
-                <li><i class="bx bxs-bolt"></i> Evaluation on high-atom count crystal datasets (JARVIS/Materials Project).</li>
-                <li><i class="bx bxs-bolt"></i> Integration with PyTorch Geometric and DGL for efficient sparse matrix operations.</li>
-              </ul>
+              <h2>Two problems with a fixed cutoff</h2>
+              <p>Graph neural networks give benchmark accuracy for material property prediction, and the
+                graph itself is the natural representation: atomic sites become nodes, bonds between
+                neighbouring sites become edges. But connecting every node to everything inside a pre-defined
+                cutoff radius does two unhelpful things at once. It manufactures long-range contacts that
+                carry no chemistry, and it feeds over-smoothing &mdash; the failure where deep message
+                passing drives every node embedding toward the same vector until the model can no longer
+                tell atoms apart.</p>
+              <p>Earlier architectures work around the symptom rather than the cause. CGCNN shares one
+                convolution weight matrix across all neighbours and therefore cannot distinguish how strongly
+                different neighbours should interact. Geometry-dependent message-passing schemes improve on
+                that, but the connectivity itself is still handed to them fixed.</p>
 
-              <h3 class="mt-4">Computational Impact</h3>
-              <p>
-                Reducing the graph density by 20% led to a substantial decrease in training time and memory footprint. This makes the model highly suitable for deployment on high-performance computing (HPC) clusters where resource allocation is critical.
-              </p>
+              <h3>Scoring the bonds instead of trusting the cutoff</h3>
+              <p>CoGNN augments the ordinary graph convolution loop with an <strong>Action Net</strong>: a
+                learnable edge-scoring network that assigns a soft weight <em>w<sub>e</sub></em> to every
+                bond. That weight multiplies the edge during message passing, so an unimportant bond simply
+                contributes less. A sparsity regulariser on the mean weight, added to the prediction loss as
+                <em>L</em> = MAE + &lambda;<em>w&#772;</em>, applies steady downward pressure, and a hard
+                threshold &theta; removes bonds that fall below it.</p>
+              <p>Four scoring variants were implemented and compared against the dense baseline, including a
+                <em>LearnableCutoffScoringNet</em> (the default), an edge-only scorer and a multiplicative
+                gate. The threshold &theta; was swept over {0.1, 0.2, 0.3, 0.4, 0.5} and selected on test MAE
+                under a sparsity constraint, with five-fold cross-validation on both benchmarks.</p>
+
+              <h3>What the model learned about chemistry</h3>
+              <div class="pj-callout is-finding">
+                <h4>Band gap and formation energy want different graphs</h4>
+                <p>For band gap, bonds in the 3&ndash;4&nbsp;&Aring; range turn out to be
+                  <strong>essential</strong> &mdash; the property depends on more than the local environment,
+                  and the scorer keeps those edges. For the highly localised formation energy the model
+                  retains only 62&ndash;68% of edges while matching or improving on the dense baseline. A
+                  substantial fraction of the structural edges in a crystal graph are simply chemically
+                  redundant for the property being predicted, and which fraction depends on the property.</p>
+              </div>
+              <p>The relationship is visible directly: plotting retained against dropped edges by bond
+                distance shows the proportion of pruned edges rising with bond length for the learnable
+                cutoff scorer. Where a variant fails to learn anything meaningful &mdash; the multiplicative
+                gate on formation energy &mdash; the kept and dropped distributions superimpose, and its
+                pruning is effectively random.</p>
+
+              <h3>Over-smoothing, measured rather than asserted</h3>
+              <p>Beyond accuracy, the pruned model maintains greater representational disparity across graph
+                nodes than the dense baseline. Tracking MADGap along with NumRank and Erank of the
+                final-layer node embeddings across depths <em>L</em>&nbsp;=&nbsp;1&hellip;8 shows CoGNN
+                holding node embeddings apart where the dense baseline collapses them &mdash; so the pruning
+                is not merely cheaper, it mitigates the failure mode that limits deep materials GNNs.</p>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Technical Specs</h3>
-              <ul>
-                <li><strong>Category</strong>: Deep Learning Optimization</li>
-                <li><strong>GNN Core</strong>: Message-Passing Neural Networks (MPNN)</li>
-                <li><strong>Libraries</strong>: PyTorch, DGL, SLURM (HPC)</li>
-                <li><strong>Dataset</strong>: Large-scale Inorganic Crystals</li>
-              </ul>
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>First author &mdash; method design, implementation, experiments</li><li><strong>Collaborators</strong>USC Computer Science, USC Chemistry &amp; Biochemistry, University of Toronto</li><li><strong>Datasets</strong>JARVIS and Materials Project, five-fold cross-validation</li><li><strong>Tasks</strong>Band gap and formation energy</li><li><strong>Status</strong>Manuscript under review</li></ul>
             </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>PyTorch</span><span>DGL</span><span>ALIGNN</span><span>EGNN</span><span>Sparsity regularisation</span><span>MADGap</span><span>Slurm / HPC</span><span>Weights &amp; Biases</span></div>
+            </div>
+            </aside>
           </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
       </div>
     </section>
+
   </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

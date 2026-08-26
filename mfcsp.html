@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MFCSP &mdash; Few-Step Crystal Structure Prediction &middot; Dipannoy Das Gupta</title>
+  <meta content="MFCSP predicts a stable crystal structure from a chemical formula using MeanFlow generative models, matching diffusion baselines with up to 100x fewer network evaluations." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/project.css" rel="stylesheet">
+</head>
+
+<body data-hue="brick">
+
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section class="pj-hero">
+      <div class="container">
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Crystal Structure Prediction &middot; University of South Carolina</div>
+        <h1>MFCSP &mdash; Crystal Structures in a Handful of Steps</h1>
+        <p class="pj-lede">Generative crystal structure prediction had stopped being limited by accuracy and started being limited by sampling cost: diffusion and flow-matching samplers integrate a trajectory over tens to thousands of sequential network evaluations for every single candidate. MFCSP learns the <em>average</em> velocity of that trajectory instead of the instantaneous one, so a complete structure can come out of a single evaluation.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-user-voice"></i> Co-author</span>
+          <span><i class="bx bx-chip"></i> MeanFlow generative model</span>
+          <span><i class="bx bx-network-chart"></i> Chemistry-aware Transformer</span>
+          <span><i class="bx bx-time-five"></i> Manuscript under review</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-main">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>83.6%</b><span>MP-20 match rate at five steps</span></div>
+              <div class="pj-metric"><b>100&times; fewer</b><span>network evaluations at one step</span></div>
+              <div class="pj-metric"><b>0.39&ndash;1.31 min</b><span>to generate 10,000 structures</span></div>
+              <div class="pj-metric"><b>72 / 72 / 65%</b><span>CSPBench structure / space group / consensus</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/mfcsp.svg" alt="MFCSP architecture: chemical formula, canonical atom ordering, per-atom tokens and a conditioning vector feed a 12-layer Transformer that predicts mean velocity; five sampling steps produce a crystal.">
+              </div>
+              <figcaption><b>Formula in, crystal out.</b> Atoms are sorted into a canonical order and tokenised with learned type embeddings plus fixed chemistry descriptors. A conditioning vector &mdash; the two MeanFlow times, a global composition embedding and a coarse crystal-system token &mdash; modulates every Transformer block through adaptive layer normalisation. Five applications of the mean-velocity update produce coordinates and a lattice directly, with no latent autoencoder in between.</figcaption>
+            </figure>
+
+              <h2>The bottleneck was never the model</h2>
+              <p>CDVAE, DiffCSP, MatterGen and CrystalFlow all made it possible to learn the distribution of
+                stable crystals directly instead of searching a potential-energy surface. What they did not
+                fix is inference: every candidate structure costs a full numerical integration of the
+                generative trajectory. DiffCSP needs on the order of 20,000 network evaluations per target;
+                CrystalFlow needs 2,000.</p>
+
+              <h3>Learning average velocity instead of instantaneous velocity</h3>
+              <p>Standard flow matching learns the instantaneous velocity at a point on the trajectory, which
+                is why it has to be integrated in small steps. MeanFlow learns the <em>average</em> velocity
+                between two times <em>r</em> and <em>t</em>, so a single update can cover a large interval:</p>
+              <p style="text-align:center;font-size:16px;color:#0b2545"><em>x&#770;<sub>r</sub></em> =
+                <em>x<sub>t</sub></em> &minus; (<em>t</em> &minus; <em>r</em>) &middot;
+                <em>u</em><sub>&theta;</sub>(<em>x<sub>t</sub></em>, <em>t</em>, <em>r</em>)</p>
+              <p>The field is trained with the MeanFlow self-consistency objective, whose
+                Jacobian&ndash;vector products are evaluated with forward-mode automatic differentiation.
+                Classifier-free condition dropout is used during training and the matching guidance
+                formulation during sampling.</p>
+
+              <h3>Making the Transformer chemistry- and symmetry-aware</h3>
+              <p>The velocity field is a sequence Transformer that treats each atom as a token. Because
+                self-attention is order-sensitive, four design choices carry the chemical and crystallographic
+                priors:</p>
+              <ul>
+                <li><strong>Canonical atom ordering.</strong> Atoms are sorted by Pauling electronegativity;
+                  for symmetry-aware training examples they are additionally grouped into space-group orbits
+                  and ordered by Wyckoff letter. This alone gives the largest single jump in space-group
+                  match.</li>
+                <li><strong>Per-token chemistry features.</strong> A learned atom-type embedding is
+                  concatenated with fixed descriptors &mdash; electronegativity, atomic radius, period and
+                  group &mdash; along with the atom's current coordinates and the shared lattice.</li>
+                <li><strong>Global composition embedding.</strong> Computed from normalised element counts;
+                  contributes the largest structure-match increment.</li>
+                <li><strong>Coarse crystal-system conditioning.</strong> A seven-way label rather than a
+                  230-way space group, so each class sees far more training examples. It is replaced by a
+                  null token for a fraction of examples, making it an auxiliary <em>training</em> signal, not
+                  an inference requirement &mdash; at generation time the model runs formula-only.</li>
+              </ul>
+
+              <div class="pj-callout">
+                <h4>Design consequence worth stating plainly</h4>
+                <p>Every inference-time conditioning signal is derivable from the composition alone. The
+                  space group is never required at generation, which is what makes the model usable on
+                  compounds nobody has characterised yet.</p>
+              </div>
+
+              <h3>What the numbers actually compare</h3>
+              <p>A single MeanFlow step matches CrystalFlow's match rate (78.38% against 78.34%) using 100
+                times fewer network evaluations and roughly an order of magnitude less wall-clock time. Five
+                steps raise it to 83.64%, above both CrystalFlow (78.34% at 2,000 evaluations) and DiffCSP
+                (77.93% at about 20,000) &mdash; still at 20 times fewer evaluations.</p>
+              <p>The stricter test is CSPBench, which withholds cell size and space group and scores symmetry
+                recovery. MFCSP reaches 72 / 72 / 65% structure, space-group and consensus match at five
+                steps. CrystalFlow scores higher (78 / 73 / 68) at its full 100-step budget but collapses to
+                49 / 32 / 31% when held to the same five-step budget &mdash; less than half the space-group
+                and consensus rates.</p>
+
+              <div class="pj-callout is-result">
+                <h4>The claim being made</h4>
+                <p>MFCSP improves <strong>accuracy per network evaluation</strong>, not peak accuracy alone.
+                  That is the axis that decides whether a generative model can be run over a large candidate
+                  space rather than a curated shortlist.</p>
+              </div>
+
+              <h3>Implementation</h3>
+              <p>A 12-layer Transformer with hidden size 768 and 12 attention heads, trained on the MP-20
+                subset of the Materials Project using the fixed DiffCSP split, with all evaluation structures
+                removed from training. 700 epochs in mixed bf16 precision with AdamW at a constant learning
+                rate of 10<sup>&minus;4</sup> and batch size 256, on a single NVIDIA A100. A companion
+                variant, <strong>pMF-CSP</strong>, swaps in the latent-free Pixel MeanFlow parameterisation
+                &mdash; predicting a denoised state and converting it to an average-velocity estimate &mdash;
+                with everything else held identical, to check that the result is not an artefact of one
+                parameterisation.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>Co-author &mdash; model development and evaluation</li><li><strong>Group</strong>Machine Learning and Evolution Laboratory, University of South Carolina</li><li><strong>Data</strong>MP-20 (Materials Project), fixed DiffCSP split</li><li><strong>Benchmarks</strong>MP-20 match rate / RMSE and CSPBench formula-only protocol</li><li><strong>Hardware</strong>Single NVIDIA A100, 700 epochs, mixed bf16</li><li><strong>Status</strong>Manuscript under review</li></ul>
+            </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>PyTorch</span><span>MeanFlow</span><span>Pixel MeanFlow</span><span>Transformers</span><span>Forward-mode AD</span><span>Classifier-free guidance</span><span>CHGNet</span><span>ORB-v3</span><span>Pymatgen</span><span>spglib</span></div>
+            </div>
+            </aside>
+          </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

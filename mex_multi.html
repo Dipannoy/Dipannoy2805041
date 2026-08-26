@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MEX-Multi &mdash; Multi-Property Inverse Design &middot; Dipannoy Das Gupta</title>
+  <meta content="A multi-property inverse-design framework: one shared SE(3)-equivariant backbone, three energy-based property heads, and a Pareto trade-off surface for crystalline materials." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/project.css" rel="stylesheet">
+</head>
+
+<body data-hue="chocolate">
+
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section class="pj-hero">
+      <div class="container">
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">Multi-Property Inverse Design &middot; University of South Carolina</div>
+        <h1>MEX-Multi &mdash; Designing for Three Properties at Once</h1>
+        <p class="pj-lede">Materials design is never a single-objective problem. Thermodynamic stability, electronic band gap and mechanical stiffness pull against one another, so what a designer actually needs is not one optimum but the trade-off surface between them. MEX-Multi learns all three inside one shared representation and returns that surface directly.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-user-voice"></i> First author</span>
+          <span><i class="bx bx-cube-alt"></i> EquiformerV2 backbone</span>
+          <span><i class="bx bx-line-chart"></i> Energy-based models</span>
+          <span><i class="bx bx-time-five"></i> Manuscript under review</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-main">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>68%</b><span>lower MAE than a model per property</span></div>
+              <div class="pj-metric"><b>0.110 eV/atom</b><span>formation-energy MAE</span></div>
+              <div class="pj-metric"><b>0.381 eV</b><span>band-gap MAE</span></div>
+              <div class="pj-metric"><b>0.087 log<sub>10</sub> GPa</b><span>bulk-modulus MAE</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/mex-multi.svg" alt="MEX-Multi architecture: a shared EquiformerV2 backbone feeds three per-property energy heads trained contrastively; a derivative-free optimizer produces point estimates and a Pareto front.">
+              </div>
+              <figcaption><b>End-to-end workflow.</b> A crystal graph is embedded once by the shared EquiformerV2 backbone. Each property owns a label encoder and a three-layer residual energy head that scores the shared embedding against a candidate value. The heads never see one another &mdash; their only coupling is the gradient that flows back into the backbone they share. At inference a derivative-free optimizer scans candidate values per head, giving both point estimates and the non-dominated trade-off surface.</figcaption>
+            </figure>
+
+              <h2>Why a single number is the wrong answer</h2>
+              <p>Ask for a material that is stable <em>and</em> has a 2&nbsp;eV band gap <em>and</em> is stiff,
+                and you have asked for something that may not exist. The honest answer is a set of
+                compromises: the structures for which you cannot improve one property without giving up
+                another. That set is the <strong>Pareto front</strong>, and producing it requires a model
+                that reasons about the properties jointly rather than three models that have never met.</p>
+              <p>There is a second problem. Novel materials live at the edges of a training distribution,
+                which is exactly where regression models become least trustworthy. Both problems pushed the
+                design toward training directly in a joint multi-property space.</p>
+
+              <h3>How the framework is put together</h3>
+              <ol class="pj-steps">
+                <li><b>One shared backbone.</b> An SE(3)-equivariant EquiformerV2 (8 layers,
+                  <em>l</em><sub>max</sub>&nbsp;=&nbsp;4, 128 spherical channels, 20-nearest-neighbour edges
+                  inside a 12&nbsp;&Aring; cutoff, roughly 28M parameters) maps each periodic crystal graph
+                  to a single embedding.</li>
+                <li><b>An energy head per property.</b> Instead of regressing a value, each property gets an
+                  energy-based model: a label encoder embeds a candidate value, that embedding is
+                  concatenated with the shared crystal embedding, and a three-layer residual MLP scores the
+                  pair. No property value ever enters the shared embedding.</li>
+                <li><b>Contrastive training, tuned per property.</b> Heads are trained to raise the score of
+                  the true value against negatives &mdash; locally sampled Gaussian-mixture negatives for the
+                  narrow-range formation energy and band gap, uniformly drawn negatives spanning the full
+                  range for bulk modulus.</li>
+                <li><b>One summed loss.</b> The per-property losses are summed, so the three objectives meet
+                  only in the gradients that reach the shared backbone.</li>
+                <li><b>Derivative-free inference.</b> At evaluation time a derivative-free optimizer scans
+                  candidate values and keeps the one each head scores highest, yielding a point estimate and,
+                  across the test set, the structure-level Pareto front.</li>
+              </ol>
+
+              <h3>Isolating where the gain comes from</h3>
+              <p>An accuracy number on its own would not show that <em>joint</em> training is what produces
+                it &mdash; extra capacity could explain the same result. So the comparison against
+                single-property baselines holds everything else fixed: identical backbone, identical heads,
+                identical losses, identical data splits. Only the number of simultaneous objectives changes.</p>
+              <p>Under that controlled comparison, joint multi-property training improved <strong>every
+                metric for every property</strong>, cutting MAE by 68%, 42% and 59% respectively. That
+                isolates transfer through the shared representation, rather than added capacity, as the
+                source of the gain.</p>
+
+              <div class="pj-callout is-result">
+                <h4>What it means in practice</h4>
+                <p>The model-derived trade-off surface lines up with the front computed from the true,
+                  DFT-measured properties of the same test structures. A designer can therefore read
+                  candidate compromises off the model instead of running the calculations that would
+                  otherwise be needed to find them.</p>
+              </div>
+
+              <h3>Evaluation</h3>
+              <p>MEX-Multi was evaluated on <strong>mp20_5k</strong>, a 5,000-structure subset of the
+                Materials Project MP-20 dataset, across three simultaneous targets: formation energy, band
+                gap and the Voigt&ndash;Reuss&ndash;Hill bulk modulus. Results are reported as mean and
+                standard deviation over three training seeds, with Spearman rank correlations of 0.957,
+                0.716 and 0.969.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>First author &mdash; framework design, implementation and experiments</li><li><strong>Group</strong>Machine Learning and Evolution Laboratory, University of South Carolina</li><li><strong>Dataset</strong>mp20_5k &mdash; 5,000 structures from Materials Project MP-20</li><li><strong>Targets</strong>Formation energy, band gap, Voigt&ndash;Reuss&ndash;Hill bulk modulus</li><li><strong>Status</strong>Manuscript under review</li></ul>
+            </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>PyTorch</span><span>EquiformerV2</span><span>Energy-based models</span><span>InfoNCE</span><span>Local-NCE</span><span>Derivative-free optimisation</span><span>Pymatgen</span><span>Weights &amp; Biases</span><span>Slurm / HPC</span></div>
+            </div>
+            </aside>
+          </div>
+
+        </div>
+
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

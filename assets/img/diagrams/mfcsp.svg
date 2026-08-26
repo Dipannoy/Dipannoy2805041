@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 352" width="960" height="352" role="img" aria-label="MFCSP architecture">
+<title>MFCSP architecture</title><desc>A formula is tokenised into atoms, a conditioned Transformer predicts the average velocity of the probability-flow trajectory, and five steps produce a full crystal.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#bb9891"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#d78fa6"/></marker></defs>
+<rect x="40" y="44" width="170" height="56" rx="10" ry="10" fill="#fdebe7" stroke="#e9a89a" stroke-width="1.25"/>
+<text x="125.0" y="62.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a271b" text-anchor="middle">Chemical formula</text>
+<text x="125.0" y="79.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">composition only — no</text>
+<text x="125.0" y="91.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">space group</text>
+<path d="M212,72 L244,72" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="246" y="44" width="196" height="56" rx="10" ry="10" fill="#fbe1dc" stroke="#dd968a" stroke-width="1.25"/>
+<text x="344.0" y="55.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">Canonical atom</text>
+<text x="344.0" y="69.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">ordering</text>
+<text x="344.0" y="86.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">electronegativity sort ·</text>
+<text x="344.0" y="98.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">Wyckoff orbits</text>
+<path d="M444,72 L476,72" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="478" y="44" width="196" height="56" rx="10" ry="10" fill="#fbe1dc" stroke="#dd968a" stroke-width="1.25"/>
+<text x="576.0" y="56.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">Per-atom tokens</text>
+<text x="576.0" y="73.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">type embedding · χ, radius,</text>
+<text x="576.0" y="85.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">period, group · coords +</text>
+<text x="576.0" y="97.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">lattice</text>
+<rect x="706" y="44" width="214" height="96" rx="10" ry="10" fill="#fbe9c2" stroke="#d9a832" stroke-width="1.25"/>
+<text x="813.0" y="70.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#6b4903" text-anchor="middle">Conditioning vector c</text>
+<text x="813.0" y="87.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">eₜ + eᵣ (MeanFlow times) ·</text>
+<text x="813.0" y="99.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">e_formula (composition) · e_sys</text>
+<text x="813.0" y="111.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">(crystal system — auxiliary,</text>
+<text x="813.0" y="123.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">CFG dropout)</text>
+<path d="M576,102 L576,150" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M813,142 L813,188 L678,188" fill="none" stroke="#bb9891" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="40" y="152" width="634" height="72" rx="10" ry="10" fill="#4e120c" stroke="#4e120c" stroke-width="1.25"/>
+<text x="357.0" y="178.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">MeanFlow velocity network uθ(xₜ, r, t)</text>
+<text x="357.0" y="195.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#f2d0c9" text-anchor="middle">12-layer Transformer · 768 hidden · 12 heads · every block modulated by c through adaptive</text>
+<text x="357.0" y="207.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#f2d0c9" text-anchor="middle">LayerNorm</text>
+<path d="M357,226 L357,248" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="32" y="250" width="438" height="76" rx="12" ry="12" fill="none" stroke="#bb9891" stroke-width="1.1" stroke-dasharray="5 4" opacity="0.95"/>
+<text x="45" y="243" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#6b7c8f" letter-spacing="1.1">FEW-STEP SAMPLING</text>
+<rect x="44" y="266" width="70" height="44" rx="10" ry="10" fill="#fbe1dc" stroke="#dd968a" stroke-width="1.25"/>
+<text x="79.0" y="286.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">step</text>
+<text x="79.0" y="300.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">1</text>
+<path d="M115,288 L126,288" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="128" y="266" width="70" height="44" rx="10" ry="10" fill="#fbe1dc" stroke="#dd968a" stroke-width="1.25"/>
+<text x="163.0" y="286.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">step</text>
+<text x="163.0" y="300.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">2</text>
+<path d="M199,288 L210,288" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="212" y="266" width="70" height="44" rx="10" ry="10" fill="#fbe1dc" stroke="#dd968a" stroke-width="1.25"/>
+<text x="247.0" y="286.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">step</text>
+<text x="247.0" y="300.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">3</text>
+<path d="M283,288 L294,288" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="296" y="266" width="70" height="44" rx="10" ry="10" fill="#fbe1dc" stroke="#dd968a" stroke-width="1.25"/>
+<text x="331.0" y="286.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">step</text>
+<text x="331.0" y="300.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7c1f16" text-anchor="middle">4</text>
+<path d="M367,288 L378,288" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="380" y="266" width="70" height="44" rx="10" ry="10" fill="#fdebe7" stroke="#e9a89a" stroke-width="1.25"/>
+<text x="415.0" y="286.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a271b" text-anchor="middle">step</text>
+<text x="415.0" y="300.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#8a271b" text-anchor="middle">5</text>
+<text x="251.0" y="340.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0b2545" text-anchor="middle">x̂ᵣ = xₜ − (t − r) · uθ(xₜ, r, t)</text>
+<path d="M472,288 L494,288" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="496" y="252" width="178" height="72" rx="10" ry="10" fill="#e7f0da" stroke="#9dbf7c" stroke-width="1.25"/>
+<text x="585.0" y="272.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#3a5a1e" text-anchor="middle">Crystal (X, L)</text>
+<text x="585.0" y="289.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">Cartesian coordinates +</text>
+<text x="585.0" y="301.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">3×3 lattice, no latent</text>
+<text x="585.0" y="313.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">autoencoder</text>
+<path d="M676,288 L698,288" fill="none" stroke="#bb9891" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="700" y="252" width="220" height="72" rx="10" ry="10" fill="#f3efee" stroke="#d5c9c7" stroke-width="1.25"/>
+<text x="810.0" y="278.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#4a3f3d" text-anchor="middle">CHGNet ranker → top-5</text>
+<text x="810.0" y="295.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">energy-ranked shortlist scored</text>
+<text x="810.0" y="307.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">by StructureMatcher</text>
+</svg>

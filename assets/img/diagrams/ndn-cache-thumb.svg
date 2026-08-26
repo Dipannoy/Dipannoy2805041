@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" width="400" height="170" role="img" aria-label="ndn-cache overview">
+<title>ndn-cache overview</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#8db2c0"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#efa9bc"/></marker></defs>
+<rect x="8" y="52" width="66" height="34" rx="10" ry="10" fill="#ddf3fc" stroke="#74cbea" stroke-width="1.25"/>
+<text x="41.0" y="73.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#08455c" text-anchor="middle">Interest</text>
+<path d="M76,69 L90,69" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="92" y="46" width="86" height="46" rx="10" ry="10" fill="#08324a" stroke="#08324a" stroke-width="1.25"/>
+<text x="135.0" y="59.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Content</text>
+<text x="135.0" y="71.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Store</text>
+<text x="135.0" y="86.9" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#bde2ef" text-anchor="middle">cached?</text>
+<path d="M180,60 L200,38" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M180,78 L200,100" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="202" y="24" width="92" height="28" rx="10" ry="10" fill="#e6f6ef" stroke="#84d0b6" stroke-width="1.25"/>
+<text x="248.0" y="36.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b5a41" text-anchor="middle">hit →</text>
+<text x="248.0" y="48.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#0b5a41" text-anchor="middle">serve</text>
+<rect x="202" y="86" width="92" height="28" rx="10" ry="10" fill="#fdeaef" stroke="#efa9bc" stroke-width="1.25"/>
+<text x="248.0" y="98.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#9f1239" text-anchor="middle">miss →</text>
+<text x="248.0" y="110.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#9f1239" text-anchor="middle">fetch</text>
+<rect x="296" y="34" width="96" height="56" rx="10" ry="10" fill="#fdf2e2" stroke="#e9c184" stroke-width="1.25"/>
+<text x="344.0" y="54.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#8a5309" text-anchor="middle">Evict by</text>
+<text x="344.0" y="66.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#8a5309" text-anchor="middle">recency +</text>
+<text x="344.0" y="78.4" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#8a5309" text-anchor="middle">frequency</text>
+<path d="M296,100 L342,94" fill="none" stroke="#8db2c0" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<text x="200.0" y="147.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#0d7ba3" text-anchor="middle">outperforms LRU and Priority-FIFO in ndnSIM</text>
+</svg>

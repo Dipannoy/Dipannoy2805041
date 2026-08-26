@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-label="Google Drive file management integration">
+<title>Google Drive file management integration</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#8fb4b6"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#b39ddb"/></marker></defs>
+<rect x="40" y="140" width="160" height="60" rx="10" ry="10" fill="#dff4f7" stroke="#77c9d8" stroke-width="1.25"/>
+<text x="120.0" y="160.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#08484f" text-anchor="middle">LMS client</text>
+<text x="120.0" y="177.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">question papers,</text>
+<text x="120.0" y="189.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">answer scripts</text>
+<path d="M202,170 L230,170" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="232" y="140" width="200" height="60" rx="10" ry="10" fill="#0a3a3e" stroke="#0a3a3e" stroke-width="1.25"/>
+<text x="332.0" y="160.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">ASP.NET Core backend</text>
+<text x="332.0" y="177.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#bfe3e0" text-anchor="middle">routes by file size and</text>
+<text x="332.0" y="189.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#bfe3e0" text-anchor="middle">direction</text>
+<path d="M434,156 L470,94" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M434,170 L470,166" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M434,184 L470,238" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="472" y="68" width="222" height="52" rx="10" ry="10" fill="#e3f5f4" stroke="#83ccc7" stroke-width="1.25"/>
+<text x="583.0" y="90.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0a4f4a" text-anchor="middle">Upload &lt; 5 MB</text>
+<text x="583.0" y="107.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">multipart</text>
+<rect x="472" y="140" width="222" height="52" rx="10" ry="10" fill="#e3f5f4" stroke="#83ccc7" stroke-width="1.25"/>
+<text x="583.0" y="162.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0a4f4a" text-anchor="middle">Upload &gt; 5 MB</text>
+<text x="583.0" y="179.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">resumable, chunked, restartable</text>
+<rect x="472" y="212" width="222" height="52" rx="10" ry="10" fill="#e3f5f4" stroke="#83ccc7" stroke-width="1.25"/>
+<text x="583.0" y="228.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0a4f4a" text-anchor="middle">Download</text>
+<text x="583.0" y="245.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">byte array streamed straight to</text>
+<text x="583.0" y="257.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">the client</text>
+<path d="M696,94 L732,112" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M696,166 L732,166" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<path d="M696,238 L732,220" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="734" y="68" width="186" height="196" rx="10" ry="10" fill="#e6f6ef" stroke="#84d0b6" stroke-width="1.25"/>
+<text x="827.0" y="155.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0b5a41" text-anchor="middle">Google Drive REST</text>
+<text x="827.0" y="169.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0b5a41" text-anchor="middle">API</text>
+<text x="827.0" y="186.5" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#6b7c8f" text-anchor="middle">OAuth 2.0 service account</text>
+<path d="M332,202 L332,232" fill="none" stroke="#8fb4b6" stroke-width="1.6" marker-end="url(#ah)" stroke-linejoin="round"/>
+<rect x="232" y="234" width="200" height="52" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.25"/>
+<text x="332.0" y="258.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" text-anchor="middle">File ID persisted in</text>
+<text x="332.0" y="272.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" text-anchor="middle">SQL</text>
+</svg>

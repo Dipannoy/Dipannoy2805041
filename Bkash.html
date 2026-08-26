@@ -5,39 +5,23 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>bKash Payment Gateway</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>bKash Payment Gateway Integration &middot; Dipannoy Das Gupta</title>
+  <meta content="Full specification analysis and implementation of the bKash mobile financial service checkout flow inside a university academic management system." name="description">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.5.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/project.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-hue="plum">
 
-  <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
@@ -45,29 +29,27 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/DipProfile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/portfolio_photo.JPG" alt="Dipannoy Das Gupta" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Dipannoy Das Gupta</a></h1>
-         <div class="social-links mt-3 text-center">
-          <a href= "mailto:1405082.ddg@ugrad.cse.buet.ac.bd" class="google"><i class="bx bxl-google"></i></a>
-      <!--     <a href="https://www.facebook.com/dipannoy.dip" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/dipannoy_dip/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-               <a href="https://github.com/Dipannoy?tab=repositories" class="github"><i class="bx bxl-github"></i></a>
+        <div class="social-links mt-3 text-center">
+          <a href="mailto:dg47@email.sc.edu" class="google" title="Email"><i class="bx bxl-google"></i></a>
+          <a href="https://join.skype.com/invite/YBA5bLGM8KhS" class="google-plus" title="Skype"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/dipannoy-das-gupta-805659150/" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Dipannoy?tab=repositories" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-         <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li class="active"><a href="index.html#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-              <li><a href="index.html#services"><i class="bx bx-server"></i> Publications</a></li>
-          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li class="active"><a href="index.html#projects"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
@@ -75,97 +57,103 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section class="pj-hero">
       <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>bKash Payment Gateway</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
-          </ol>
+        <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
+        <div class="pj-eyebrow">API Integration &middot; Edusoft Consultants Ltd.</div>
+        <h1>Moving University Tuition Payments Online</h1>
+        <p class="pj-lede">University bill payment was still a queue-and-counter process. Integrating bKash &mdash; the mobile financial service most students already use &mdash; into the existing academic management system moved it onto the phone in their pocket. The full API specification analysis and implementation were mine.</p>
+        <div class="pj-chips">
+          <span><i class="bx bx-credit-card"></i> Mobile financial services</span>
+          <span><i class="bx bx-code-alt"></i> ASP.NET</span>
+          <span><i class="bx bx-buildings"></i> Multiple universities</span>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section class="pj-main">
       <div class="container">
+        <div class="row">
 
-        <div class="portfolio-details-container">
+          <div class="col-lg-8">
+            <div class="pj-content">
+            <div class="pj-metrics">
+              <div class="pj-metric is-key"><b>3 core APIs</b><span>create, execute, query</span></div>
+              <div class="pj-metric"><b>Live</b><span>tuition collection in production</span></div>
+              <div class="pj-metric"><b>Multiple</b><span>university billing modules</span></div>
+            </div>
+            <figure class="pj-figure">
+              <div class="pj-figure-scroll">
+                <img src="assets/img/diagrams/bkash.svg" alt="bKash payment flow: billing module, grant token, create payment, checkout confirmation, execute payment, query status, ledger update and receipt.">
+              </div>
+              <figcaption><b>Three API calls and the states between them.</b> Create opens the transaction after the merchant is authenticated, the student confirms on their own wallet PIN screen, Execute settles it, and Query resolves anything ambiguous before the tuition ledger is updated &mdash; which is the call that matters most, because a payment that succeeded on the wallet side and failed to register on ours is the failure a student actually notices.</figcaption>
+            </figure>
 
-          <div class="owl-carousel portfolio-details-carousel">
-          <!--   <img src="assets/img/bkash1.jpg" class="img-fluid" alt="">
-            <img src="assets/img/bkash2.png" class="img-fluid" alt=""> -->
+              <h2>The context</h2>
+              <p>Like everything else, it was high time the traditional university bill payment system moved
+                to an online platform. Working from client requirements, we integrated the bKash payment
+                gateway with our existing comprehensive academic management system, so fee collection happens
+                inside the system that already knows what each student owes.</p>
+
+              <h3>The API flow</h3>
+              <ol class="pj-steps">
+                <li><b>Create.</b> Initiates the payment flow, fetching tokens and the other confidential
+                  information the transaction needs.</li>
+                <li><b>Execute.</b> Completes the payment once the student has confirmed on their wallet.</li>
+                <li><b>Query.</b> Checks the status of a payment &mdash; the call that reconciles the cases
+                  where the two sides disagree.</li>
+              </ol>
+
+              <div class="pj-callout">
+                <h4>The part that takes the work</h4>
+                <p>The happy path is short. What takes the analysis is everything around it: a student
+                  closing the tab mid-flow, a wallet timing out after the debit, a duplicate submission.
+                  Every one of those has to end with the tuition ledger and the wallet agreeing, which is
+                  what the Query call exists for.</p>
+              </div>
+
+              <h3>Scope of my work</h3>
+              <p>Full API specification analysis and implementation, integration with the existing billing
+                module, and the payment-status reconciliation that keeps institutional records correct.</p>
+            </div>
           </div>
 
-          <div class="portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Payment Gateway Integration</li>
-              <li><strong>Tech Stack</strong>: ASP.Net, Javascript, JQuery</li>
-    
-            </ul>
+          <div class="col-lg-4">
+            <aside class="pj-aside">
+            <div class="pj-panel">
+              <h3>Project facts</h3>
+              <ul><li><strong>Role</strong>Full API analysis and implementation</li><li><strong>Employer</strong>Edusoft Consultants Ltd., Dhaka</li><li><strong>Category</strong>Payment gateway integration</li><li><strong>Deployed for</strong>Multiple universities' billing modules</li></ul>
+            </div>
+            <div class="pj-panel">
+              <h3>Stack</h3>
+              <div class="pj-pills"><span>ASP.NET</span><span>C#</span><span>JavaScript</span><span>jQuery</span><span>bKash Checkout API</span><span>REST</span></div>
+            </div>
+            </aside>
           </div>
 
         </div>
 
-        <div class="portfolio-description">
-          <h2>bKash payment method has been implemented with multiple universities'
-              billing module.
-          </h2>
-          <p>
-          Like other activities, it's high time to transfer the traditional university bill payment system to the online platform. Considering the clients' requirements, we integrate the bKash payment gateway with our existing university comprehensive academic management system. The full API specification analysis and implementation are accomplished by me.  
-          </p>
-
-            <ul>
-              <li><strong>Create API</strong>: This one initiates the payment flow fetching tokens and other confidential info.</li>
-              <li><strong>Execute API</strong>: It's responsible for the payment completion.</li>
-              <li><strong>Query API</strong>: Checking the status of payment is performed by this API</li>
-        
-            </ul>
-
-
+        <div class="pj-footer-nav">
+          <a class="pj-back" href="index.html#projects"><i class="bx bx-left-arrow-alt"></i> Back to projects</a>
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var toggles = document.querySelectorAll('.mobile-nav-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.body.classList.toggle('mobile-nav-active');
+          var i = btn.querySelector('i');
+          i.classList.toggle('icofont-navigation-menu');
+          i.classList.toggle('icofont-close');
+        });
+      });
+    })();
+  </script>
 
 </body>
 

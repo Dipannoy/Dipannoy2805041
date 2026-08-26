@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" width="400" height="170" role="img" aria-label="ssl-materials overview">
+<title>ssl-materials overview</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#a3aebc"/></marker><marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#efa9bc"/></marker></defs>
+<text x="10.0" y="24.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#6b7c8f" text-anchor="start">Downstream error after pre-training on 364,000 structures</text>
+<text x="10.0" y="52.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0b2545" text-anchor="start">supervised</text>
+<rect x="108" y="40" width="206" height="18" rx="4" ry="4" fill="#9fb0c4"/>
+<text x="10.0" y="88.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0b2545" text-anchor="start">SSL pre-trained</text>
+<rect x="108" y="76" width="200" height="18" rx="4" ry="4" fill="#3d5875"/>
+<line x1="314" y1="32" x2="314" y2="102" stroke="#efa9bc" stroke-width="1.4" stroke-dasharray="3 3" opacity="1.0"/>
+<text x="340.0" y="74.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#9f1239" text-anchor="middle">≈</text>
+<text x="200.0" y="122.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#9f1239" text-anchor="middle">no meaningful gap — labels still carry the signal</text>
+<text x="200.0" y="147.0" font-family="Poppins, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#3d5875" text-anchor="middle">a rigorous negative result, reported as one</text>
+</svg>
