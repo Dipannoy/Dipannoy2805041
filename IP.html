@@ -73,21 +73,23 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>One platform</b><span>replaces a multi-tool workflow</span></div>
+          <div class="pj-metric"><b>CMBBE 2021</b><span>presented by me</span></div>
+          <div class="pj-metric"><b>Python</b><span>end-to-end, on Colab</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/femur-gnn.svg" alt="Pipeline from CT DICOM slices through pixel-clustering segmentation and 3D femur reconstruction to a region graph scored by a GNN for fracture risk.">
+          </div>
+          <figcaption><b>From slices to a risk score.</b> DICOM slices are segmented by pixel clustering, stacked into a 3D femur, and the geometrically complex regions of the femoral head are represented as a graph so a GNN can reason over them &mdash; all inside one automated pipeline rather than across several licensed applications.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>One platform</b><span>replaces a multi-tool workflow</span></div>
-              <div class="pj-metric"><b>CMBBE 2021</b><span>presented by me</span></div>
-              <div class="pj-metric"><b>Python</b><span>end-to-end, on Colab</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/femur-gnn.svg" alt="Pipeline from CT DICOM slices through pixel-clustering segmentation and 3D femur reconstruction to a region graph scored by a GNN for fracture risk.">
-              </div>
-              <figcaption><b>From slices to a risk score.</b> DICOM slices are segmented by pixel clustering, stacked into a 3D femur, and the geometrically complex regions of the femoral head are represented as a graph so a GNN can reason over them &mdash; all inside one automated pipeline rather than across several licensed applications.</figcaption>
-            </figure>
 
               <h2>The problem with the current workflow</h2>
               <p>A good number of image-processing packages are used for pathological analysis. They demand a

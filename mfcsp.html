@@ -74,22 +74,24 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>83.6%</b><span>MP-20 match rate at five steps</span></div>
+          <div class="pj-metric"><b>100&times; fewer</b><span>network evaluations at one step</span></div>
+          <div class="pj-metric"><b>0.39&ndash;1.31 min</b><span>to generate 10,000 structures</span></div>
+          <div class="pj-metric"><b>72 / 72 / 65%</b><span>CSPBench structure / space group / consensus</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/figures/mf_csp_2.jpg" alt="MFCSP architecture in detail. A noisy crystal state — Cartesian positions, a nine-parameter lattice, the formula and one-hot atom types — is tokenised one token per atom from type, chemistry, position and lattice embeddings, concatenated and projected to d=768, then canonically ordered. A 12-layer Transformer encoder, every block modulated by the conditioning vector through adaptive layer normalisation, feeds an output head that emits a per-token atomic velocity and a pooled lattice velocity. Those define a probability-flow ODE whose MeanFlow update jumps across the interval in one step to the clean structure.">
+          </div>
+          <figcaption><b>Formula in, crystal out.</b> Each atom becomes one token, built from a learned type embedding, fixed chemistry descriptors, its current position and the shared lattice, then ordered by Pauling electronegativity and grouped into space-group orbits. The conditioning vector &mdash; the two MeanFlow times, a global composition embedding and a coarse crystal-system token that is null at inference &mdash; modulates every Transformer block through adaptive layer normalisation. The output head predicts an average velocity for the atoms and one for the lattice; a single MeanFlow update then jumps across the whole time interval rather than integrating along it.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>83.6%</b><span>MP-20 match rate at five steps</span></div>
-              <div class="pj-metric"><b>100&times; fewer</b><span>network evaluations at one step</span></div>
-              <div class="pj-metric"><b>0.39&ndash;1.31 min</b><span>to generate 10,000 structures</span></div>
-              <div class="pj-metric"><b>72 / 72 / 65%</b><span>CSPBench structure / space group / consensus</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/mfcsp.svg" alt="MFCSP architecture: chemical formula, canonical atom ordering, per-atom tokens and a conditioning vector feed a 12-layer Transformer that predicts mean velocity; five sampling steps produce a crystal.">
-              </div>
-              <figcaption><b>Formula in, crystal out.</b> Atoms are sorted into a canonical order and tokenised with learned type embeddings plus fixed chemistry descriptors. A conditioning vector &mdash; the two MeanFlow times, a global composition embedding and a coarse crystal-system token &mdash; modulates every Transformer block through adaptive layer normalisation. Five applications of the mean-velocity update produce coordinates and a lattice directly, with no latent autoencoder in between.</figcaption>
-            </figure>
 
               <h2>The bottleneck was never the model</h2>
               <p>CDVAE, DiffCSP, MatterGen and CrystalFlow all made it possible to learn the distribution of

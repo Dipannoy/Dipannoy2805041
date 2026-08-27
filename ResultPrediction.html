@@ -73,21 +73,23 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>4 classifiers</b><span>compared on identical splits</span></div>
+          <div class="pj-metric"><b>90 / 10</b><span>train / test split</span></div>
+          <div class="pj-metric"><b>Springer</b><span>LNNS vol. 284, pp. 295&ndash;307</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/result-prediction.svg" alt="Result prediction pipeline: historical course grades, attribute selection, a 90/10 split, four classifiers in parallel, and a predicted result feeding early intervention.">
+          </div>
+          <figcaption><b>Four models, one decision.</b> Grade-based predictor attributes are extracted from historical course records and the same split is run through Naive Bayes, a J48 decision tree, the instance-based K* and a Random Tree. Agreement across methods is what makes the forecast trustworthy enough to act on.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>4 classifiers</b><span>compared on identical splits</span></div>
-              <div class="pj-metric"><b>90 / 10</b><span>train / test split</span></div>
-              <div class="pj-metric"><b>Springer</b><span>LNNS vol. 284, pp. 295&ndash;307</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/result-prediction.svg" alt="Result prediction pipeline: historical course grades, attribute selection, a 90/10 split, four classifiers in parallel, and a predicted result feeding early intervention.">
-              </div>
-              <figcaption><b>Four models, one decision.</b> Grade-based predictor attributes are extracted from historical course records and the same split is run through Naive Bayes, a J48 decision tree, the instance-based K* and a Random Tree. Agreement across methods is what makes the forecast trustworthy enough to act on.</figcaption>
-            </figure>
 
               <h2>The premise</h2>
               <p>Academic performance is not random. How a student did in the prerequisites carries real

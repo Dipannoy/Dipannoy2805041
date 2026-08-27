@@ -74,22 +74,24 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>68%</b><span>lower MAE than a model per property</span></div>
+          <div class="pj-metric"><b>0.110 eV/atom</b><span>formation-energy MAE</span></div>
+          <div class="pj-metric"><b>0.381 eV</b><span>band-gap MAE</span></div>
+          <div class="pj-metric"><b>0.087 log<sub>10</sub> GPa</b><span>bulk-modulus MAE</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/figures/mex-multi-workflow.svg" alt="MEX-Multi end-to-end workflow. A crystal structure passes through the EquiformerV2 backbone to one shared crystal embedding, which feeds three paths: (A) training, with per-property label encoders, property-specific energy heads, contrastive local-NCE and InfoNCE training and a summed loss that backpropagates into the shared backbone; (B) inference, where a derivative-free optimiser gives either a per-property point estimate scored on MAE and correlation, or a candidate pool sorted by NSGA-II into a Pareto front; and (C) retrieval validation, embedding the held-out test set and the alex_mp20 pool for top-K cosine retrieval against random and single-property baselines, compared by KL divergence.">
+          </div>
+          <figcaption>Figure 2 from the MEX-Multi manuscript &mdash; <b>the end-to-end workflow.</b> One EquiformerV2 backbone (8 layers, l<sub>max</sub> = 4, 20-NN edges, &asymp;28M parameters) produces the single embedding that all three stages share. <b>(A) Training:</b> each property has its own label encoder and energy head; the summed loss is the only thing that couples them, and it couples them through the backbone. <b>(B) Inference:</b> the heads score exactly the embedding they were trained on, so no train/test input shift arises &mdash; one run per property gives a point estimate, and pooled runs give the structure-level Pareto front. <b>(C) Retrieval validation:</b> the same backbone embeds the held-out test set and a &asymp;34,500-candidate pool, checking that retrieved property distributions match.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>68%</b><span>lower MAE than a model per property</span></div>
-              <div class="pj-metric"><b>0.110 eV/atom</b><span>formation-energy MAE</span></div>
-              <div class="pj-metric"><b>0.381 eV</b><span>band-gap MAE</span></div>
-              <div class="pj-metric"><b>0.087 log<sub>10</sub> GPa</b><span>bulk-modulus MAE</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/mex-multi.svg" alt="MEX-Multi architecture: a shared EquiformerV2 backbone feeds three per-property energy heads trained contrastively; a derivative-free optimizer produces point estimates and a Pareto front.">
-              </div>
-              <figcaption><b>End-to-end workflow.</b> A crystal graph is embedded once by the shared EquiformerV2 backbone. Each property owns a label encoder and a three-layer residual energy head that scores the shared embedding against a candidate value. The heads never see one another &mdash; their only coupling is the gradient that flows back into the backbone they share. At inference a derivative-free optimizer scans candidate values per head, giving both point estimates and the non-dominated trade-off surface.</figcaption>
-            </figure>
 
               <h2>Why a single number is the wrong answer</h2>
               <p>Ask for a material that is stable <em>and</em> has a 2&nbsp;eV band gap <em>and</em> is stiff,

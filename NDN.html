@@ -73,21 +73,23 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>Hybrid policy</b><span>recency &oplus; frequency, not one or the other</span></div>
+          <div class="pj-metric"><b>ndnSIM</b><span>simulated traffic and cache behaviour</span></div>
+          <div class="pj-metric"><b>LRU &amp; FIFO</b><span>baselines outperformed on hit rate</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/ndn-cache.svg" alt="NDN caching flow: an interest packet, a content store lookup that hits or misses, insertion on miss, and a hybrid eviction policy combining recency and frequency scores.">
+          </div>
+          <figcaption><b>Where the policy lives.</b> An interest packet either hits the content store and is served locally, or misses and is forwarded upstream, with the returned data inserted on the way back. When insertion finds the store full, the hybrid policy ranks candidates by combining a recency score with a frequency score &mdash; balancing what was used last against what is used often.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>Hybrid policy</b><span>recency &oplus; frequency, not one or the other</span></div>
-              <div class="pj-metric"><b>ndnSIM</b><span>simulated traffic and cache behaviour</span></div>
-              <div class="pj-metric"><b>LRU &amp; FIFO</b><span>baselines outperformed on hit rate</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/ndn-cache.svg" alt="NDN caching flow: an interest packet, a content store lookup that hits or misses, insertion on miss, and a hybrid eviction policy combining recency and frequency scores.">
-              </div>
-              <figcaption><b>Where the policy lives.</b> An interest packet either hits the content store and is served locally, or misses and is forwarded upstream, with the returned data inserted on the way back. When insertion finds the store full, the hybrid policy ranks candidates by combining a recency score with a frequency score &mdash; balancing what was used last against what is used often.</figcaption>
-            </figure>
 
               <h2>Why caching is the whole problem</h2>
               <p>Named Data Networking replaces "where is this host" with "what is this content", and that

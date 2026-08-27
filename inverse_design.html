@@ -74,22 +74,24 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>up to 5&times;</b><span>improvement in control and novelty</span></div>
+          <div class="pj-metric"><b>2.5&ndash;3.5 eV</b><span>target band-gap window</span></div>
+          <div class="pj-metric"><b>3 schemes</b><span>compared head to head</span></div>
+          <div class="pj-metric"><b>600 structures</b><span>generated per configuration</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/cond-gen.svg" alt="Conditional generation architecture: a target band gap enters a diffusion backbone through three conditioning schemes; generated crystals are checked for validity, uniqueness, novelty and property match.">
+          </div>
+          <figcaption><b>Three routes for the same signal.</b> The target property reaches the generator either through lightweight adapter modules bolted onto a frozen backbone, through injection into the node embeddings, or by shifting the fine-tuning distribution onto the target window. The backbone denoises lattice, fractional coordinates and atom types, decoded by an SE(3)-equivariant GNN; every generated batch is then scored for validity, uniqueness, novelty and whether the band gap actually landed where it was asked to.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>up to 5&times;</b><span>improvement in control and novelty</span></div>
-              <div class="pj-metric"><b>2.5&ndash;3.5 eV</b><span>target band-gap window</span></div>
-              <div class="pj-metric"><b>3 schemes</b><span>compared head to head</span></div>
-              <div class="pj-metric"><b>600 structures</b><span>generated per configuration</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/cond-gen.svg" alt="Conditional generation architecture: a target band gap enters a diffusion backbone through three conditioning schemes; generated crystals are checked for validity, uniqueness, novelty and property match.">
-              </div>
-              <figcaption><b>Three routes for the same signal.</b> The target property reaches the generator either through lightweight adapter modules bolted onto a frozen backbone, through injection into the node embeddings, or by shifting the fine-tuning distribution onto the target window. The backbone denoises lattice, fractional coordinates and atom types, decoded by an SE(3)-equivariant GNN; every generated batch is then scored for validity, uniqueness, novelty and whether the band gap actually landed where it was asked to.</figcaption>
-            </figure>
 
               <h2>Why the band gap is the property to control</h2>
               <p>Band gap governs the electronic and optical behaviour of an inorganic crystal. It decides

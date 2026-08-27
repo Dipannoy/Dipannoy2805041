@@ -74,22 +74,24 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>up to 38%</b><span>of bonds removed as redundant</span></div>
+          <div class="pj-metric"><b>2.5 / 2.8%</b><span>lower band-gap MAE (JARVIS / MP)</span></div>
+          <div class="pj-metric"><b>0.037 eV/atom</b><span>formation-energy MAE on MP</span></div>
+          <div class="pj-metric"><b>higher MADGap</b><span>less over-smoothing at depth</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/cognn.svg" alt="CoGNN pipeline: crystal to k-NN bond graph, an Action Net scoring every bond, EGNN message passing gated by those weights, hard threshold pruning, readout MLP and a sparsity-regularised loss.">
+          </div>
+          <figcaption><b>The cooperative loop.</b> Inside each of <em>L</em> graph-convolution layers, an Action Net assigns a soft weight to every bond and the EGNN regressor uses those weights as edge gates, so a bond contributes in proportion to how much the scorer values it. The sparsity term in the loss pushes uninformative bonds toward zero, and a hard threshold &theta; prunes them outright at both training and inference time.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>up to 38%</b><span>of bonds removed as redundant</span></div>
-              <div class="pj-metric"><b>2.5 / 2.8%</b><span>lower band-gap MAE (JARVIS / MP)</span></div>
-              <div class="pj-metric"><b>0.037 eV/atom</b><span>formation-energy MAE on MP</span></div>
-              <div class="pj-metric"><b>higher MADGap</b><span>less over-smoothing at depth</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/cognn.svg" alt="CoGNN pipeline: crystal to k-NN bond graph, an Action Net scoring every bond, EGNN message passing gated by those weights, hard threshold pruning, readout MLP and a sparsity-regularised loss.">
-              </div>
-              <figcaption><b>The cooperative loop.</b> Inside each of <em>L</em> graph-convolution layers, an Action Net assigns a soft weight to every bond and the EGNN regressor uses those weights as edge gates, so a bond contributes in proportion to how much the scorer values it. The sparsity term in the loss pushes uninformative bonds toward zero, and a hard threshold &theta; prunes them outright at both training and inference time.</figcaption>
-            </figure>
 
               <h2>Two problems with a fixed cutoff</h2>
               <p>Graph neural networks give benchmark accuracy for material property prediction, and the

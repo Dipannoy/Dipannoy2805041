@@ -73,21 +73,23 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>5 MB</b><span>threshold between transfer modes</span></div>
+          <div class="pj-metric"><b>Resumable</b><span>survives an interrupted connection</span></div>
+          <div class="pj-metric"><b>Streamed</b><span>flat server memory on download</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/gdrive.svg" alt="Google Drive integration: an ASP.NET Core backend routing uploads by file size to multipart or resumable transfers, streaming downloads, and persisting file IDs in SQL.">
+          </div>
+          <figcaption><b>Routing by size and direction.</b> Small files take a multipart upload; anything over 5&nbsp;MB goes through the resumable chunked protocol so an interrupted transfer picks up where it stopped rather than starting again. Downloads stream the byte array straight to the client, so server memory does not scale with file size, and the Drive file ID is what gets persisted locally.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>5 MB</b><span>threshold between transfer modes</span></div>
-              <div class="pj-metric"><b>Resumable</b><span>survives an interrupted connection</span></div>
-              <div class="pj-metric"><b>Streamed</b><span>flat server memory on download</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/gdrive.svg" alt="Google Drive integration: an ASP.NET Core backend routing uploads by file size to multipart or resumable transfers, streaming downloads, and persisting file IDs in SQL.">
-              </div>
-              <figcaption><b>Routing by size and direction.</b> Small files take a multipart upload; anything over 5&nbsp;MB goes through the resumable chunked protocol so an interrupted transfer picks up where it stopped rather than starting again. Downloads stream the byte array straight to the client, so server memory does not scale with file size, and the Drive file ID is what gets persisted locally.</figcaption>
-            </figure>
 
               <h2>Why offload the storage at all</h2>
               <p>An LMS handling answer scripts for a whole institution accumulates files quickly, and every

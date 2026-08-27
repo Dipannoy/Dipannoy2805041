@@ -74,22 +74,24 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>1.6&times;</b><span>better formation energy than direct training</span></div>
+          <div class="pj-metric"><b>1.2&ndash;1.35&times;</b><span>better HSE band gap</span></div>
+          <div class="pj-metric"><b>38 meV/atom</b><span>final &Delta;H<sub>f</sub> MAE</span></div>
+          <div class="pj-metric"><b>0.18 eV</b><span>final E<sub>g</sub>(HSE) MAE</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/domain-adaptation.svg" alt="Domain adaptation pipeline: a source model trained on 500 ABX3 compounds transfers weights to a double-perovskite target model, refined by three active-learning rounds, then used to screen 222,960 candidates.">
+          </div>
+          <figcaption><b>Two pipelines, one set of weights.</b> The source pipeline trains on 500 ABX<sub>3</sub> compounds. The optimal parameters from that run initialise a new model on the target AA'BB'X<sub>6</sub> dataset, whose structures come from the inexpensive bond-valence method rather than from DFT relaxation. Three rounds of active learning then add the samples the ensemble is most and least certain about, growing the training set from 700 to 3,593 before the final models screen the full candidate space.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>1.6&times;</b><span>better formation energy than direct training</span></div>
-              <div class="pj-metric"><b>1.2&ndash;1.35&times;</b><span>better HSE band gap</span></div>
-              <div class="pj-metric"><b>38 meV/atom</b><span>final &Delta;H<sub>f</sub> MAE</span></div>
-              <div class="pj-metric"><b>0.18 eV</b><span>final E<sub>g</sub>(HSE) MAE</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/domain-adaptation.svg" alt="Domain adaptation pipeline: a source model trained on 500 ABX3 compounds transfers weights to a double-perovskite target model, refined by three active-learning rounds, then used to screen 222,960 candidates.">
-              </div>
-              <figcaption><b>Two pipelines, one set of weights.</b> The source pipeline trains on 500 ABX<sub>3</sub> compounds. The optimal parameters from that run initialise a new model on the target AA'BB'X<sub>6</sub> dataset, whose structures come from the inexpensive bond-valence method rather than from DFT relaxation. Three rounds of active learning then add the samples the ensemble is most and least certain about, growing the training set from 700 to 3,593 before the final models screen the full candidate space.</figcaption>
-            </figure>
 
               <h2>A chemical space too large to compute and too sparse to learn</h2>
               <p>Halide perovskites are used across light-emitting diodes, photocatalysis and &mdash; most

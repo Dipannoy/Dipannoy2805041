@@ -73,21 +73,23 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>3 core APIs</b><span>create, execute, query</span></div>
+          <div class="pj-metric"><b>Live</b><span>tuition collection in production</span></div>
+          <div class="pj-metric"><b>Multiple</b><span>university billing modules</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/bkash.svg" alt="bKash payment flow: billing module, grant token, create payment, checkout confirmation, execute payment, query status, ledger update and receipt.">
+          </div>
+          <figcaption><b>Three API calls and the states between them.</b> Create opens the transaction after the merchant is authenticated, the student confirms on their own wallet PIN screen, Execute settles it, and Query resolves anything ambiguous before the tuition ledger is updated &mdash; which is the call that matters most, because a payment that succeeded on the wallet side and failed to register on ours is the failure a student actually notices.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>3 core APIs</b><span>create, execute, query</span></div>
-              <div class="pj-metric"><b>Live</b><span>tuition collection in production</span></div>
-              <div class="pj-metric"><b>Multiple</b><span>university billing modules</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/bkash.svg" alt="bKash payment flow: billing module, grant token, create payment, checkout confirmation, execute payment, query status, ledger update and receipt.">
-              </div>
-              <figcaption><b>Three API calls and the states between them.</b> Create opens the transaction after the merchant is authenticated, the student confirms on their own wallet PIN screen, Execute settles it, and Query resolves anything ambiguous before the tuition ledger is updated &mdash; which is the call that matters most, because a payment that succeeded on the wallet side and failed to register on ours is the failure a student actually notices.</figcaption>
-            </figure>
 
               <h2>The context</h2>
               <p>Like everything else, it was high time the traditional university bill payment system moved

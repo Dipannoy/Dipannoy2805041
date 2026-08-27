@@ -73,21 +73,23 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>2 predictors</b><span>BERTOS and TOSS, used together</span></div>
+          <div class="pj-metric"><b>Charge neutral</b><span>enforced, not hoped for</span></div>
+          <div class="pj-metric"><b>Inverse design</b><span>target property &rarr; structure</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/crysllmgen.svg" alt="CrysLLMGen pipeline: composition through BERTOS and TOSS oxidation-state predictors and a charge-neutrality filter, into the Materium generative backbone and a stability screen.">
+          </div>
+          <figcaption><b>Chemistry first, then geometry.</b> A composition is passed through two complementary oxidation-state predictors &mdash; a transformer language model over element sequences and a global optimiser &mdash; and candidates that cannot be balanced are rejected before generation. Those oxidation-state priors then constrain what the Materium backbone is allowed to produce, and the output is screened for stability and validity.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>2 predictors</b><span>BERTOS and TOSS, used together</span></div>
-              <div class="pj-metric"><b>Charge neutral</b><span>enforced, not hoped for</span></div>
-              <div class="pj-metric"><b>Inverse design</b><span>target property &rarr; structure</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/crysllmgen.svg" alt="CrysLLMGen pipeline: composition through BERTOS and TOSS oxidation-state predictors and a charge-neutrality filter, into the Materium generative backbone and a stability screen.">
-              </div>
-              <figcaption><b>Chemistry first, then geometry.</b> A composition is passed through two complementary oxidation-state predictors &mdash; a transformer language model over element sequences and a global optimiser &mdash; and candidates that cannot be balanced are rejected before generation. Those oxidation-state priors then constrain what the Materium backbone is allowed to produce, and the output is screened for stability and validity.</figcaption>
-            </figure>
 
               <h2>The bottleneck this addresses</h2>
               <p>The hard part of material informatics is not producing <em>a</em> structure &mdash; it is

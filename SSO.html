@@ -73,21 +73,23 @@
 
     <section class="pj-main">
       <div class="container">
+        <div class="pj-metrics">
+          <div class="pj-metric is-key"><b>1 credential</b><span>across every application</span></div>
+          <div class="pj-metric"><b>OIDC</b><span>response type: code</span></div>
+          <div class="pj-metric"><b>2 client apps</b><span>ASP.NET Core and ASP.NET</span></div>
+        </div>
+
+        <figure class="pj-figure">
+          <div class="pj-figure-scroll">
+            <img src="assets/img/diagrams/sso.svg" alt="Single sign-on architecture: a user reaching two client applications that both redirect to an OpenID Connect server, which returns an authorization code exchanged for tokens.">
+          </div>
+          <figcaption><b>The authorization-code flow.</b> Either client application redirects an unauthenticated user to the SSO server. After login and consent the server returns an authorization code, which the client exchanges at the token endpoint for an id_token and an access token &mdash; and the resulting session is valid across every portal, not just the one that started it.</figcaption>
+        </figure>
+
         <div class="row">
 
           <div class="col-lg-8">
             <div class="pj-content">
-            <div class="pj-metrics">
-              <div class="pj-metric is-key"><b>1 credential</b><span>across every application</span></div>
-              <div class="pj-metric"><b>OIDC</b><span>response type: code</span></div>
-              <div class="pj-metric"><b>2 client apps</b><span>ASP.NET Core and ASP.NET</span></div>
-            </div>
-            <figure class="pj-figure">
-              <div class="pj-figure-scroll">
-                <img src="assets/img/diagrams/sso.svg" alt="Single sign-on architecture: a user reaching two client applications that both redirect to an OpenID Connect server, which returns an authorization code exchanged for tokens.">
-              </div>
-              <figcaption><b>The authorization-code flow.</b> Either client application redirects an unauthenticated user to the SSO server. After login and consent the server returns an authorization code, which the client exchanges at the token endpoint for an id_token and an access token &mdash; and the resulting session is valid across every portal, not just the one that started it.</figcaption>
-            </figure>
 
               <h2>The problem worth solving</h2>
               <p>In daily life we come across a great many applications, and juggling different usernames and
